@@ -1,2 +1,3 @@
 # spwml_docs
-SpWML documentation.
+SpWML documentation.  
+For [Web page](https://masahidemori-simpleappli.github.io/spwml_docs/).
