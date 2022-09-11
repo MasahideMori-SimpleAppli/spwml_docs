@@ -6,7 +6,7 @@ Classes and methods
 Click on the block type name to jump to the detailed class and function page.
 In addition, specifications such as margins are :ref:`common parameters<spwml>` of each class, and can be used in any block.
 
-Structure (container for elements)
+Container
 ====================================
 * :ref:`block(Simple container) <block>`
 * :ref:`card <card>`
