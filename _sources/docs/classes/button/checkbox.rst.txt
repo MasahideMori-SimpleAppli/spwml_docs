@@ -1,0 +1,80 @@
+:orphan:
+.. _checkbox:
+
+======================================
+CheckboxElement
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (checkbox)
+   +(menu)menu 1
+   +(menu)menu 2
+   +(menu)menu 3
+
+----
+
+Summary
+===============
+
+This block allows you to create checkboxes.
+
+----
+
+Functions (Dart)
+===================
+
+Child block control
+-----------------------
+
+:ref:`Parent class <multi_child>` functions.
+
+Initial value setting
+-------------------------
+
+Set the initial value.To keep the value when updating the screen, use
+Hold the value in the parent widget, etc., and call it.
+
+.. code-block:: none
+   
+   void setInitialValues(List<bool> v)
+
+Callback setting
+-------------------
+
+The values of each of the retained checkboxes are collectively passed as a list.
+
+.. code-block:: none
+   
+   void setCallback(void Function(List<bool>? checkValues)? callback)
+
+----
+
+Variable（Dart）
+=================
+
+* :ref:`The common<spwml>` variable.
+* :ref:`Parent<multi_child>` variable.
+* [elParams] : Not only `Checkbox class <https://api.flutter.dev/flutter/material/Checkbox-class.html>`__ variables that has variables that have been further adjusted to improve usability.
+
+----
+
+Parameters
+====================
+
+* :ref:`The common<spwml>` parameters.
+* :ref:`Parent<multi_child>` parameters.
+* iconSize (double). Set size of icon in px.
+* iconColor (String). Color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+* splashRadius (double). Set the size of the reaction circle by px on when tapped.
+* enableTapLabel (bool). If true, can tap text. The initial value is false.
+
+----
+
+Super Class
+==============
+
+:ref:`multi_child`

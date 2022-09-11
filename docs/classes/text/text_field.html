@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>TextFieldElement &#8212; SpWML Docs  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/alabaster.css" />
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="textfieldelement">
+<span id="textfield"></span><h1>TextFieldElement<a class="headerlink" href="#textfieldelement" title="Permalink to this heading">¶</a></h1>
+<section id="how-to-write-by-spwml">
+<h2>How to write by SpWML<a class="headerlink" href="#how-to-write-by-spwml" title="Permalink to this heading">¶</a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(tf)
+or
+(textField)
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">¶</a></h2>
+<p>It is a block that can be set to text input without a child block.</p>
+</section>
+<hr class="docutils" />
+<section id="functions-dart">
+<h2>Functions (Dart)<a class="headerlink" href="#functions-dart" title="Permalink to this heading">¶</a></h2>
+<section id="search-icon-callback">
+<h3>Search icon callback<a class="headerlink" href="#search-icon-callback" title="Permalink to this heading">¶</a></h3>
+<p>Sets the button callback when the input is in search mode.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setSuffixCallback(Function(String inputText)? suffixCallback)
+</pre></div>
+</div>
+</section>
+<section id="input-complete-callback">
+<h3>Input complete callback<a class="headerlink" href="#input-complete-callback" title="Permalink to this heading">¶</a></h3>
+<p>Set a callback when user input is completed.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setOnSubmitted(void Function(String)? onSubmitted)
+</pre></div>
+</div>
+<hr class="docutils" />
+<p>Set a class to hold the input text. The text is managed by the Parent widget as per Flutter’s standard specifications.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setController(TextEditingController? controller)
+</pre></div>
+</div>
+<hr class="docutils" />
+<p>Set Focus.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setFocusNode(FocusNode? focusNode)
+</pre></div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="variable-dart">
+<h2>Variable（Dart）<a class="headerlink" href="#variable-dart" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">The common</span></a> variable.</p></li>
+<li><p><a class="reference internal" href="text.html#text"><span class="std std-ref">Parent</span></a> variable.</p></li>
+<li><p>[tfParams] :  A variable with parameters equivalent to Flutter <a class="reference external" href="https://api.flutter.dev/flutter/material/TextField-class.html">TextField class</a> .</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="parameters">
+<h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">The common</span></a> parameters.</p></li>
+<li><p><a class="reference internal" href="text.html#text"><span class="std std-ref">Parent</span></a> parameters. However, isSelectable is invalid.</p></li>
+<li><p>labelText(String). Hint text with the function of moving to the upper left with animation.</p></li>
+<li><p>hint(String). This is the hint text that is displayed when the input is empty.</p></li>
+<li><p>type(String). Specifies the shape of the input box.Specify either material or rounded.</p></li>
+<li><p>mode(String).Specifies the operation mode.Specify one of normal, password, search, or manual.In manual mode, SpWML specification is invalid and the user setting value is reflected as it is.</p></li>
+<li><p>iconNum(String). Set the icon type with <a class="reference external" href="https://api.flutter.dev/flutter/material/Icons-class.html">codePoint</a> .</p></li>
+<li><p>iconSize (double).</p></li>
+<li><p>iconColor (String). Color setting for icons. #AARRGGBB notation, or <a class="reference external" href="https://material.io/design/color/the-color-system.html#tools-for-picking-colors">2014 Material Design color palettes</a> It can be handled with notations such as red[500] and redAccent[100].</p></li>
+<li><p>suffixIconNum(String). Suffix Set the icon type with <a class="reference external" href="https://api.flutter.dev/flutter/material/Icons-class.html">codePoint</a> .</p></li>
+<li><p>suffixIconSize(double). Suffix Set size of icon in px.</p></li>
+<li><p>suffixIconSplashRadius(double). Specifies the size of the animation area for tapping the tail icon in px.</p></li>
+<li><p>suffixIconColor(String). Color setting for the suffix icon. #AARRGGBB notation, or <a class="reference external" href="https://material.io/design/color/the-color-system.html#tools-for-picking-colors">2014 Material Design color palettes</a> It can be handled with notations such as red[500] and redAccent[100].</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="super-class">
+<h2>Super Class<a class="headerlink" href="#super-class" title="Permalink to this heading">¶</a></h2>
+<p><a class="reference internal" href="text.html#text"><span class="std std-ref">TextElement</span></a></p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../index.html">SpWML Docs</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction.html">What is SpWML?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../try_editor.html">Try SpWML Editor!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../install.html">How to install SpWML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../coding.html">Working with SpWML from code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes_and_methods.html">Classes and methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../copyright_notice.html">Notice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendix.html">Appendix</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Masahide Mori.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../_sources/docs/classes/text/text_field.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

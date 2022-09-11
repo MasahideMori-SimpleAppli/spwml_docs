@@ -1,0 +1,65 @@
+:orphan:
+.. _table:
+
+======================================
+TableElement
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (table, hNum:2)
+   +(tr)
+   ++(grandson block)
+   ++(grandson block)
+   +(tr)
+   ++(grandson block)
+   ++(grandson block)
+
+----
+
+Summary
+===============
+
+A block with multiple child blocks.
+This block is used as a child element of the table block, and the inner child blocks are the elements of each column in the table.
+Of the parameters, hNum is a required parameter and must be specified.
+Also, tr is usually used for the child block.
+
+----
+
+Functions (Dart)
+===================
+
+Child block control
+-----------------------
+
+:ref:`Parent class <multi_child>` functions.
+
+----
+
+Variable（Dart）
+=================
+
+* :ref:`The common<spwml>` variable.
+* :ref:`Parent<multi_child>` variable.
+* [elParams] :  A variable with parameters equivalent to Flutter `Table class <https://api.flutter.dev/flutter/widgets/Table-class.html>`__ .
+
+----
+
+Parameters
+====================
+
+* :ref:`The common<spwml>` parameters.
+* :ref:`Parent<multi_child>` parameters.
+* hNum (int). Set the number of elements in the horizontal direction of the table.This parameter is required.
+* color (String). Color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+
+----
+
+Super Class
+==============
+
+:ref:`multi_child`

@@ -1,0 +1,55 @@
+:orphan:
+.. _single_child:
+
+======================================
+SingleChildElement
+======================================
+
+How to write by SpWML
+========================
+
+It is a super class that cannot be described directly.
+
+----
+
+Summary
+===============
+
+A super class for SpWML elements that have one child block.
+
+----
+
+Functions (Dart)
+===================
+
+Call from Builder
+----------------------
+
+There is a method called replaceID in the Builder function, and by using this method, you can replace the child block with a widget.
+
+.. code-block:: none
+   
+    SpWMLBuilder builder = SpWMLBuilder("(SubClass of this, id:1)");
+    builder.replaceID(1, Text("abc"));
+
+----
+
+Variable（Dart）
+=================
+
+* :ref:`The common<spwml>` variable.
+* [child] : The single child widget.
+
+----
+
+Parameters
+====================
+
+* :ref:`The common<spwml>` parameters.
+
+----
+
+Super Class
+==============
+
+:ref:`spwml`

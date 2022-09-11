@@ -1,0 +1,56 @@
+:orphan:
+.. _stack:
+
+======================================
+StackElement
+======================================
+
+How to write by SpWML
+========================
+.. code-block:: none
+   
+   (stack)
+   +(child block)
+   +(child block)
+
+----
+
+Summary
+===============
+
+A block with multiple child blocks.
+The upper left corners of the inner child blocks are aligned, and the ones in the back row are stacked higher.
+
+----
+
+Functions (Dart)
+===================
+
+Child block control
+-----------------------
+
+:ref:`Parent class <multi_child>` functions.
+
+----
+
+Variable（Dart）
+=================
+
+* :ref:`The common<spwml>` variable.
+* :ref:`Parent<multi_child>` variable.
+* [elParams] :  A variable with parameters equivalent to Flutter `Stack class <https://api.flutter.dev/flutter/widgets/Stack-class.html>`__ .
+
+----
+
+Parameters
+====================
+
+* :ref:`The common<spwml>` parameters.
+* :ref:`Parent<multi_child>` parameters.
+
+----
+
+Super Class
+==============
+
+:ref:`multi_child`

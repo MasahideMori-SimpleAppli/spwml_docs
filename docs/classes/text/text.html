@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>TextElement &#8212; SpWML Docs  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/alabaster.css" />
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="textelement">
+<span id="text"></span><h1>TextElement<a class="headerlink" href="#textelement" title="Permalink to this heading">¶</a></h1>
+<section id="how-to-write-by-spwml">
+<h2>How to write by SpWML<a class="headerlink" href="#how-to-write-by-spwml" title="Permalink to this heading">¶</a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(h1)The content text
+(h2)The content text
+(h3)The content text
+(h4)The content text
+(h5)The content text
+(h6)The content text
+(subtitle1)The content text
+(subtitle2)The content text
+(body1)The content text
+(body2)The content text
+(caption)The content text
+(overline)The content text
+(text)The content text
+(menu)The content text
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">¶</a></h2>
+<p>A block that contains text elements without a child block.
+There are many variations in size and format.
+Also, text is an alias equivalent to body1, and menu is almost the same as body1, but this is invalied the default margin.</p>
+</section>
+<hr class="docutils" />
+<section id="functions-dart">
+<h2>Functions (Dart)<a class="headerlink" href="#functions-dart" title="Permalink to this heading">¶</a></h2>
+<section id="change-text">
+<h3>Change text<a class="headerlink" href="#change-text" title="Permalink to this heading">¶</a></h3>
+<p>Change content text.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>SpWMLBuilder builder = SpWMLBuilder(&quot;(SubClass of this, id:1)&quot;);
+builder.replaceID(1, Text(&quot;abc&quot;));
+</pre></div>
+</div>
+</section>
+<section id="get-style">
+<h3>Get Style<a class="headerlink" href="#get-style" title="Permalink to this heading">¶</a></h3>
+<p>Get the TextStyle set by SpWML.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>TextStyle getStyle()
+</pre></div>
+</div>
+</section>
+<section id="get-strutstyle">
+<h3>Get StrutStyleの取得<a class="headerlink" href="#get-strutstyle" title="Permalink to this heading">¶</a></h3>
+<p>Get the StrutStyle set by SpWML.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>StrutStyle getStrutStyle()
+</pre></div>
+</div>
+</section>
+<section id="get-align">
+<h3>Get Align<a class="headerlink" href="#get-align" title="Permalink to this heading">¶</a></h3>
+<p>Get the TextAlign set by SpWML.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>TextAlign getTextAlign()
+</pre></div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="variable-dart">
+<h2>Variable（Dart）<a class="headerlink" href="#variable-dart" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">The common</span></a> variable.</p></li>
+<li><p>[textParams] : A variable with equivalent parameters of Flutter’s <a class="reference external" href="https://api.flutter.dev/flutter/widgets/Text-class.html">Text class</a> and <a class="reference external" href="https://api.flutter.dev/flutter/material/SelectableText-class.html">SelectableText class</a> .</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="parameters">
+<h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">The common</span></a> parameters.</p></li>
+<li><p>isSelectable(bool). If true, the text can be selected.The initial value is true except for menu.</p></li>
+<li><p>fontName(String). This is the name of the font to be used. To change the font, settings must be made on the Flutter project side. Only the fonts set in the project can be loaded.</p></li>
+<li><p>fontSize(double). Specifies the font size in px.</p></li>
+<li><p>fontWeight(String). The weight of the font.Specify one of normal, regular, bold, thin, light, medium, black, w100 to w900.</p></li>
+<li><p>fontStyle(String). This is the font style setting.Specify either normal or italic.</p></li>
+<li><p>textColor(String). Color setting. #AARRGGBB notation, or <a class="reference external" href="https://material.io/design/color/the-color-system.html#tools-for-picking-colors">2014 Material Design color palettes</a> It can be handled with notations such as red[500] and redAccent[100].</p></li>
+<li><p>textBGColor(String). Text Background Color setting. #AARRGGBB notation, or <a class="reference external" href="https://material.io/design/color/the-color-system.html#tools-for-picking-colors">2014 Material Design color palettes</a> It can be handled with notations such as red[500] and redAccent[100].</p></li>
+<li><p>textDeco(String). Specify decoration such as underline.Specify one of none, underline, overline, lineThrough.</p></li>
+<li><p>textDecoStyle(String).Decoration style.It can be solid, dotted, dashed, double or wavy.</p></li>
+<li><p>textDecoColor(String)Color setting. #AARRGGBB notation, or <a class="reference external" href="https://material.io/design/color/the-color-system.html#tools-for-picking-colors">2014 Material Design color palettes</a> It can be handled with notations such as red[500] and redAccent[100].</p></li>
+<li><p>textDecoThickness(double). Specifies the line width of the decoration in px.</p></li>
+<li><p>letterSpacing(double). Specifies the space between letters in px.</p></li>
+<li><p>wordSpacing(double). Specifies the space between words in px.</p></li>
+<li><p>textAlign(String). The alignment of the text.It can be left, center, right or justify.</p></li>
+<li><p>textHeight(double). Specifies the height of the text.For English, 1.0 is fine, but for Japanese, it may be better to adjust between 1.0 and 1.3.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="super-class">
+<h2>Super Class<a class="headerlink" href="#super-class" title="Permalink to this heading">¶</a></h2>
+<p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">SpWMLElement</span></a></p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../index.html">SpWML Docs</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction.html">What is SpWML?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../try_editor.html">Try SpWML Editor!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../install.html">How to install SpWML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../coding.html">Working with SpWML from code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes_and_methods.html">Classes and methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../copyright_notice.html">Notice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendix.html">Appendix</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Masahide Mori.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../_sources/docs/classes/text/text.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

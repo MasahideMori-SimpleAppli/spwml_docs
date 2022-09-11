@@ -1,0 +1,58 @@
+:orphan:
+.. _scroll:
+
+======================================
+ScrollElement
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (scroll)
+   +(single child block)
+
+----
+
+Summary
+===============
+
+A block with a single child block.
+If the size of the inner child block exceeds the size of the parent block, it will be scrollable.
+
+----
+
+Functions (Dart)
+===================
+
+Child block control
+-----------------------
+
+:ref:`Parent class<single_child>` functions.
+
+----
+
+Variable（Dart）
+=================
+
+* :ref:`The common<spwml>` variable.
+* :ref:`Parent<single_child>` variable.
+* [elParams] :  A variable with parameters equivalent to Flutter `SingleChildScrollViewclass <https://api.flutter.dev/flutter/widgets/SingleChildScrollView-class.html>`__ .
+
+----
+
+Parameters
+====================
+
+* :ref:`The common<spwml>` parameters.
+* :ref:`Parent<single_child>` parameters.
+* isPrimary (bool). Specifies whether this is the primary scroll view.If there are multiple scrolls, the second and subsequent views must be set to false.
+* axis (String). Specifies the direction of scrolling, either vertical or horizontal.
+
+----
+
+Super Class
+==============
+
+:ref:`single_child`

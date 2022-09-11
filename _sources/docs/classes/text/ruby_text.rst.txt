@@ -1,0 +1,96 @@
+:orphan:
+.. _ruby:
+
+======================================
+RubyTextElement
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (ruby, rubyText:The ruby-text)Normal text
+
+----
+
+Summary
+===============
+
+A block that does not have a child block and can contain ruby text.
+
+----
+
+Functions (Dart)
+===================
+
+Function of Parent class
+--------------------------
+
+You can use the functions of the :ref:`Parent class<text>` .
+
+Get Style
+--------------------
+
+Get ruby-text TextStyle set by SpWML.
+
+.. code-block:: none
+   
+   TextStyle getRubyStyle()
+
+Get StrutStyle
+--------------------
+
+Get ruby-text StrutStyle set by SpWML.
+
+.. code-block:: none
+   
+   StrutStyle getRubyStrutStyle()
+
+Get Align
+--------------------
+
+Get ruby-text TextAlign set by SpWML.
+
+.. code-block:: none
+   
+   TextAlign getRubyAlign()
+
+
+----
+
+Variable（Dart）
+=================
+
+* :ref:`The common<spwml>` variable.
+* :ref:`Parent<text>` variable.
+* [rubyParams] :  A variable with parameters equivalent to Flutter `Text class <https://api.flutter.dev/flutter/widgets/Text-class.html>`__ , and ruby-text controlling parameters.
+
+----
+
+Parameters
+======================
+
+* :ref:`The common<spwml>` parameters.
+* :ref:`Parent<text>` parameters.
+* rubyFontName(String). This is the name of the font to be used. To change the font, settings must be made on the Flutter project side. Only the fonts set in the project can be loaded.
+* rubySize(double). Specifies the font size as a magnification of the standard text.Use a value between 0.0 and 1.0.
+* rubyFontWeight(String). Font weight.Specify one of normal, regular, bold, thin, light, medium, black, w100 to w900.
+* rubyFontStyle(String). Specifies the font style.Specify either normal or italic.
+* rubyColor(String). Color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+* rubyBGColor(String). Text background Color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+* rubyDeco(String). Specify decoration such as underline.Specify one of none, underline, overline, lineThrough.
+* rubyDecoStyle(String).Decoration style.It can be solid, dotted, dashed, double or wavy.
+* rubyDecoColor(String)Color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+* rubyDecoThickness(double). Specifies the line width of the decoration in px.
+* rubyLetterSpacing(double). Specifies the space between characters in px.
+* rubyWordSpacing(double). Specifies the space between words in px.
+* rubyAlign(String). Text alignment.Left, center, right, or justify.
+* rubyHeight(double). Specifies the text height. For English, 1.0 is fine, but for Japanese or other hieroglyph type text, it may be better to adjust between 1.0 and 1.3.
+
+----
+
+Super Class
+================
+
+:ref:`text`

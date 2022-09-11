@@ -1,0 +1,113 @@
+:orphan:
+.. _text:
+
+======================================
+TextElement
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (h1)The content text
+   (h2)The content text
+   (h3)The content text
+   (h4)The content text
+   (h5)The content text
+   (h6)The content text
+   (subtitle1)The content text
+   (subtitle2)The content text
+   (body1)The content text
+   (body2)The content text
+   (caption)The content text
+   (overline)The content text
+   (text)The content text
+   (menu)The content text
+
+----
+
+Summary
+===============
+
+A block that contains text elements without a child block.
+There are many variations in size and format.
+Also, text is an alias equivalent to body1, and menu is almost the same as body1, but this is invalied the default margin.
+
+----
+
+Functions (Dart)
+===================
+
+Change text
+-----------------
+
+Change content text.
+
+.. code-block:: none
+   
+    SpWMLBuilder builder = SpWMLBuilder("(SubClass of this, id:1)");
+    builder.replaceID(1, Text("abc"));
+
+Get Style
+--------------------
+
+Get the TextStyle set by SpWML.
+
+.. code-block:: none
+   
+   TextStyle getStyle()
+
+Get StrutStyleの取得
+--------------------
+
+Get the StrutStyle set by SpWML.
+
+.. code-block:: none
+   
+   StrutStyle getStrutStyle()
+
+Get Align
+--------------------
+
+Get the TextAlign set by SpWML.
+
+.. code-block:: none
+   
+   TextAlign getTextAlign()
+
+----
+
+Variable（Dart）
+=================
+
+* :ref:`The common<spwml>` variable.
+* [textParams] : A variable with equivalent parameters of Flutter's `Text class <https://api.flutter.dev/flutter/widgets/Text-class.html>`__ and `SelectableText class <https://api.flutter.dev/flutter /material/SelectableText-class.html>`__ .
+----
+
+Parameters
+======================
+
+* :ref:`The common<spwml>` parameters.
+* isSelectable(bool). If true, the text can be selected.The initial value is true except for menu.
+* fontName(String). This is the name of the font to be used. To change the font, settings must be made on the Flutter project side. Only the fonts set in the project can be loaded.
+* fontSize(double). Specifies the font size in px.
+* fontWeight(String). The weight of the font.Specify one of normal, regular, bold, thin, light, medium, black, w100 to w900.
+* fontStyle(String). This is the font style setting.Specify either normal or italic.
+* textColor(String). Color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+* textBGColor(String). Text Background Color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+* textDeco(String). Specify decoration such as underline.Specify one of none, underline, overline, lineThrough.
+* textDecoStyle(String).Decoration style.It can be solid, dotted, dashed, double or wavy.
+* textDecoColor(String)Color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+* textDecoThickness(double). Specifies the line width of the decoration in px.
+* letterSpacing(double). Specifies the space between letters in px.
+* wordSpacing(double). Specifies the space between words in px.
+* textAlign(String). The alignment of the text.It can be left, center, right or justify.
+* textHeight(double). Specifies the height of the text.For English, 1.0 is fine, but for Japanese, it may be better to adjust between 1.0 and 1.3.
+
+----
+
+Super Class
+================
+
+:ref:`spwml`

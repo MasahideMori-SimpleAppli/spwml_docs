@@ -1,0 +1,74 @@
+:orphan:
+.. _btn:
+
+======================================
+BtnElement
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (btn)Button text
+   +(child block)Block-type buttons use child blocks.
+
+----
+
+Summary
+===============
+
+A block in which various buttons can be placed.
+
+----
+
+Functions (Dart)
+===================
+
+Child block control
+-----------------------
+
+:ref:`Parent Class<single_child_text>` function.
+This only has an effect when the button is of block type.
+
+Callback setting
+-------------------
+
+Set button callback
+
+.. code-block:: none
+   
+   void setBtnCallback(void Function()? callback)
+
+----
+
+Variable（Dart）
+=================
+
+* :ref:`common<spwml>` variable.
+* :ref:`parent<single_child_text>` variable
+* [elParams] : Like `TextButton class <https://api.flutter.dev/flutter/material/TextButton-class.html>`__ parameters.
+
+----
+
+Parameters
+====================
+
+* :ref:`common<spwml>` parameters. Parameters related to borders work differently from other elements.
+* :ref:`parent<single_child_text>` parameters.
+* type (String). Specify the type of button as one of text, outlined, elevated, icon, block. block is a special button whose child element responds to taps.
+* iconNum (String).  Set icon type by `codePoint <https://api.flutter.dev/flutter/material/Icons-class.html>`__ .
+* iconSize (double). 
+* iconColor (String).  #AARRGGBB, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ colors, like red[500] or redAccent[100].
+* splashRadius (double). 
+* fgColor (String).  The foreground color. Overlay color changes when button is tapped.  #AARRGGBB, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ colors, like red[500] or redAccent[100].
+* btnBGColor (String).  The backgound color.  #AARRGGBB, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ colors, like red[500] or redAccent[100].
+* color (String).  Same btnBGColor.
+* shape (String).  The border shape. Specify one of roundRect, stadium, bevel, circle.
+
+----
+
+Super Class
+==============
+
+:ref:`single_child_text`

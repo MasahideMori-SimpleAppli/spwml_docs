@@ -1,0 +1,31 @@
+======================================
+Try SpWML Editor!
+======================================
+
+There is a simple editor written in SpWML, so please try various things.
+
+This is a simple build for test display,
+so I think the best way to use it is to paste code created with another code editor to test and fine-tune the UI.
+
+https://simple-widget-markup-editor.web.app/
+
+SpWML notation
+====================
+SpWML is structured as a derivative of SBML.
+`Simple Block Markup Laungage(SBML) <https://github.com/MasahideMori-SimpleAppli/simple_block_markup_language/>`__ 
+
+.. code-block:: none
+   
+   (type, parameter1:value1, parameter2:value2,...)content
+
+If SBML is XML, SpWML is like HTML, and SBML is a more flexible language.
+The writing method is the same as SBML, and type names such as h1 and h2, which are similar to HTML, are predefined.
+
+For example, if you want to write text in the size of header 1, do the following.
+
+.. code-block:: none
+   
+   (h1)The text
+
+Available parameters differ depending on the type.
+Please refer to :ref:`Classes and methods<classes_and_methods>` on this homepage for detailed type names and available parameters.

@@ -1,0 +1,69 @@
+:orphan:
+.. _popupMenuBtn:
+
+======================================
+PopupMenuBtnElement
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (popupMenuBtn)
+   +(menu)menu 1
+   +(menu)menu 2
+   +(menu)menu 3
+
+----
+
+Summary
+===============
+
+A block that allows you to create a popup menu.
+
+----
+
+Functions (Dart)
+===================
+
+Child block control
+-----------------------
+
+:ref:`Parent class <multi_child>` functions.
+
+Callback setting
+-------------------
+
+When the menu is selected, its index is passed.
+
+.. code-block:: none
+   
+   void setCallback(void Function(int index)? callback)
+
+----
+
+Variable（Dart）
+=================
+
+* :ref:`The common<spwml>` variable.
+* :ref:`Parent<multi_child>` variable.
+* [elParams] : Not only `PopupMenuButton class <https://api.flutter.dev/flutter/material/PopupMenuButton-class.html>`__ variables that has variables that have been further adjusted to improve usability.
+
+----
+
+Parameters
+====================
+
+* :ref:`The common<spwml>` parameters.
+* :ref:`Parent<multi_child>` parameters.
+* iconNum (String). Set the icon type with `codePoint <https://api.flutter.dev/flutter/material/Icons-class.html>`__ .
+* iconSize (double). Set size of icon in px.
+* iconColor (String). Color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+
+----
+
+Super Class
+==============
+
+:ref:`multi_child`

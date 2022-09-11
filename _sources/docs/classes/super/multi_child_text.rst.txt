@@ -1,0 +1,57 @@
+:orphan:
+.. _multi_child_text:
+
+======================================
+MultiChildTextElement
+======================================
+
+How to write by SpWML
+========================
+
+It is a super class that cannot be described directly.
+
+----
+
+Summary
+===============
+
+A super class for SpWML elements that have multiple child blocks.
+
+----
+
+Functions (Dart)
+===================
+
+Call from Builder
+----------------------
+
+There is a method called replaceUnderStructure in the Builder function, and by using this method, you can replace the child block array with a widget.
+
+.. code-block:: none
+   
+    SpWMLBuilder builder = SpWMLBuilder("(SubClass of this, id:1)");
+    builder.replaceUnderStructure(1, [Text("abc"), Text("def")]);
+
+----
+
+Variable（Dart）
+=================
+
+* :ref:`The common<spwml>` variable.
+* :ref:`Parent<text>` variable.
+* [children] : children widget list.
+
+----
+
+Parameters
+====================
+
+* :ref:`The common<spwml>` parameters.
+* :ref:`Parent<text>` parameters.
+
+----
+
+Super Class
+==============
+
+:ref:`text`

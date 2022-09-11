@@ -1,0 +1,17 @@
+======================================
+Welcome to the SpWML docs!
+======================================
+
+Contents
+==========
+
+.. toctree::
+   :maxdepth: 2
+   
+   docs/introduction.rst
+   docs/try_editor
+   docs/install
+   docs/coding
+   docs/classes_and_methods
+   docs/copyright_notice
+   docs/appendix

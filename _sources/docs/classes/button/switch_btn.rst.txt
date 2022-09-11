@@ -1,0 +1,69 @@
+:orphan:
+.. _switchBtn:
+
+======================================
+SwitchBtnElement
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (switchBtn)
+
+----
+
+Summary
+===============
+
+A block that has no child blocks.
+An ON/OFF switch is placed where this block is placed.
+
+----
+
+Functions (Dart)
+===================
+
+setCallback
+---------------------
+
+Set a callback when the switch is tapped.
+The button state is passed as an argument to the callback function.
+
+.. code-block:: none
+   
+   void setCallback(void Function(bool btnEnabled)? callback)
+
+setSwitchValue
+---------------------
+
+Sets the switch value.
+Screen updates are required and arguments must be managed within the Parent widget.
+
+.. code-block:: none
+   
+   void setSwitchValue(bool v)
+
+----
+
+Variable（Dart）
+=================
+
+* :ref:`The common<spwml>` variable.
+* [elParams] : A variable with parameters equivalent to Flutter `Switch class <https://api.flutter.dev/flutter/material/Switch-class.html>`__ .
+
+----
+
+Parameters
+====================
+
+* :ref:`The common<spwml>` parameters.
+* color (String). Color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+
+----
+
+Super Class
+==============
+
+:ref:`spwml`

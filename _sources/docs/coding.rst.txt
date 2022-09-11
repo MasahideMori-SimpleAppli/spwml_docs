@@ -1,0 +1,45 @@
+======================================
+Working with SpWML from code
+======================================
+
+Basic operation
+=================
+
+It will be easier to understand if you check the sample below.
+https://pub.dev/packages/simple_widget_markup/example
+
+One of the SpWML parameters contain above sample is "id".
+For example, a block with "id:1" can be retrieved from the Dart code as follows.
+
+.. code-block:: none
+   
+   BtnElement btnElement = builder.getElementByID(1) as BtnElement;
+
+See :ref:`Classes and Methods <classes_and_methods>` to see what types there are and what parameters they have.
+The "BtnElement" part changes depending on what you want to get. This is mentioned on the page above.
+Basically, except for some abbreviations, the class is named "SpWML type name + Element".
+
+Also, each class has almost the same parameters as similar classes in Flutter, and by rewriting the class parameters as follows,
+You can control almost everything from code.
+
+.. code-block:: none
+   
+   BtnElement btnElement = builder.getElementByID(1) as BtnElement;
+   runBtn.elParams.p.normalBtnParams?.style = const ButtonStyle();
+   runBtn.textParams.p.isSelectable = true;
+
+----
+
+Integration with Flutter widgets
+=================================
+
+Using the struct :ref:`block <block>` you can embed widgets inside like this:
+By using this, if the screen parts created by the designer with the design tool are converted to Flutter Widgets, you can be easily embedded.
+
+.. code-block:: none
+
+   SpWMLBuilder b = SpWMLBuilder(layout);
+   b.replaceID (Target block id, Widget);
+   Widget compiledWidget = b.build(context);
+
+Use this when reusing existing code or embedding special screen parts that are difficult to write in a static language.

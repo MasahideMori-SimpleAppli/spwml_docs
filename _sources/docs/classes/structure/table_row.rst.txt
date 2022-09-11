@@ -1,0 +1,58 @@
+:orphan:
+.. _tableRow:
+
+======================================
+TableRowElement
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (tr)
+   +(child block)
+   +(child block)
+
+----
+
+Summary
+===============
+
+A block with multiple child blocks.
+This block is used as a child element of the table block, and the inner child blocks are the elements of each column in the table.
+
+----
+
+Functions (Dart)
+===================
+
+Child block control
+-----------------------
+
+:ref:`Parent class <multi_child>` functions.
+
+----
+
+Variable（Dart）
+=================
+
+* :ref:`The common<spwml>` variable.
+* :ref:`Parent<multi_child>` variable.
+* [elParams] :  A variable with parameters equivalent to Flutter `TableRow class <https://api.flutter.dev/flutter/widgets/TableRow-class.html>`__ .
+
+----
+
+Parameters
+====================
+
+* :ref:`The common<spwml>` parameters.
+* :ref:`Parent<multi_child>` parameters.
+* color (String). Color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+
+----
+
+Super Class
+==============
+
+:ref:`multi_child`

@@ -1,0 +1,81 @@
+:orphan:
+.. _radioBtn:
+
+======================================
+RadioBtnElement
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (radioBtn)
+   +(menu)menu 1
+   +(menu)menu 2
+   +(menu)menu 3
+
+----
+
+Summary
+===============
+
+A block that can create radio buttons.
+
+----
+
+Functions (Dart)
+===================
+
+Child block control
+-----------------------
+
+:ref:`Parent class <multi_child>` functions.
+
+Initial value setting
+-------------------------
+
+Set the initial value.To keep the value when updating the screen, use
+Hold the value in the parent widget, etc., and call it.
+It will be in the state where the index th counting from 0 given as an argument is selected.
+
+.. code-block:: none
+   
+   void setInitialIndex(int? v)
+
+Callback setting
+-------------------
+
+When a radio button is selected, its index is passed.
+
+.. code-block:: none
+   
+   void setCallback(void Function(int? selectedIndex)? callback)
+
+----
+
+Variable（Dart）
+=================
+
+* :ref:`The common<spwml>` variable.
+* :ref:`Parent<multi_child>` variable.
+* [elParams] : Not only `Radio class <https://api.flutter.dev/flutter/material/Radio-class.html>`__ variables that has variables that have been further adjusted to improve usability.
+
+----
+
+Parameters
+====================
+
+* :ref:`The common<spwml>` parameters.
+* :ref:`Parent<multi_child>` parameters.
+* iconSize (double). Set size of icon in px.
+* iconColor (String). Color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+* splashRadius (double). Set the size of the reaction circle by px on when tapped.
+* enableTapLabel (bool). If true, can tap text. The initial value is false.
+
+----
+
+Super Class
+==============
+
+:ref:`multi_child`

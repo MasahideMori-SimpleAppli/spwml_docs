@@ -1,0 +1,55 @@
+:orphan:
+.. _href:
+
+======================================
+HrefElement
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (href)Link destination URL
+
+----
+
+Summary
+===============
+
+A block that can have a hyperlink without a child block.
+
+----
+
+Functions (Dart)
+===================
+
+Change text
+-----------------
+
+:ref:`Parent class<text>` functions.
+
+----
+
+Variable（Dart）
+=================
+
+* :ref:`The common<spwml>` variable.
+* :ref:`Parent<text>` variable.
+* [elParams] : Parameters for tap response and alt text.
+
+----
+
+Parameters
+======================
+
+* :ref:`The common<spwml>` parameters.
+* :ref:`Parent<text>` parameters. However, isSelectable is invalid.
+* alt(String). Alternate text for the hyperlink.If enabled, this will be displayed as the text for the link.
+
+----
+
+Super Class
+================
+
+:ref:`text`

@@ -1,0 +1,84 @@
+:orphan:
+.. _dropdownBtn:
+
+======================================
+DropdownBtnElement
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (dropdownBtn)
+   +(menu)menu 1
+   +(menu)menu 2
+   +(menu)menu 3
+
+----
+
+Summary
+===============
+
+A block that allows you to create a drop-down button.
+
+----
+
+Functions (Dart)
+===================
+
+Child block control
+-----------------------
+
+:ref:`Parent class <multi_child>` functions.
+
+Initial value setting
+-------------------------
+
+Set the initial value.To keep the value when updating the screen, use
+Hold the value in a parent widget, etc., and call it.
+It will be in the state where the index that counting from 0 given as an argument is selected.
+
+.. code-block:: none
+   
+   setInitialIndex(int? index)
+
+Callback setting
+-------------------
+
+The index is passed when the dropdown is selected.
+
+.. code-block:: none
+   
+   setCallback(void Function(int index)? callback)
+
+
+----
+
+Variable（Dart）
+=================
+
+* :ref:`The common<spwml>` variable.
+* :ref:`Parent<multi_child>` variable.
+* [elParams] : Not only `DropdownButton class <https://api.flutter.dev/flutter/material/DropdownButton-class.html>`__ variables that has variables that have been further adjusted to improve usability.
+----
+
+Parameters
+====================
+
+* :ref:`The common<spwml>` parameters.
+* :ref:`Parent<multi_child>` parameters.
+* hint (String). Sets the hint text when unselected.
+* iconNum (String). Set the icon type with `codePoint <https://api.flutter.dev/flutter/material/Icons-class.html>`__ .
+* iconSize (double). Set size of icon in px.
+* iconColor (String). Color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+* splashRadius (double). Set the size of the reaction circle in px on when tapped.
+* underlineColor (String). Color setting of underline. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+* underlineHeight (double). Set underline size in px.
+
+----
+
+Super Class
+==============
+
+:ref:`multi_child`

@@ -1,0 +1,56 @@
+.. _classes_and_methods:
+======================================
+Classes and methods
+======================================
+
+Click on the block type name to jump to the detailed class and function page.
+In addition, specifications such as margins are :ref:`common parameters<spwml>` of each class, and can be used in any block.
+
+Structure (container for elements)
+====================================
+* :ref:`block(Simple container) <block>`
+* :ref:`card <card>`
+* :ref:`col (A container whose interior is a row) <col>`
+* :ref:`expTile (A container whose interior expands downward with a tap) <expTile>`
+* :ref:`row (A container with a column inside)<row>`
+* :ref:`scroll (A container whose interior can be scrolled) <scroll>`
+* :ref:`span(A container whose interior can be the same line element) <span>`
+* :ref:`stack (A container whose interior can be stacked like layers) <stack>`
+* :ref:`tr (A container for rows inside a table) <tableRow>`
+* :ref:`table (A container with a spreadsheet inside) <table>`
+* :ref:`wrap (A container whose interior is laid out in the Z direction from the upper left) <wrap>`
+
+Text
+==================
+* :ref:`h1<text>`
+* :ref:`h2<text>`
+* :ref:`h3<text>`
+* :ref:`h4<text>`
+* :ref:`h5<text>`
+* :ref:`h6<text>`
+* :ref:`subtitle1<text>`
+* :ref:`subtitle2<text>`
+* :ref:`text（body1）<text>`
+* :ref:`body2<text>`
+* :ref:`caption<text>`
+* :ref:`overline<text>`
+* :ref:`menu (Non mergin text) <text>`
+* :ref:`href <href>`
+* :ref:`ruby (The ruby-text) <ruby>`
+* :ref:`tf (textField) <textField>`
+
+Buttons (elements that respond to touch interactions)
+========================================================
+* :ref:`btn (buttons) <btn>`
+* :ref:`checkbox (Multi selection) <checkbox>`
+* :ref:`dropdownBtn <dropdownBtn>`
+* :ref:`popupMenuBtn <popupMenuBtn>`
+* :ref:`radioBtn (Single selection) <radioBtn>`
+* :ref:`switchBtn <switchBtn>`
+
+Others
+==================
+* :ref:`icon <icon>`
+* :ref:`img (image) <img>`
+* :ref:`line (Horizontal line) <line>`
+* :ref:`vline (Vertical line) <vline>`

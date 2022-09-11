@@ -1,0 +1,15 @@
+======================================
+How to install SpWML
+======================================
+
+You can download the package for Flutter application from below.
+
+https://pub.dev/packages/simple_widget_markup
+
+Please refer to the following installation method and import method.
+
+https://pub.dev/packages/simple_widget_markup/install
+
+I think that the behavior is easier to understand if you run the following test code in the Flutter project.
+
+https://pub.dev/packages/simple_widget_markup/example

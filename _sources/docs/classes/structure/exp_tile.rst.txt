@@ -1,0 +1,60 @@
+:orphan:
+.. _expTile:
+
+======================================
+ExpTileElement
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (expTile)
+   +(child block)
+   +(child block)
+
+----
+
+Summary
+===============
+
+A block with multiple child blocks.
+The inner child block will be the block within the unfolding tile.
+
+----
+
+Functions (Dart)
+===================
+
+Child block control
+-----------------------
+
+:ref:`Parent class<multi_child_text>` functions.
+
+----
+
+Variable（Dart）
+=================
+
+* :ref:`The common<spwml>` variable.
+* :ref:`Parent<multi_child_text>` variable.
+* [elParams] :  A variable with parameters equivalent to Flutter `ExpansionTile class <https://api.flutter.dev/flutter/material/ExpansionTile-class.html>`__ .
+
+----
+
+Parameters
+====================
+
+* :ref:`The common<spwml>` parameters.
+* :ref:`Parent<multi_child_text>` parameters.
+* iconNum (String).  Set the icon type with `codePoint <https://api.flutter.dev/flutter/material/Icons-class.html>`__ .
+* iconSize (String). The size of the icon. Only works if iconNum is valid.
+* iconColor (String). Color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+
+----
+
+Super Class
+==============
+
+:ref:`multi_child_text`

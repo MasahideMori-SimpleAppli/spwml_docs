@@ -1,0 +1,97 @@
+:orphan:
+.. _textField:
+
+======================================
+TextFieldElement
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (tf)
+   or
+   (textField)
+
+----
+
+Summary
+===============
+
+It is a block that can be set to text input without a child block.
+
+----
+
+Functions (Dart)
+===================
+
+Search icon callback
+----------------------------
+
+Sets the button callback when the input is in search mode.
+
+.. code-block:: none
+   
+   void setSuffixCallback(Function(String inputText)? suffixCallback)
+
+Input complete callback
+----------------------------
+
+Set a callback when user input is completed.
+
+.. code-block:: none
+   
+   void setOnSubmitted(void Function(String)? onSubmitted)
+
+----------------------------
+
+
+Set a class to hold the input text. The text is managed by the Parent widget as per Flutter's standard specifications.
+
+.. code-block:: none
+   
+   void setController(TextEditingController? controller)
+
+----------------------------
+
+
+Set Focus.
+
+.. code-block:: none
+   
+   void setFocusNode(FocusNode? focusNode)
+
+----
+
+Variable（Dart）
+=================
+
+* :ref:`The common<spwml>` variable.
+* :ref:`Parent<text>` variable.
+* [tfParams] :  A variable with parameters equivalent to Flutter `TextField class <https://api.flutter.dev/flutter/material/TextField-class.html>`__ .
+
+----
+
+Parameters
+======================
+
+* :ref:`The common<spwml>` parameters.
+* :ref:`Parent<text>` parameters. However, isSelectable is invalid.
+* labelText(String). Hint text with the function of moving to the upper left with animation.
+* hint(String). This is the hint text that is displayed when the input is empty.
+* type(String). Specifies the shape of the input box.Specify either material or rounded.
+* mode(String).Specifies the operation mode.Specify one of normal, password, search, or manual.In manual mode, SpWML specification is invalid and the user setting value is reflected as it is.
+* iconNum(String). Set the icon type with `codePoint <https://api.flutter.dev/flutter/material/Icons-class.html>`__ .
+* iconSize (double).
+* iconColor (String). Color setting for icons. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+* suffixIconNum(String). Suffix Set the icon type with `codePoint <https://api.flutter.dev/flutter/material/Icons-class.html>`__ .
+* suffixIconSize(double). Suffix Set size of icon in px.
+* suffixIconSplashRadius(double). Specifies the size of the animation area for tapping the tail icon in px.
+* suffixIconColor(String). Color setting for the suffix icon. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+----
+
+Super Class
+===============
+
+:ref:`text`

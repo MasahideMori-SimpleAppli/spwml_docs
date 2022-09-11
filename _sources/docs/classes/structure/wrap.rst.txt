@@ -1,0 +1,59 @@
+:orphan:
+.. _wrap:
+
+======================================
+WrapElement
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (wrap)
+   +(child block)
+   +(child block)
+
+----
+
+Summary
+===============
+
+A block with multiple child blocks.
+The inner child block becomes a floating element, and after it is spread horizontally on the screen as much as possible, the surplus is spread over the next line.
+
+----
+
+Functions (Dart)
+===================
+
+Child block control
+-----------------------
+
+:ref:`Parent class <multi_child>` functions.
+
+----
+
+Variable（Dart）
+=================
+
+* :ref:`The common<spwml>` variable.
+* :ref:`Parent<multi_child>` variable.
+* [elParams] : FlutterのWrapclass `Wrap class <https://api.flutter.dev/flutter/widgets/Wrap-class.html>`__ .
+
+----
+
+Parameters
+====================
+
+* :ref:`The common<spwml>` parameters.
+* :ref:`Parent<multi_child>` parameters.
+* vAlign (String). Vertical alignment: left, start, center, right, end, top, or bottom.
+* hAlign (String). Horizontal alignment, which can be left, start, center, right, end, top, or bottom.
+
+----
+
+Super Class
+==============
+
+:ref:`multi_child`

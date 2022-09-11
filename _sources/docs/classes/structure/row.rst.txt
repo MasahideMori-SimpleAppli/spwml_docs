@@ -1,0 +1,59 @@
+:orphan:
+.. _row:
+
+======================================
+RowElement
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (row)
+   +(child block)
+   +(child block)
+
+----
+
+Summary
+===============
+
+A block with multiple child blocks.
+Each inner child block becomes a column block.
+
+----
+
+Functions (Dart)
+===================
+
+Child block control
+-----------------------
+
+:ref:`Parent class <multi_child>` functions.
+
+----
+
+Variable（Dart）
+=================
+
+* :ref:`The common<spwml>` variable.
+* :ref:`Parent<multi_child>` variable.
+* [elParams] :  A variable with parameters equivalent to Flutter `Row class <https://api.flutter.dev/flutter/widgets/Row-class.html>`__ .
+
+----
+
+Parameters
+====================
+
+* :ref:`The common<spwml>` parameters.
+* :ref:`Parent<multi_child>` parameters.
+* vAlign (String). Vertical alignment: left, start, center, right, end, top, or bottom.
+* hAlign (String). Horizontal alignment, which can be left, start, center, right, end, top, or bottom.
+
+----
+
+Super Class
+==============
+
+:ref:`multi_child`

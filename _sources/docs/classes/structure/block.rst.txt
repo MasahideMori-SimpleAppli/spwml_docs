@@ -1,0 +1,54 @@
+:orphan:
+.. _block:
+
+======================================
+BlockElement
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (block)
+   +(single child block)
+
+----
+
+Summary
+===============
+
+A region delimiter block with only one child block.
+
+----
+
+Functions (Dart)
+===================
+
+Child block control
+-----------------------
+
+:ref:`Parent class<single_child>` functions.
+
+----
+
+Variable（Dart）
+=================
+
+* :ref:`The common<spwml>` variable.
+* :ref:`Parent<single_child>` variable.
+
+----
+
+Parameters
+====================
+
+* :ref:`The common<spwml>` parameters.
+* :ref:`Parent<single_child>` parameters.
+
+----
+
+Super Class
+==============
+
+:ref:`single_child`

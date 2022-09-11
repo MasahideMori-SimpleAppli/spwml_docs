@@ -1,0 +1,39 @@
+======================================
+What is SpWML?
+======================================
+
+A markup language for Flutter
+===============================
+SpWML is an open source markup language for Flutter applications.
+
+SpWML has the following features:
+
+* Since the contents are described in units of lines, it is easy to reuse parts and port only parameters.
+* If there is a problem with the description, it will tell you which line is wrong, except for crashing the app due to a runtime error.
+* Design and logic can be separated cleanly, so you can create from any screen. It will be easier to create a screen after login or after linking with the server.
+* The number of lines on the program code side becomes considerably shorter, making maintenance easier.
+* Most parameters can be changed directly from Dart.
+
+The source code of SpWML is published in the following repositories.
+https://github.com/MasahideMori-SimpleAppli/simple_widget_markup
+
+
+What SpWML aims for
+=======================
+SpWML aims to create "Program UI" "quickly" and "with high maintainability".
+Therefore, it is particularly suitable for cases such as:
+
+* New app development of ventures and startups with fast development speed and frequent updates.
+* MVP prototyping and experimental projects.
+* Development of business system.
+
+By using SpWML, you can not only build quickly, but also make it difficult to create spaghetti code.
+By limiting the degree of freedom, it is less likely that the code will become obscure after the person in charge takes over.
+
+In this way, SpWML is being developed with business practicality as the top priority.
+
+In addition, as the direction of SpWML, the description method including parameters may differ from pure Flutter code.
+If you're thinking of building a completely compatible and static layout, you should look for another project.
+There are other projects trying to do this with XML and markdown.
+
+SpWML is being developed in the direction of "making it easier to write a practical layout with a small amount of code".

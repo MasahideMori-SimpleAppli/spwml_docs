@@ -1,0 +1,8 @@
+======================================
+Appendix
+======================================
+
+Units
+===========
+Since SpWML is handled by Flutter, all px are specified in logical pixels.
+Minimal visual differences between devices, but care must be taken if exact calculations are required.

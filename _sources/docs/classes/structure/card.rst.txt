@@ -1,0 +1,59 @@
+:orphan:
+.. _card:
+
+======================================
+CardElement
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (card)
+   +(single child block)
+
+----
+
+Summary
+===============
+
+A card block with only one child block.
+Inner child blocks are placed inside the card UI.
+
+----
+
+Functions (Dart)
+===================
+
+Child block control
+-----------------------
+
+:ref:`Parent class<single_child>` functions.
+
+----
+
+Variable（Dart）
+=================
+
+* :ref:`The common<spwml>` variable.
+* :ref:`Parent<single_child>` variable.
+* [elParams] :  A variable with parameters equivalent to Flutter `Card class <https://api.flutter.dev/flutter/material/Card-class.html>`__ .
+
+----
+
+Parameters
+====================
+
+* :ref:`The common<spwml>` parameters.
+* :ref:`Parent<single_child>` parameters.
+* color (String). #AARRGGBB, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ colors, like red[500] or redAccent[100].
+* cardElevation (double). It is the floating degree of the card. It is specified in px.
+* shape (String). The shape of the border. Specify one of roundRect, stadium, bevel, or circle.
+
+----
+
+Super Class
+==============
+
+:ref:`single_child`
