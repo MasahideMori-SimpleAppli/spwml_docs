@@ -46,7 +46,22 @@
 <hr class="docutils" />
 <section id="functions-dart">
 <h2>Functions (Dart)<a class="headerlink" href="#functions-dart" title="Permalink to this heading">¶</a></h2>
-<p>It has no external use, only methods that are used internally.</p>
+<section id="call-from-builder">
+<h3>Call from Builder<a class="headerlink" href="#call-from-builder" title="Permalink to this heading">¶</a></h3>
+<p>There is a method called getElementByID in the function of SpWMLBuilder, you can get the element by using this.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>SpWMLBuilder builder = SpWMLBuilder(&quot;(text, id:1)abcde&quot;);
+TextElement text = builder.getElementByID(1) as TextElement;
+</pre></div>
+</div>
+</section>
+<section id="call-from-builder-2">
+<h3>Call from Builder 2<a class="headerlink" href="#call-from-builder-2" title="Permalink to this heading">¶</a></h3>
+<p>There is a method called getElementBySID in the function of SpWMLBuilder, you can get the element by using this.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>SpWMLBuilder builder = SpWMLBuilder(&quot;(text, sid:aaa)abcde&quot;);
+TextElement text = builder.getElementBySID(&quot;aaa&quot;) as TextElement;
+</pre></div>
+</div>
+</section>
 </section>
 <hr class="docutils" />
 <section id="variable-dart">
@@ -66,7 +81,8 @@
 <section id="parameters">
 <h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
-<li><p>id(int). ID specified by int.Used for specifying button callbacks and replacing child blocks.</p></li>
+<li><p>id(int). ID specified by int. Used for specifying button callbacks and replacing child blocks.</p></li>
+<li><p>sid(String). String ID specified by int. Used for specifying button callbacks and replacing child blocks.</p></li>
 <li><p>h(double). It can also be written as height, which is the height of this element specified in px.</p></li>
 <li><p>w(double). It can also be written as width, which is the width of this element specified in px.</p></li>
 <li><p>weight(double). The ratio of this element on the screen.If no other element has a ratio, the element with this will occupy the rest of the width.</p></li>

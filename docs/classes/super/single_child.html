@@ -48,9 +48,17 @@
 <h2>Functions (Dart)<a class="headerlink" href="#functions-dart" title="Permalink to this heading">¶</a></h2>
 <section id="call-from-builder">
 <h3>Call from Builder<a class="headerlink" href="#call-from-builder" title="Permalink to this heading">¶</a></h3>
-<p>There is a method called replaceID in the Builder function, and by using this method, you can replace the child block with a widget.</p>
+<p>There is a method called replaceID in the SpWMLBuilder function, and by using this method, you can replace the child block with a widget.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>SpWMLBuilder builder = SpWMLBuilder(&quot;(SubClass of this, id:1)&quot;);
 builder.replaceID(1, Text(&quot;abc&quot;));
+</pre></div>
+</div>
+</section>
+<section id="call-from-builder-2">
+<h3>Call from Builder 2<a class="headerlink" href="#call-from-builder-2" title="Permalink to this heading">¶</a></h3>
+<p>There is a method called replaceSID in the SpWMLBuilder function, and by using this method, you can replace the child block with a widget.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>SpWMLBuilder builder = SpWMLBuilder(&quot;(SubClass of this, sid:aaa)&quot;);
+builder.replaceSID(&quot;aaa&quot;, Text(&quot;abc&quot;));
 </pre></div>
 </div>
 </section>

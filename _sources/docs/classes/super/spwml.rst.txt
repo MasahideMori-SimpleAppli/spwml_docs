@@ -22,7 +22,27 @@ Superclass of all SpWML elements.
 Functions (Dart)
 ===================
 
-It has no external use, only methods that are used internally.
+Call from Builder
+----------------------
+
+There is a method called getElementByID in the function of SpWMLBuilder, you can get the element by using this.
+
+.. code-block:: none
+   
+    SpWMLBuilder builder = SpWMLBuilder("(text, id:1)abcde");
+    TextElement text = builder.getElementByID(1) as TextElement;
+
+
+Call from Builder 2
+----------------------
+
+There is a method called getElementBySID in the function of SpWMLBuilder, you can get the element by using this.
+
+.. code-block:: none
+   
+    SpWMLBuilder builder = SpWMLBuilder("(text, sid:aaa)abcde");
+    TextElement text = builder.getElementBySID("aaa") as TextElement;
+
 
 ----
 
@@ -43,7 +63,8 @@ Variable（Dart）
 Parameters
 ====================
 
-* id(int). ID specified by int.Used for specifying button callbacks and replacing child blocks.
+* id(int). ID specified by int. Used for specifying button callbacks and replacing child blocks.
+* sid(String). String ID specified by int. Used for specifying button callbacks and replacing child blocks.
 * h(double). It can also be written as height, which is the height of this element specified in px.
 * w(double). It can also be written as width, which is the width of this element specified in px.
 * weight(double). The ratio of this element on the screen.If no other element has a ratio, the element with this will occupy the rest of the width.

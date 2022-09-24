@@ -25,12 +25,24 @@ Functions (Dart)
 Call from Builder
 ----------------------
 
-There is a method called replaceID in the Builder function, and by using this method, you can replace the child block with a widget.
+There is a method called replaceID in the SpWMLBuilder function, and by using this method, you can replace the child block with a widget.
 
 .. code-block:: none
    
     SpWMLBuilder builder = SpWMLBuilder("(SubClass of this, id:1)");
     builder.replaceID(1, Text("abc"));
+
+
+Call from Builder 2
+----------------------
+
+There is a method called replaceSID in the SpWMLBuilder function, and by using this method, you can replace the child block with a widget.
+
+.. code-block:: none
+   
+    SpWMLBuilder builder = SpWMLBuilder("(SubClass of this, sid:aaa)");
+    builder.replaceSID("aaa", Text("abc"));
+
 
 ----
 
