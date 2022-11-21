@@ -94,6 +94,7 @@ Parameters
 * rBR (double). The amount of rounding of the bottom right border specified in px.
 * ellipticalX (double). The amount of rounding in the x-axis direction specified by px.Both ellipticalX and ellipticalY must be set at the same time.
 * ellipticalY (double). The amount of rounding in the y-axis direction specified in px.Both ellipticalX and ellipticalY must be set at the same time.
+* isGone (bool)。If true, hides this block. The initial value is false.
 
 ----
 

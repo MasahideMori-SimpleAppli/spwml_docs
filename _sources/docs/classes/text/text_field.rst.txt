@@ -89,6 +89,11 @@ Parameters
 * suffixIconSize(double). Suffix Set size of icon in px.
 * suffixIconSplashRadius(double). Specifies the size of the animation area for tapping the tail icon in px.
 * suffixIconColor(String). Color setting for the suffix icon. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+* cpL (double)。Left content padding.
+* cpT (double)。Top content padding.
+* cpR (double)。Right content padding.
+* cpB (double)。Bottom content padding.
+
 ----
 
 Super Class
