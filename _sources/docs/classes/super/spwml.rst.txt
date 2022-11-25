@@ -51,7 +51,7 @@ Variable（Dart）
 
 * [serial] : Internal array number.
 * [type] : The type of SpWML.
-* [param] : parameters converted for Flutter after being parsed by SBML.
+* [param] : parameters converted for Flutter after being parsed by SpBML.
 * [spwmlParams] : Parameters written by the user in SpWML.
 * [parentSerial] : Seial of Parent block.
 * [lineStart] : Start line number of this block.
