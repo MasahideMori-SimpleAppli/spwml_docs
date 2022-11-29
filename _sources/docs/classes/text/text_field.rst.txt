@@ -35,6 +35,17 @@ Sets the button callback when the input is in search mode.
    
    void setSuffixCallback(Function(String inputText)? suffixCallback)
 
+
+Text change callback
+----------------------------
+
+Set a callback when text changed by user.
+
+.. code-block:: none
+   
+   void setOnChanged(void Function(String)? onChanged)
+
+
 Input complete callback
 ----------------------------
 
