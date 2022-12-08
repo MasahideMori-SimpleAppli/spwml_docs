@@ -65,6 +65,7 @@ Parameters
 
 * id(int). ID specified by int. Used for specifying button callbacks and replacing child blocks.
 * sid(String). String ID specified by int. Used for specifying button callbacks and replacing child blocks.
+* text(String). The text content written within the block. In a text element, this content is displayed on the screen.
 * h(double). It can also be written as height, which is the height of this element specified in px.
 * w(double). It can also be written as width, which is the width of this element specified in px.
 * weight(double). The ratio of this element on the screen.If no other element has a ratio, the element with this will occupy the rest of the width.

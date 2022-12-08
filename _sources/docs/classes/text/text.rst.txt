@@ -46,8 +46,7 @@ Change content text.
 
 .. code-block:: none
    
-    SpWMLBuilder builder = SpWMLBuilder("(SubClass of this, id:1)");
-    builder.replaceID(1, Text("abc"));
+   setText(String newText)
 
 Get Style
 --------------------
