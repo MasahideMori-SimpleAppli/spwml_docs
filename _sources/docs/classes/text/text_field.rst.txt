@@ -73,6 +73,24 @@ Set Focus.
    
    void setFocusNode(FocusNode? focusNode)
 
+----------------------------
+
+
+Set enabled flag.
+
+.. code-block:: none
+   
+   void setEnabled(bool enabled)
+
+----------------------------
+
+
+Set Controller and Focus by textfield_manager.
+
+.. code-block:: none
+   
+   void setManager(TextFieldManager manager, String name,{String? initialText})
+
 ----
 
 Variable（Dart）
