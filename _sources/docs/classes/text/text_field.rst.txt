@@ -55,8 +55,9 @@ Set a callback when user input is completed.
    
    void setOnSubmitted(void Function(String)? onSubmitted)
 
-----------------------------
 
+Other functions
+----------------------------
 
 Set a class to hold the input text. The text is managed by the Parent widget as per Flutter's standard specifications.
 
