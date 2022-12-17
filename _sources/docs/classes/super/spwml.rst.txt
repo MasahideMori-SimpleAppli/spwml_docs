@@ -44,6 +44,17 @@ There is a method called getElementBySID in the function of SpWMLBuilder, you ca
     TextElement text = builder.getElementBySID("aaa") as TextElement;
 
 
+Set visibility flag
+----------------------
+
+If isGone set true, remove this element in build result.
+
+.. code-block:: none
+   
+    void setIsGone(bool isGone)
+
+
+
 ----
 
 Variable（Dart）
