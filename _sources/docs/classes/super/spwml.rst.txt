@@ -79,11 +79,11 @@ Parameters
 * text(String). The text content written within the block. In a text element, this content is displayed on the screen.
 * h(double). It can also be written as height, which is the height of this element specified in px.
 * w(double). It can also be written as width, which is the width of this element specified in px.
-* weight(double). The ratio of this element on the screen.If no other element has a ratio, the element with this will occupy the rest of the width.
-* minH (double). It can also be written as minHeight.It is the minimum height specified in px.Ignored depending on the conditions.
-* minW (double). It can also be written as minWidth.It is the minimum width specified in px.Ignored depending on the conditions.
-* maxH (double). It can also be written as maxHeight.It is the maximum height specified in px.Ignored depending on the conditions.
-* maxW (double). It can also be written as maxWidth.It is the maximum width specified in px.Ignored depending on the conditions.
+* wt(double). It can also be written as weight, The ratio of this element on the screen.If no other element has a ratio, the element with this will occupy the rest of the width.
+* minH (double). It can also be written as minHeight, It is the minimum height specified in px. Ignored depending on the conditions.
+* minW (double). It can also be written as minWidth, It is the minimum width specified in px. Ignored depending on the conditions.
+* maxH (double). It can also be written as maxHeight, It is the maximum height specified in px. Ignored depending on the conditions.
+* maxW (double). It can also be written as maxWidth, It is the maximum width specified in px. Ignored depending on the conditions.
 * mL (double). It can also be written as mLeft, which is the left margin specified in px.
 * mT (double). It can also be written as mTop, which is the top margin specified in px.
 * mR (double). It can also be written as mRight, which is the right margin specified in px.
