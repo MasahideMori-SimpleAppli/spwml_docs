@@ -123,6 +123,8 @@ Parameters
 * cpT (double)。Top content padding.
 * cpR (double)。Right content padding.
 * cpB (double)。Bottom content padding.
+* maxLines(int?). Sets how many lines of text the text field will look like. This does not limit the actual number of input lines.
+* maxLength(int?). Maximum number of input characters for text.
 
 ----
 

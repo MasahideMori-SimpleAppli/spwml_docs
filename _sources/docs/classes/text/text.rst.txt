@@ -104,7 +104,7 @@ Parameters
 * textAlign(String). The alignment of the text. It can be left, center, right or justify.
 * textHeight(double). Specifies the height of the text.For English, 1.0 is fine, but for Japanese, it may be better to adjust between 1.0 and 1.3.
 * overflow(String). The text overflow parameter. It can be clip, ellipsis, fade or visible. This parameter is valid only when isSelectable is false.
-* maxLines(int). Maximum number of lines of text allowed when drawing.
+* maxLines(int?). Maximum number of lines of text allowed when drawing.
 
 ----
 
