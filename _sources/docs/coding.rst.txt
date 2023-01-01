@@ -19,14 +19,31 @@ See :ref:`Classes and Methods <classes_and_methods>` to see what types there are
 The "BtnElement" part changes depending on what you want to get. This is mentioned on the page above.
 Basically, except for some abbreviations, the class is named "SpWML type name + Element".
 
-Also, each class has almost the same parameters as similar classes in Flutter, and by rewriting the class parameters as follows,
+Also, by using the sid parameter introduced from version 10.1.0, you can write easier-to-understand code.
+
+.. code-block:: none
+   
+   BtnElement delBtn = builder.getElementBySID("deleteButton") as BtnElement;
+
+Maintainability is high because it can be called using the sid set on SpWML. I recommend using sid.
+
+Each class has almost the same parameters as similar classes in Flutter, and by rewriting the class parameters as follows,
 You can control almost everything from code.
 
 .. code-block:: none
    
-   BtnElement btnElement = builder.getElementByID(1) as BtnElement;
+   BtnElement runBtn = builder.getElementByID(1) as BtnElement;
    runBtn.elParams.p.normalBtnParams?.style = const ButtonStyle();
    runBtn.textParams.p.isSelectable = true;
+
+There are various types of parameters, but they are all named xxParams,
+Basically what you use in that class is defined with the name elParams.
+Exceptions are Text type Element, such as textParams, tfParams, and rubyParams.
+The parameter common to all elements is spwmlParams.
+Access to "params" is not recommended as it is a parameter used internally.
+
+In addition, frequently used variables may be implemented in element methods.
+If there is an implementation, please use it. It may be safer to operate.
 
 ----
 
@@ -43,3 +60,4 @@ By using this, if the screen parts created by the designer with the design tool 
    Widget compiledWidget = b.build(context);
 
 Use this when reusing existing code or embedding special screen parts that are difficult to write in a static language.
+If you use replaceSID instead of replaceID, you can also search and embed by sid.

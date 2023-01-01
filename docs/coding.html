@@ -49,13 +49,25 @@ For example, a block with “id:1” can be retrieved from the Dart code as foll
 <p>See <a class="reference internal" href="classes_and_methods.html#classes-and-methods"><span class="std std-ref">Classes and Methods</span></a> to see what types there are and what parameters they have.
 The “BtnElement” part changes depending on what you want to get. This is mentioned on the page above.
 Basically, except for some abbreviations, the class is named “SpWML type name + Element”.</p>
-<p>Also, each class has almost the same parameters as similar classes in Flutter, and by rewriting the class parameters as follows,
+<p>Also, by using the sid parameter introduced from version 10.1.0, you can write easier-to-understand code.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>BtnElement delBtn = builder.getElementBySID(&quot;deleteButton&quot;) as BtnElement;
+</pre></div>
+</div>
+<p>Maintainability is high because it can be called using the sid set on SpWML. I recommend using sid.</p>
+<p>Each class has almost the same parameters as similar classes in Flutter, and by rewriting the class parameters as follows,
 You can control almost everything from code.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>BtnElement btnElement = builder.getElementByID(1) as BtnElement;
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>BtnElement runBtn = builder.getElementByID(1) as BtnElement;
 runBtn.elParams.p.normalBtnParams?.style = const ButtonStyle();
 runBtn.textParams.p.isSelectable = true;
 </pre></div>
 </div>
+<p>There are various types of parameters, but they are all named xxParams,
+Basically what you use in that class is defined with the name elParams.
+Exceptions are Text type Element, such as textParams, tfParams, and rubyParams.
+The parameter common to all elements is spwmlParams.
+Access to “params” is not recommended as it is a parameter used internally.</p>
+<p>In addition, frequently used variables may be implemented in element methods.
+If there is an implementation, please use it. It may be safer to operate.</p>
 </section>
 <hr class="docutils" />
 <section id="integration-with-flutter-widgets">
@@ -67,7 +79,8 @@ b.replaceID (Target block id, Widget);
 Widget compiledWidget = b.build(context);
 </pre></div>
 </div>
-<p>Use this when reusing existing code or embedding special screen parts that are difficult to write in a static language.</p>
+<p>Use this when reusing existing code or embedding special screen parts that are difficult to write in a static language.
+If you use replaceSID instead of replaceID, you can also search and embed by sid.</p>
 </section>
 </section>
 
