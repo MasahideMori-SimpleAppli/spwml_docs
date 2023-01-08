@@ -90,7 +90,7 @@ Set Controller and Focus by textfield_manager.
 
 .. code-block:: none
    
-   void setManager(TextFieldManager manager, String name,{String? initialText})
+   void setManager(TextFieldManager manager, String name, {String? initialText, bool isAlwaysInitialize = false})
 
 ----
 
