@@ -54,3 +54,4 @@ Others
 * :ref:`img (image) <img>`
 * :ref:`line (Horizontal line) <line>`
 * :ref:`vline (Vertical line) <vline>`
+* :ref:`progressIndicator <progress_indicator>`

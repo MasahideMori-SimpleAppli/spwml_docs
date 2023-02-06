@@ -54,6 +54,15 @@ If isGone set true, remove this element in build result.
     void setIsGone(bool isGone)
 
 
+Background color setting
+--------------------------
+
+Sets the background color. Calling this will automatically update the box decoration as well.
+
+.. code-block:: none
+   
+    void setBGColor(Color c)
+
 
 ----
 

@@ -1,0 +1,62 @@
+:orphan:
+.. _progress_indicator:
+
+======================================
+ProgressIndicatorElement
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (progressIndicator)
+
+----
+
+Summary
+===============
+
+A block in which a progress indicator can be placed that has no child blocks.
+
+----
+
+Functions (Dart)
+===================
+
+
+Setting the current progress
+------------------------------
+
+You can set the progress as a value between 0.0 and 1.0. If you give null, it will be in loading state.
+
+.. code-block:: none
+   
+    void setValue(double? v)
+
+
+----
+
+Variable（Dart）
+=================
+
+* :ref:`The common<spwml>` variable.
+* [elParams] : This parameter has `CircularProgressIndicator class <https://api.flutter.dev/flutter/material/CircularProgressIndicator-class.html>`__ and `LinearProgressIndicator class <https://api.flutter.dev/flutter/material/LinearProgressIndicator-class.html>`__ parameters.
+
+----
+
+Parameters
+====================
+
+* :ref:`The common<spwml>` parameters.
+* type (String). Specifies the type of loading. Specify circular or linear.
+* value (double?). You can set the progress as a value between 0.0 and 1.0. If you give null, it will be in loading state.
+* indicatorColor (String). Indicator color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+* indicatorBGColor (String). Indicator background color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+
+----
+
+Super Class
+==============
+
+:ref:`spwml`

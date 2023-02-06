@@ -24,7 +24,16 @@ A block that does not have child blocks and can be used to place images.
 Functions (Dart)
 ===================
 
-It has no external use, only methods that are used internally.
+
+Byte image settings
+----------------------
+
+Sets byte data as an image.
+
+.. code-block:: none
+   
+    void setBytesImage(Uint8List image)
+
 
 ----
 
@@ -32,7 +41,7 @@ Variable（Dart）
 =================
 
 * :ref:`The common<spwml>` variable.
-* [elParams] :  A variable with parameters equivalent to Flutter `Image class <https://api.flutter.dev/flutter/widgets/Image-class.html>`__ .
+* [elParams] :  A variable with parameters equivalent to Flutter `Image class <https://api.flutter.dev/flutter/widgets/Image-class.html>`__ . It also has some additional parameters such as bytes.
 
 ----
 
@@ -40,9 +49,11 @@ Parameters
 ====================
 
 * :ref:`The common<spwml>` parameters.
-* type (String). Specifies the resource loading source. Specify either network or asset. In the case of the network, if you give a URL, the image will be downloaded and displayed from there, but be careful about CORS. The default is the network type.
+* type (String). Specifies the resource loading source. Specify either network, asset, or memory. If it is memory and ImgParams.bytes is null, it works as network. In the case of the network, if you give a URL, the image will be downloaded and displayed from there, but be careful about CORS. The default is the network type.
 * fit (String). Specifies how the image fits within this element. It can be none, contain, cover, fitHeight, or fitWidth.
 * repeat (String).Set whether to repeat the image. Specify one of noRepeat, repeat, repeatX, or repeatY. The "repeat" repeats in both vertical and horizontal directions, "repeatX" only in the X-axis direction, and "repeatY" only in the Y-axis direction.
+* clipType (String). Specifies image clipping. Specify one of none, oval, rRect. Default is none.
+* clipRadius (double). Specifies the radius of rounding applied when clipType is rRect.
 
 ----
 
