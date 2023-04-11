@@ -10,6 +10,7 @@ Contents
    
    docs/introduction.rst
    docs/try_editor
+   docs/ai_prompt
    docs/install
    docs/coding
    docs/classes_and_methods

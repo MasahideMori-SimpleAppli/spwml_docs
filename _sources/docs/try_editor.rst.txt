@@ -29,3 +29,4 @@ For example, if you want to write text in the size of header 1, do the following
 
 Available parameters differ depending on the type.
 Please refer to :ref:`Classes and methods<classes_and_methods>` on this homepage for detailed type names and available parameters.
+Also, if you want to get a quick overview or try AI auto-generation, see :ref:`Let AI generate the design<ai_prompt>`.

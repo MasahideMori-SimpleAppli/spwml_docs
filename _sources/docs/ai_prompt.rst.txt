@@ -1,0 +1,14 @@
+.. _ai_prompt:
+======================================
+Let AI generate the design
+======================================
+
+Since SpWML has a simple syntax, it is also suitable for generative AI to interpret specifications and generate designs.
+
+Below is a bare minimum prompt for the AI.
+
+Please note that this prompt is being adjusted and may change frequently.
+
+Also, anyone new to SpWML may find this prompt a good example.
+
+`Prompt for AI <https://masahidemori-simpleappli.github.io/spwml_docs/prompt/spwml_prompt_en.txt>`__ 
