@@ -42,24 +42,22 @@ The specifications of SpWML are as follows. Please consider this specification w
 # Indentation for hierarchical structure
 Containers can have child elements, and child elements are indented with a + mark.
 
-Single element containers block and scroll can have child elements. A child element can be a container or an element inside a container.
-
-# example with singular child element
+## Single element containers block and scroll can have child elements.
+### Example with singular child element
 (block)
 +(text) text content
 
-Containers other than block and scroll can have multiple child elements.
-
-# Example with multiple child elements.
+## Containers other than block and scroll can have multiple child elements.
+### Example with multiple child elements.
 (col)
 +(col)
 ++(text) 1st line of 1st line.
-++(text) 1st line 2nd line.
+++(text) 2nd line of 1st line.
 ++(text) 3rd line of 1st line.
 +(row)
-++(text) 2nd line, 1st column.
+++(text) 1st column of 2nd line.
 ++(text) 2nd column of 2nd line.
-++(text) 2nd line, 3rd column.
+++(text) 3rd column of 2nd line.
 
 # element size
 A setting for the size of the element that can be set for all elements.
@@ -83,33 +81,49 @@ If set, the size of col or row's inner child elements can be set proportionally.
 (row)
 +(text, w:300) left text
 +(text, wt:1) right text
+## Display in full screen. If you set wt:1 on the first container element like below, the height of the container will be maximized to the height of the screen.
+(row, wt: 1)
++(text) 1st column
++(text) second column
 
 # Margin
 Margins keep the element you set farther away from other elements.
-Margins are valid for all elements, and there are four types of parameters.
-- mL : left margin. Units are relative pixels. auto cannot be used and must always be numeric.
-- mT : top margin. Units are relative pixels. auto cannot be used and must always be numeric.
-- mR : right margin. Units are relative pixels. auto cannot be used and must always be numeric.
-- mB : bottom margin. Units are relative pixels. auto cannot be used and must always be numeric.
+Margins are valid for all elements, and there are four types of parameters. None can be auto and must always be numeric.
+- mL : left margin. Units are relative pixels.
+- mT : top margin. Units are relative pixels.
+- mR : right margin. Units are relative pixels.
+- mB : bottom margin. Units are relative pixels.
 ## Usage example. I have a margin of 12 pixels to the left and 24 pixels above the text.
 (text, mL:12, mT:24) Text content.
 
 # Padding
 Padding shifts the position of child elements of the element you set.
-Padding is valid for all elements, and there are 4 types of parameters.
-- mL : Left padding. Units are relative pixels. auto cannot be used and must always be numeric.
-- mT : Top padding. Units are relative pixels. auto cannot be used and must always be numeric.
-- mR : Right padding. Units are relative pixels. auto cannot be used and must always be numeric.
-- mB : bottom padding. Units are relative pixels. auto cannot be used and must always be numeric.
-## Usage example. I'm setting a padding of 12 pixels above the container and 12 pixels to the left.
+Padding is valid for all elements, and there are 4 types of parameters. None can be auto and must always be numeric.
+- mL : Left padding. Units are relative pixels.
+- mT : Top padding. Units are relative pixels.
+- mR : Right padding. Units are relative pixels.
+- mB : bottom padding. Units are relative pixels.
+## Usage example. We are padding the container with 12 pixels to the top and 12 pixels to the left.
 (col, pL:12, pT:12)
 +(text) Text content.
 
 # background color
-Background color settings available for the container. Set the bgColor parameter in hexadecimal notation.
+Background color settings available for the container. Set the bgColor parameter in hexadecimal notation as follows.
 (col)
 +(block, bgColor:#FF9800, w:100, h:100)
 
 # font size and font color
-For text elements, button elements, etc., you can set the font size (character size) and font color as follows. Below is 12 pixels and has a blue font set.
+For text elements, button elements, etc., you can set the font size (character size) and font color as follows. Below it is 12 pixels and I have set a blue font.
 (text, fontSize: 12, textColor: #007BFF)
+
+# font weight and typeface
+You can set font weight and italic for text elements, button elements, etc.
+The font thickness has the following variations, and the larger the number, the thicker the font. Also, the regular size that is often used is 400.
+100, 200, 300, 400, 500, 600, 700, 800, 900.
+In the example below, the font is set to 300, thinner than normal, and italic.
+(text, fontWeight: 300, fontStyle: italic)
+
+# the sid of the element
+Elements in SpWML can be assigned sids. This is to allow programmers to manipulate it from the Dart language.
+sid is a unique id set as a string, and for elements that respond to user actions such as buttons, use sid as follows.
+(btn, type:elevated, sid:name_of_the_user_action_etc)
