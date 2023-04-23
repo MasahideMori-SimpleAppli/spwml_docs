@@ -114,11 +114,11 @@ Parameters
 * mode(String).Specifies the operation mode.Specify one of normal, password, search, or manual.In manual mode, SpWML specification is invalid and the user setting value is reflected as it is.
 * iconNum(String). Set the icon type with `codePoint <https://api.flutter.dev/flutter/material/Icons-class.html>`__ .
 * iconSize (double).
-* iconColor (String). Color setting for icons. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+* iconColor (String). Color setting for icons.  :ref:`The color system<color_system>` .
 * suffixIconNum(String). Suffix Set the icon type with `codePoint <https://api.flutter.dev/flutter/material/Icons-class.html>`__ .
 * suffixIconSize(double). Suffix Set size of icon in px.
 * suffixIconSplashRadius(double). Specifies the size of the animation area for tapping the tail icon in px.
-* suffixIconColor(String). Color setting for the suffix icon. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+* suffixIconColor(String). Color setting for the suffix icon.  :ref:`The color system<color_system>` .
 * cpL (double)。Left content padding.
 * cpT (double)。Top content padding.
 * cpR (double)。Right content padding.

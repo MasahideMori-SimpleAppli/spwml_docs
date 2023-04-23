@@ -59,7 +59,7 @@ Parameters
 ====================
 
 * :ref:`The common<spwml>` parameters.
-* color (String). Color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+* color (String). Color setting. :ref:`The color system<color_system>` .
 
 ----
 

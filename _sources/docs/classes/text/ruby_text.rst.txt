@@ -77,11 +77,11 @@ Parameters
 * rubySize(double). Specifies the font size as a magnification of the standard text.Use a value between 0.0 and 1.0.
 * rubyFontWeight(String). Font weight.Specify one of normal, regular, bold, thin, light, medium, black, w100 to w900.
 * rubyFontStyle(String). Specifies the font style.Specify either normal or italic.
-* rubyColor(String). Color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
-* rubyBGColor(String). Text background Color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+* rubyColor(String). Color setting. :ref:`The color system<color_system>` .
+* rubyBGColor(String). Text background Color setting. :ref:`The color system<color_system>` .
 * rubyDeco(String). Specify decoration such as underline.Specify one of none, underline, overline, lineThrough.
 * rubyDecoStyle(String).Decoration style.It can be solid, dotted, dashed, double or wavy.
-* rubyDecoColor(String)Color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+* rubyDecoColor(String)Color setting. :ref:`The color system<color_system>` .
 * rubyDecoThickness(double). Specifies the line width of the decoration in px.
 * rubyLetterSpacing(double). Specifies the space between characters in px.
 * rubyWordSpacing(double). Specifies the space between words in px.

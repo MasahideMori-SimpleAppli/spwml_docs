@@ -37,8 +37,20 @@
 <span id="btn"></span><h1>BtnElement<a class="headerlink" href="#btnelement" title="Permalink to this heading">¶</a></h1>
 <section id="how-to-write-by-spwml">
 <h2>How to write by SpWML<a class="headerlink" href="#how-to-write-by-spwml" title="Permalink to this heading">¶</a></h2>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(btn)Button text
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>// Example
+(btn)Button text
 +(child block)Block-type buttons use child blocks.
+
+// common usage
+(btn) text-only button
+(btn, type:outlined) button with border
+(btn, type:elevated) three-dimensional button
+(btn, type:icon, iconNum:0xe1b9, splashRadius:24) Delete icon button
+(btn, type:block, borderRadius:8, shape:roundRect, elevation:8) Example of defining a card type button with a block button
++(row, bgColor:orange, borderRadius:8, borderShape: rectangle)
+++(col, mL:8, mT:8, mR:8, mB:8)
++++(menu) block button.
++++(menu) The whole child block can be a button.
 </pre></div>
 </div>
 </section>
@@ -81,10 +93,10 @@ This only has an effect when the button is of block type.</p>
 <li><p>type (String). Specify the type of button as one of text, outlined, elevated, icon, block. block is a special button whose child element responds to taps.</p></li>
 <li><p>iconNum (String).  Set icon type by <a class="reference external" href="https://api.flutter.dev/flutter/material/Icons-class.html">codePoint</a> .</p></li>
 <li><p>iconSize (double).</p></li>
-<li><p>iconColor (String).  #AARRGGBB, or <a class="reference external" href="https://material.io/design/color/the-color-system.html#tools-for-picking-colors">2014 Material Design color palettes</a> colors, like red[500] or redAccent[100].</p></li>
+<li><p>iconColor (String).  <a class="reference internal" href="../../ref/color_system.html#color-system"><span class="std std-ref">The color system</span></a> .</p></li>
 <li><p>splashRadius (double).</p></li>
-<li><p>fgColor (String).  The foreground color. Overlay color changes when button is tapped.  #AARRGGBB, or <a class="reference external" href="https://material.io/design/color/the-color-system.html#tools-for-picking-colors">2014 Material Design color palettes</a> colors, like red[500] or redAccent[100].</p></li>
-<li><p>btnBGColor (String).  The backgound color.  #AARRGGBB, or <a class="reference external" href="https://material.io/design/color/the-color-system.html#tools-for-picking-colors">2014 Material Design color palettes</a> colors, like red[500] or redAccent[100].</p></li>
+<li><p>fgColor (String).  The foreground color. The color of the overlay changes when the button is tapped. <a class="reference internal" href="../../ref/color_system.html#color-system"><span class="std std-ref">The color system</span></a> .</p></li>
+<li><p>btnBGColor (String).  The backgound color. <a class="reference internal" href="../../ref/color_system.html#color-system"><span class="std std-ref">The color system</span></a> .</p></li>
 <li><p>color (String).  Same btnBGColor.</p></li>
 <li><p>shape (String).  The border shape. Specify one of roundRect, stadium, bevel, circle.</p></li>
 </ul>
@@ -116,6 +128,7 @@ This only has an effect when the button is of block type.</p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../introduction.html">What is SpWML?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../try_editor.html">Try SpWML Editor!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ai_prompt.html">Let AI generate the design</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../install.html">How to install SpWML</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../coding.html">Working with SpWML from code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes_and_methods.html">Classes and methods</a></li>

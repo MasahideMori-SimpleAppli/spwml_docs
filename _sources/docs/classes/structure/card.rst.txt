@@ -47,7 +47,7 @@ Parameters
 
 * :ref:`The common<spwml>` parameters.
 * :ref:`Parent<single_child>` parameters.
-* color (String). #AARRGGBB, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ colors, like red[500] or redAccent[100].
+* color (String).  :ref:`The color system<color_system>` .
 * cardElevation (double). It is the floating degree of the card. It is specified in px.
 * shape (String). The shape of the border. Specify one of roundRect, stadium, bevel, or circle.
 

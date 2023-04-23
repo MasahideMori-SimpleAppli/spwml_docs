@@ -93,11 +93,11 @@ Parameters
 * fontSize(double). Specifies the font size in px.
 * fontWeight(String). The weight of the font.Specify one of normal, regular, bold, thin, light, medium, black, w100 to w900.
 * fontStyle(String). This is the font style setting.Specify either normal or italic.
-* textColor(String). Color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
-* textBGColor(String). Text Background Color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+* textColor(String). Color setting. :ref:`The color system<color_system>` .
+* textBGColor(String). Text Background Color setting. :ref:`The color system<color_system>` .
 * textDeco(String). Specify decoration such as underline.Specify one of none, underline, overline, lineThrough.
 * textDecoStyle(String).Decoration style. It can be solid, dotted, dashed, double or wavy.
-* textDecoColor(String)Color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+* textDecoColor(String)Color setting. :ref:`The color system<color_system>` .
 * textDecoThickness(double). Specifies the line width of the decoration in px.
 * letterSpacing(double). Specifies the space between letters in px.
 * wordSpacing(double). Specifies the space between words in px.

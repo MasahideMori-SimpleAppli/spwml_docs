@@ -10,8 +10,20 @@ How to write by SpWML
 
 .. code-block:: none
    
+   // Example
    (btn)Button text
    +(child block)Block-type buttons use child blocks.
+
+   // common usage
+   (btn) text-only button
+   (btn, type:outlined) button with border
+   (btn, type:elevated) three-dimensional button
+   (btn, type:icon, iconNum:0xe1b9, splashRadius:24) Delete icon button
+   (btn, type:block, borderRadius:8, shape:roundRect, elevation:8) Example of defining a card type button with a block button
+   +(row, bgColor:orange, borderRadius:8, borderShape: rectangle)
+   ++(col, mL:8, mT:8, mR:8, mB:8)
+   +++(menu) block button.
+   +++(menu) The whole child block can be a button.
 
 ----
 
@@ -59,10 +71,10 @@ Parameters
 * type (String). Specify the type of button as one of text, outlined, elevated, icon, block. block is a special button whose child element responds to taps.
 * iconNum (String).  Set icon type by `codePoint <https://api.flutter.dev/flutter/material/Icons-class.html>`__ .
 * iconSize (double). 
-* iconColor (String).  #AARRGGBB, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ colors, like red[500] or redAccent[100].
+* iconColor (String).  :ref:`The color system<color_system>` .
 * splashRadius (double). 
-* fgColor (String).  The foreground color. Overlay color changes when button is tapped.  #AARRGGBB, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ colors, like red[500] or redAccent[100].
-* btnBGColor (String).  The backgound color.  #AARRGGBB, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ colors, like red[500] or redAccent[100].
+* fgColor (String).  The foreground color. The color of the overlay changes when the button is tapped. :ref:`The color system<color_system>` .
+* btnBGColor (String).  The backgound color. :ref:`The color system<color_system>` .
 * color (String).  Same btnBGColor.
 * shape (String).  The border shape. Specify one of roundRect, stadium, bevel, circle.
 

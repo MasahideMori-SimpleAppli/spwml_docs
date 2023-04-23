@@ -104,11 +104,11 @@ Parameters
 * shiftX (double). Shift the relative position of the element on the x-axis.
 * shiftY (double). Shift the relative position of the element on the y-axis.
 * elevation (double). Shifts the relative position of the element on the z-axis.
-* bgColor (String). Background Color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors> `__ It can be handled with notations such as red[500] and redAccent[100].
-* borderColor (String). Border color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking- colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+* bgColor (String). Background Color setting. :ref:`The color system<color_system>` .
+* borderColor (String). Border color setting. :ref:`The color system<color_system>` .
 * borderWidth (double). The width of the border line specified in px.
 * borderRadius (double). Radius of border specified in px.
-* borderShape (String).The shape of the border.Specify a rectangle or circle.Invalid for btn, card, radioBtn, checkbox, table, tableRow.
+* borderShape (String).The shape of the border.Specify a rectangle or circle. Invalid for btn, card, radioBtn, checkbox, table, tableRow.
 * rTL (double). Amount of rounding of the upper left border specified in px.
 * rTR (double). The amount of rounding of the upper right border specified in px.
 * rBL (double). The amount of rounding of the lower left border specified in px.

@@ -51,8 +51,8 @@ Parameters
 * :ref:`The common<spwml>` parameters.
 * type (String). Specifies the type of loading. Specify circular or linear.
 * value (double?). You can set the progress as a value between 0.0 and 1.0. If you give null, it will be in loading state.
-* indicatorColor (String). Indicator color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
-* indicatorBGColor (String). Indicator background color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+* indicatorColor (String). Indicator color setting. :ref:`The color system<color_system>` .
+* indicatorBGColor (String). Indicator background color setting. :ref:`The color system<color_system>` .
 
 ----
 

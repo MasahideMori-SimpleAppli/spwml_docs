@@ -68,7 +68,7 @@ Parameters
 * :ref:`The common<spwml>` parameters.
 * :ref:`Parent<multi_child>` parameters.
 * iconSize (double). Set size of icon in px.
-* iconColor (String). Color setting. #AARRGGBB notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ It can be handled with notations such as red[500] and redAccent[100].
+* iconColor (String). Color setting. :ref:`The color system<color_system>` .
 * splashRadius (double). Set the size of the reaction circle by px on when tapped.
 * enableTapLabel (bool). If true, can tap text. The initial value is false.
 
