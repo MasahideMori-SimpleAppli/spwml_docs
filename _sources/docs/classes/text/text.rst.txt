@@ -9,7 +9,29 @@ How to write by SpWML
 ========================
 
 .. code-block:: none
-   
+
+   // default
+   (text)The content text
+   (menu)The content text
+
+   // material V3
+   (displayL)The content text
+   (displayM)The content text
+   (displayS)The content text
+   (headlineL)The content text
+   (headlineM)The content text
+   (headlineS)The content text
+   (titleL)The content text
+   (titleM)The content text
+   (titleS)The content text
+   (labelL)The content text
+   (labelM)The content text
+   (labelS)The content text
+   (bodyL)The content text
+   (bodyM)The content text
+   (bodyS)The content text
+
+   // material V2
    (h1)The content text
    (h2)The content text
    (h3)The content text
@@ -22,8 +44,6 @@ How to write by SpWML
    (body2)The content text
    (caption)The content text
    (overline)The content text
-   (text)The content text
-   (menu)The content text
 
 ----
 
@@ -32,7 +52,7 @@ Summary
 
 A block that contains text elements without a child block.
 There are many variations in size and format.
-Also, text is an alias equivalent to body1, and menu is almost the same as body1, but this is invalied the default margin.
+Also, By default text is the same parameter as body1, and menu is almost the same as body1, but with selection disabled and a different lineHeight.
 
 ----
 
@@ -89,11 +109,11 @@ Parameters
 
 * :ref:`The common<spwml>` parameters.
 * isSelectable(bool). If true, the text can be selected.The initial value is true except for menu.
-* fontName(String). This is the name of the font to be used. To change the font, settings must be made on the Flutter project side. Only the fonts set in the project can be loaded.
+* fontFamily(String). This is the name of the font to be used. To change the font, settings must be made on the Flutter project side. Only the fonts set in the project can be loaded.
 * fontSize(double). Specifies the font size in px.
 * fontWeight(String). The weight of the font.Specify one of normal, regular, bold, thin, light, medium, black, w100 to w900.
 * fontStyle(String). This is the font style setting.Specify either normal or italic.
-* textColor(String). Color setting. :ref:`The color system<color_system>` .
+* textColor(String?). Color setting. :ref:`The color system<color_system>` .
 * textBGColor(String). Text Background Color setting. :ref:`The color system<color_system>` .
 * textDeco(String). Specify decoration such as underline.Specify one of none, underline, overline, lineThrough.
 * textDecoStyle(String).Decoration style. It can be solid, dotted, dashed, double or wavy.
@@ -102,9 +122,16 @@ Parameters
 * letterSpacing(double). Specifies the space between letters in px.
 * wordSpacing(double). Specifies the space between words in px.
 * textAlign(String). The alignment of the text. It can be left, center, right or justify.
-* textHeight(double). Specifies the height of the text.For English, 1.0 is fine, but for Japanese, it may be better to adjust between 1.0 and 1.3.
+* lineHeight(double). Specifies the height of the text.For English, 1.0 is fine, but for Japanese, it may be better to adjust between 1.0 and 1.3.
 * overflow(String). The text overflow parameter. It can be clip, ellipsis, fade or visible. This parameter is valid only when isSelectable is false.
 * maxLines(int?). Maximum number of lines of text allowed when drawing.
+
+----
+
+Deprecated parameters
+========================
+* textHeight(double). Renamed to lineHeight.
+* fontName(String). Renamed to fontFamily.
 
 ----
 

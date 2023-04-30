@@ -42,15 +42,28 @@
 +(child block)Block-type buttons use child blocks.
 
 // common usage
-(btn) text-only button
-(btn, type:outlined) button with border
-(btn, type:elevated) three-dimensional button
-(btn, type:icon, iconNum:0xe1b9, splashRadius:24) Delete icon button
-(btn, type:block, borderRadius:8, shape:roundRect, elevation:8) Example of defining a card type button with a block button
-+(row, bgColor:orange, borderRadius:8, borderShape: rectangle)
+(btn, textColor:null)Text button
+(btn, type:outlined, textColor:null)Outlined button
+(btn, type:elevated, textColor:brown, textColor:null)Elevated button
+(btn, type:icon, iconNum:0xefaa)Icon button
+(btn, type:block, borderRadius:8, shape:roundRect)An example of defining a card-type button with a block button
++(row, bgColor:orange, borderRadius:8, borderShape:rectangle)
 ++(col, mL:8, mT:8, mR:8, mB:8)
-+++(menu) block button.
-+++(menu) The whole child block can be a button.
++++(menu)button&#39;s child block.
++++(menu)a button with content like this.
+(btn, type:elevated, textColor:white, iconNum:0xefaa, lineHeight:1.2, h:32, iconColor:yellow, btnBGColor:blue)With params
+(btn)
++(col)
+++(menu)button&#39;s child block.
+++(menu)a button with content like this.
+(btn, type:outlined)
++(col)
+++(menu)button&#39;s child block.
+++(menu)a button with content like this.
+(btn, type:elevated)
++(col)
+++(menu)button&#39;s child block.
+++(menu)a button with content like this.
 </pre></div>
 </div>
 </section>

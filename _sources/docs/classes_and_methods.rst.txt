@@ -22,6 +22,35 @@ Container
 
 Text
 ==================
+
+Default
+--------------
+* :ref:`text<text>`
+* :ref:`menu (Non mergin text) <text>`
+* :ref:`href <href>`
+* :ref:`ruby (The ruby-text) <ruby>`
+* :ref:`tf (textField) <textField>`
+
+Material V3
+--------------
+* :ref:`displayL<text>`
+* :ref:`displayM<text>`
+* :ref:`displayS<text>`
+* :ref:`headlineL<text>`
+* :ref:`headlineM<text>`
+* :ref:`headlineS<text>`
+* :ref:`titleL<text>`
+* :ref:`titleM<text>`
+* :ref:`titleS<text>`
+* :ref:`labelL<text>`
+* :ref:`labelM<text>`
+* :ref:`labelS<text>`
+* :ref:`bodyL<text>`
+* :ref:`bodyM<text>`
+* :ref:`bodyS<text>`
+
+Material V2
+--------------
 * :ref:`h1<text>`
 * :ref:`h2<text>`
 * :ref:`h3<text>`
@@ -30,14 +59,10 @@ Text
 * :ref:`h6<text>`
 * :ref:`subtitle1<text>`
 * :ref:`subtitle2<text>`
-* :ref:`text（body1）<text>`
+* :ref:`body1<text>`
 * :ref:`body2<text>`
 * :ref:`caption<text>`
 * :ref:`overline<text>`
-* :ref:`menu (Non mergin text) <text>`
-* :ref:`href <href>`
-* :ref:`ruby (The ruby-text) <ruby>`
-* :ref:`tf (textField) <textField>`
 
 Buttons (elements that respond to touch interactions)
 ========================================================

@@ -10,6 +10,7 @@ How to write color
 
 #AARRGGBB(#RRGGBB) notation, or `2014 Material Design color palettes <https://material.io/design/color/the-color-system.html#tools-for-picking-colors>`__ 
 It can be handled with notations such as red[500] and redAccent[100].
+Some may be null, such as textColor, in which case the system color will be set.
 
 .. code-block:: none
    
