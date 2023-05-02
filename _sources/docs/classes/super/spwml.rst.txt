@@ -97,10 +97,12 @@ Parameters
 * mT (double). It can also be written as mTop, which is the top margin specified in px.
 * mR (double). It can also be written as mRight, which is the right margin specified in px.
 * mB (double). It can also be written as mBottom, which is the bottom margin specified in px.
+* mAll (double). Batch specification of margin in px. When used together with individual specifications such as mL, the individual side takes precedence.
 * pL (double). It can also be written as pLeft, which is the left padding specified in px.
 * pT (double). It can also be written as pTop, which is the top padding specified by px.
 * pR (double). It can also be written as pRight, which is the right padding specified in px.
 * pB (double). It can also be written as pBottom, which is the bottom padding specified in px.
+* pAll (double). Batch specification of padding in px. When used together with individual specifications such as pL, the individual side takes precedence.
 * shiftX (double). Shift the relative position of the element on the x-axis.
 * shiftY (double). Shift the relative position of the element on the y-axis.
 * elevation (double). Shifts the relative position of the element on the z-axis.
