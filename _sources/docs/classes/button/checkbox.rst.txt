@@ -14,6 +14,11 @@ How to write by SpWML
    +(menu)menu 1
    +(menu)menu 2
    +(menu)menu 3
+   // primary color, icon right.
+   (checkbox, isV3:true, isPrefixIcon:false, w:100)
+   +(menu)aaa
+   +(menu)bbb
+   +(menu)ccc
 
 ----
 
@@ -71,6 +76,8 @@ Parameters
 * iconColor (String). Color setting. :ref:`The color system<color_system>` .
 * splashRadius (double). Set the size of the reaction circle by px on when tapped.
 * enableTapLabel (bool). If true, can tap text. The initial value is false.
+* isV3 (bool). If true, the checkbox color will be the system primary color. Also, the icon changes to a solid type.
+* isPrefixIcon (bool). Default is true, if false the icon is aligned to the right. Note that you may need to specify the width as well, as the text portion will autostretch.
 
 ----
 

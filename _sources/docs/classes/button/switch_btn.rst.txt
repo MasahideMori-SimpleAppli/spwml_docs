@@ -11,6 +11,8 @@ How to write by SpWML
 .. code-block:: none
    
    (switchBtn)
+   // only material v3
+   (switchBtn, type:check)
 
 ----
 
@@ -60,6 +62,7 @@ Parameters
 
 * :ref:`The common<spwml>` parameters.
 * color (String). Color setting. :ref:`The color system<color_system>` .
+* check (bool). It changes to a switch with a check icon only when Material V3 is enabled.
 
 ----
 

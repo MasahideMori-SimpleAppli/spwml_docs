@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>RowElement &#8212; SpWML Docs  documentation</title>
+    <title>SuperAndSubscriptElement &#8212; SpWML Docs  documentation</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/alabaster.css" />
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
@@ -33,28 +33,30 @@
 
           <div class="body" role="main">
             
-  <section id="rowelement">
-<span id="row"></span><h1>RowElement<a class="headerlink" href="#rowelement" title="Permalink to this heading">¶</a></h1>
+  <section id="superandsubscriptelement">
+<span id="super-and-subscript"></span><h1>SuperAndSubscriptElement<a class="headerlink" href="#superandsubscriptelement" title="Permalink to this heading">¶</a></h1>
 <section id="how-to-write-by-spwml">
 <h2>How to write by SpWML<a class="headerlink" href="#how-to-write-by-spwml" title="Permalink to this heading">¶</a></h2>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(row)
-+(child block)
-+(child block)
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(span)
++(text, lineHeight:1, mT:0)CH
++(subscript)3
++(text, lineHeight:1, mT:0)COO
++(superscript)-
 </pre></div>
 </div>
 </section>
 <hr class="docutils" />
 <section id="summary">
 <h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">¶</a></h2>
-<p>A block with multiple child blocks.
-Each inner child block becomes a column block.</p>
+<p>A block containing superscript and subscript text elements with no child blocks.
+By using it as a child block of the span element and combining it with an element whose lineHeight is 1 and mT is 0, you can handle characters in special positions with appropriate placement.</p>
 </section>
 <hr class="docutils" />
 <section id="functions-dart">
 <h2>Functions (Dart)<a class="headerlink" href="#functions-dart" title="Permalink to this heading">¶</a></h2>
-<section id="child-block-control">
-<h3>Child block control<a class="headerlink" href="#child-block-control" title="Permalink to this heading">¶</a></h3>
-<p><a class="reference internal" href="../super/multi_child.html#multi-child"><span class="std std-ref">Parent class</span></a> functions.</p>
+<section id="change-text">
+<h3>Change text<a class="headerlink" href="#change-text" title="Permalink to this heading">¶</a></h3>
+<p><a class="reference internal" href="text.html#text"><span class="std std-ref">Parent class</span></a> functions.</p>
 </section>
 </section>
 <hr class="docutils" />
@@ -62,8 +64,8 @@ Each inner child block becomes a column block.</p>
 <h2>Variable（Dart）<a class="headerlink" href="#variable-dart" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">The common</span></a> variable.</p></li>
-<li><p><a class="reference internal" href="../super/multi_child.html#multi-child"><span class="std std-ref">Parent</span></a> variable.</p></li>
-<li><p>[elParams] :  A variable with parameters equivalent to Flutter <a class="reference external" href="https://api.flutter.dev/flutter/widgets/Row-class.html">Row class</a> .</p></li>
+<li><p><a class="reference internal" href="text.html#text"><span class="std std-ref">Parent</span></a> variable.</p></li>
+<li><p>[elParams] : Parameters related to display magnification, etc.</p></li>
 </ul>
 </section>
 <hr class="docutils" />
@@ -71,16 +73,14 @@ Each inner child block becomes a column block.</p>
 <h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">The common</span></a> parameters.</p></li>
-<li><p><a class="reference internal" href="../super/multi_child.html#multi-child"><span class="std std-ref">Parent</span></a> parameters.</p></li>
-<li><p>vAlign (String). Vertical alignment: left, start, center, right, end, top, bottom, baseline or stretch.</p></li>
-<li><p>hAlign (String). Horizontal alignment, which can be left, start. center, right, end, top, bottom, spaceAround, spaceEvenly or spaceBetween.</p></li>
-<li><p>baselineType (String?). Specify alphabetic or ideographic. Required if vAlign is baseline, and if null automatically specifies alphabetic.</p></li>
+<li><p><a class="reference internal" href="text.html#text"><span class="std std-ref">Parent</span></a> parameters. However, isSelectable is invalid.</p></li>
+<li><p>baselineCorrection(double). Position correction value. If set, the value will be added to the y coordinate.</p></li>
 </ul>
 </section>
 <hr class="docutils" />
 <section id="super-class">
 <h2>Super Class<a class="headerlink" href="#super-class" title="Permalink to this heading">¶</a></h2>
-<p><a class="reference internal" href="../super/multi_child.html#multi-child"><span class="std std-ref">MultiChildElement</span></a></p>
+<p><a class="reference internal" href="text.html#text"><span class="std std-ref">TextElement</span></a></p>
 </section>
 </section>
 
@@ -149,7 +149,7 @@ Each inner child block becomes a column block.</p>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="../../../_sources/docs/classes/structure/row.rst.txt"
+      <a href="../../../_sources/docs/classes/text/super_and_subscript.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

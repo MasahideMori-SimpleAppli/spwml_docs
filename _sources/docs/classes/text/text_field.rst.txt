@@ -11,8 +11,12 @@ How to write by SpWML
 .. code-block:: none
    
    (tf)
-   or
-   (textField)
+   (tf, w:380, labelText:Abbreviation)
+   (tf, w:380, labelText:search, mode:search)
+   (tf, w:380, labelText:search, mode:searchPrefix)
+   (tf, w:380, labelText:search\ with\ clear, mode:searchAndClear)
+   (tf, w:380, labelText:input\ password, mode:password)
+   (tf, w:380, labelText:rounded\ type, type:rounded)
 
 ----
 
@@ -111,7 +115,7 @@ Parameters
 * labelText(String). Hint text with the function of moving to the upper left with animation.
 * hint(String). This is the hint text that is displayed when the input is empty.
 * type(String). Specifies the shape of the input box.Specify either material or rounded.
-* mode(String).Specifies the operation mode.Specify one of normal, password, search, or manual.In manual mode, SpWML specification is invalid and the user setting value is reflected as it is.
+* mode(String). Specifies the operation mode. Specify one of normal, password, passwordPrefix, search, searchPrefix, searchAndClear, manual. In manual mode, SpWML specification is invalid and the user setting value is reflected as it is.
 * iconNum(String). Set the icon type with `codePoint <https://api.flutter.dev/flutter/material/Icons-class.html>`__ .
 * iconSize (double).
 * iconColor (String). Color setting for icons.  :ref:`The color system<color_system>` .
@@ -125,6 +129,8 @@ Parameters
 * cpB (double)。Bottom content padding.
 * maxLines(int?). Sets how many lines of text the text field will look like. This does not limit the actual number of input lines. However, if set to 1, line breaks are not allowed.
 * maxLength(int?). Maximum number of input characters for text.
+* fillColor(String?). Fill color when type is rounded.
+* radius(double). The corner rounding when type is rounded.
 
 ----
 

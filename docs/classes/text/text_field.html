@@ -38,8 +38,12 @@
 <section id="how-to-write-by-spwml">
 <h2>How to write by SpWML<a class="headerlink" href="#how-to-write-by-spwml" title="Permalink to this heading">¶</a></h2>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(tf)
-or
-(textField)
+(tf, w:380, labelText:Abbreviation)
+(tf, w:380, labelText:search, mode:search)
+(tf, w:380, labelText:search, mode:searchPrefix)
+(tf, w:380, labelText:search\ with\ clear, mode:searchAndClear)
+(tf, w:380, labelText:input\ password, mode:password)
+(tf, w:380, labelText:rounded\ type, type:rounded)
 </pre></div>
 </div>
 </section>
@@ -113,7 +117,7 @@ or
 <li><p>labelText(String). Hint text with the function of moving to the upper left with animation.</p></li>
 <li><p>hint(String). This is the hint text that is displayed when the input is empty.</p></li>
 <li><p>type(String). Specifies the shape of the input box.Specify either material or rounded.</p></li>
-<li><p>mode(String).Specifies the operation mode.Specify one of normal, password, search, or manual.In manual mode, SpWML specification is invalid and the user setting value is reflected as it is.</p></li>
+<li><p>mode(String). Specifies the operation mode. Specify one of normal, password, passwordPrefix, search, searchPrefix, searchAndClear, manual. In manual mode, SpWML specification is invalid and the user setting value is reflected as it is.</p></li>
 <li><p>iconNum(String). Set the icon type with <a class="reference external" href="https://api.flutter.dev/flutter/material/Icons-class.html">codePoint</a> .</p></li>
 <li><p>iconSize (double).</p></li>
 <li><p>iconColor (String). Color setting for icons.  <a class="reference internal" href="../../ref/color_system.html#color-system"><span class="std std-ref">The color system</span></a> .</p></li>
@@ -127,6 +131,8 @@ or
 <li><p>cpB (double)。Bottom content padding.</p></li>
 <li><p>maxLines(int?). Sets how many lines of text the text field will look like. This does not limit the actual number of input lines. However, if set to 1, line breaks are not allowed.</p></li>
 <li><p>maxLength(int?). Maximum number of input characters for text.</p></li>
+<li><p>fillColor(String?). Fill color when type is rounded.</p></li>
+<li><p>radius(double). The corner rounding when type is rounded.</p></li>
 </ul>
 </section>
 <hr class="docutils" />

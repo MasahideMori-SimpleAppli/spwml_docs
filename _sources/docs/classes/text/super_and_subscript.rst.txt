@@ -1,0 +1,60 @@
+:orphan:
+.. _super_and_subscript:
+
+======================================
+SuperAndSubscriptElement
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (span)
+   +(text, lineHeight:1, mT:0)CH
+   +(subscript)3
+   +(text, lineHeight:1, mT:0)COO
+   +(superscript)-
+
+----
+
+Summary
+===============
+
+A block containing superscript and subscript text elements with no child blocks.
+By using it as a child block of the span element and combining it with an element whose lineHeight is 1 and mT is 0, you can handle characters in special positions with appropriate placement.
+
+----
+
+Functions (Dart)
+===================
+
+Change text
+-----------------
+
+:ref:`Parent class<text>` functions.
+
+----
+
+Variable（Dart）
+=================
+
+* :ref:`The common<spwml>` variable.
+* :ref:`Parent<text>` variable.
+* [elParams] : Parameters related to display magnification, etc.
+
+----
+
+Parameters
+======================
+
+* :ref:`The common<spwml>` parameters.
+* :ref:`Parent<text>` parameters. However, isSelectable is invalid.
+* baselineCorrection(double). Position correction value. If set, the value will be added to the y coordinate.
+
+----
+
+Super Class
+================
+
+:ref:`text`

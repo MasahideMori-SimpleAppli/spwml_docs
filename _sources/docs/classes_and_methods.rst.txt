@@ -24,12 +24,14 @@ Text
 ==================
 
 Default
---------------
+----------------
 * :ref:`text<text>`
 * :ref:`menu (Non mergin text) <text>`
 * :ref:`href <href>`
 * :ref:`ruby (The ruby-text) <ruby>`
 * :ref:`tf (textField) <textField>`
+* :ref:`superscript<super_and_subscript>`
+* :ref:`subscript<super_and_subscript>`
 
 Material V3
 --------------

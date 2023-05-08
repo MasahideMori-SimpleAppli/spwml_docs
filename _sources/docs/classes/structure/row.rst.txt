@@ -48,8 +48,9 @@ Parameters
 
 * :ref:`The common<spwml>` parameters.
 * :ref:`Parent<multi_child>` parameters.
-* vAlign (String). Vertical alignment: left, start, center, right, end, top, or bottom.
-* hAlign (String). Horizontal alignment, which can be left, start, center, right, end, top, or bottom.
+* vAlign (String). Vertical alignment: left, start, center, right, end, top, bottom, baseline or stretch.
+* hAlign (String). Horizontal alignment, which can be left, start. center, right, end, top, bottom, spaceAround, spaceEvenly or spaceBetween.
+* baselineType (String?). Specify alphabetic or ideographic. Required if vAlign is baseline, and if null automatically specifies alphabetic.
 
 ----
 

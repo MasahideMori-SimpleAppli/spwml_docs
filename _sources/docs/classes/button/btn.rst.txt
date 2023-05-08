@@ -65,6 +65,16 @@ Set button callback
    
    void setBtnCallback(void Function()? callback)
 
+
+Disable
+-------------------
+
+Disable the button. the callback will be null.
+
+.. code-block:: none
+   
+   void setDisabled()
+
 ----
 
 Variable（Dart）
