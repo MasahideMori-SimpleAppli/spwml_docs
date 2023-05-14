@@ -51,6 +51,7 @@ Parameters
 * :ref:`The common<spwml>` parameters.
 * :ref:`Parent<text>` parameters. However, isSelectable is invalid.
 * baselineCorrection(double). Position correction value. If set, the value will be added to the y coordinate.
+* mag(double). Magnification of font size. The default is 0.6, and 1.0 is the same size as the normal font.
 
 ----
 

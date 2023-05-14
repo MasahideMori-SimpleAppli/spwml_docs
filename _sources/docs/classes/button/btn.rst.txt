@@ -91,7 +91,7 @@ Parameters
 
 * :ref:`common<spwml>` parameters. Parameters related to borders work differently from other elements.
 * :ref:`parent<single_child_text>` parameters.
-* type (String). Specify the type of button as one of text, outlined, elevated, icon, block. block is a special button whose child element responds to taps.
+* type (String). Specify the type of button as one of text, outlined, elevated, filled, filledTonal, icon, iconFilled, iconFilledTonal, iconOutlined or block. block is a special button whose child element responds to taps.
 * iconNum (String).  Set icon type by `codePoint <https://api.flutter.dev/flutter/material/Icons-class.html>`__ .
 * iconSize (double). 
 * iconColor (String).  :ref:`The color system<color_system>` .

@@ -15,13 +15,13 @@ The specifications of SpWML are as follows. Please consider this specification w
 - stack : A container whose contents overlap in the z-axis direction. Child elements are laid out in order, with the first one at the bottom and one above the other.
 - wrap : A container that automatically aligns child elements inside according to the width of the screen. It is like a so-called card view, and child elements that fit within its own width are automatically placed on one line, and elements that exceed the width are automatically placed on the next line.
 
-# Of the elements that can be set to type, those related to user actions are called buttons.
-## normal button
+# Normal button. Of the elements that can be set to type, those related to user actions are called buttons.
 - btn : A normal button, you can change the appearance by setting the keyword type in the parameter. Note that the type here refers to the subtype, not the element. The button text is assigned the content text.
 ## Set button type
 - (btn) : no type setting. It becomes a text-only button.
 - (btn, type:outlined) : Button with outline.
 - (btn, type:elevated) : 3D button.
+
 # Other buttons
 - switchBtn : Button for switch to set ON or OFF. It cannot have child elements.
 - checkbox : A checkbox with multiple child elements, each of which is a multi-select selection item.
