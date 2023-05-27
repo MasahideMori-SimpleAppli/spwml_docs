@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>ProgressIndicatorElement &#8212; SpWML Docs  documentation</title>
+    <title>CircleAvatarElement &#8212; SpWML Docs  documentation</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/alabaster.css" />
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
@@ -33,28 +33,27 @@
 
           <div class="body" role="main">
             
-  <section id="progressindicatorelement">
-<span id="progressindicator"></span><h1>ProgressIndicatorElement<a class="headerlink" href="#progressindicatorelement" title="Permalink to this heading">¶</a></h1>
+  <section id="circleavatarelement">
+<span id="circleavatar"></span><h1>CircleAvatarElement<a class="headerlink" href="#circleavatarelement" title="Permalink to this heading">¶</a></h1>
 <section id="how-to-write-by-spwml">
 <h2>How to write by SpWML<a class="headerlink" href="#how-to-write-by-spwml" title="Permalink to this heading">¶</a></h2>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(progressIndicator)
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(circleAvatar, color:red)
+// Show initials
++(menu)M
 </pre></div>
 </div>
 </section>
 <hr class="docutils" />
 <section id="summary">
 <h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">¶</a></h2>
-<p>A block in which a progress indicator can be placed that has no child blocks.</p>
+<p>A block that can surround its child blocks with a circular viewing area.</p>
 </section>
 <hr class="docutils" />
 <section id="functions-dart">
 <h2>Functions (Dart)<a class="headerlink" href="#functions-dart" title="Permalink to this heading">¶</a></h2>
-<section id="setting-the-current-progress">
-<h3>Setting the current progress<a class="headerlink" href="#setting-the-current-progress" title="Permalink to this heading">¶</a></h3>
-<p>You can set the progress as a value between 0.0 and 1.0. If you give null, it will be in loading state.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setValue(double? v)
-</pre></div>
-</div>
+<section id="child-block-control">
+<h3>Child block control<a class="headerlink" href="#child-block-control" title="Permalink to this heading">¶</a></h3>
+<p><a class="reference internal" href="../super/single_child.html#single-child"><span class="std std-ref">Parent class</span></a> functions.</p>
 </section>
 </section>
 <hr class="docutils" />
@@ -62,7 +61,8 @@
 <h2>Variable（Dart）<a class="headerlink" href="#variable-dart" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">The common</span></a> variable.</p></li>
-<li><p>[elParams] : This parameter has <a class="reference external" href="https://api.flutter.dev/flutter/material/CircularProgressIndicator-class.html">CircularProgressIndicator class</a> and <a class="reference external" href="https://api.flutter.dev/flutter/material/LinearProgressIndicator-class.html">LinearProgressIndicator class</a> parameters.</p></li>
+<li><p><a class="reference internal" href="../super/single_child.html#single-child"><span class="std std-ref">Parent</span></a> variable.</p></li>
+<li><p>[elParams] : A variable with parameters equivalent to Flutter <a class="reference external" href="https://api.flutter.dev/flutter/material/CircleAvatar-class.html">CircleAvatar class</a> .</p></li>
 </ul>
 </section>
 <hr class="docutils" />
@@ -70,16 +70,16 @@
 <h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">The common</span></a> parameters.</p></li>
-<li><p>type (String). Specifies the type of loading. Specify circular or linear.</p></li>
-<li><p>value (double?). You can set the progress as a value between 0.0 and 1.0. If you give null, it will be in loading state.</p></li>
-<li><p>indicatorColor (String). Indicator color setting. <a class="reference internal" href="../../ref/color_system.html#color-system"><span class="std std-ref">The color system</span></a> .</p></li>
-<li><p>indicatorBGColor (String). Indicator background color setting. <a class="reference internal" href="../../ref/color_system.html#color-system"><span class="std std-ref">The color system</span></a> .</p></li>
+<li><p><a class="reference internal" href="../super/single_child.html#single-child"><span class="std std-ref">Parent</span></a> parameters.</p></li>
+<li><p>color (String). Set backgound color of circle. <a class="reference internal" href="../../ref/color_system.html#color-system"><span class="std std-ref">The color system</span></a> .</p></li>
+<li><p>fgColor (String). Set foreground color. <a class="reference internal" href="../../ref/color_system.html#color-system"><span class="std std-ref">The color system</span></a> .</p></li>
+<li><p>radius (double). Set radius.</p></li>
 </ul>
 </section>
 <hr class="docutils" />
 <section id="super-class">
 <h2>Super Class<a class="headerlink" href="#super-class" title="Permalink to this heading">¶</a></h2>
-<p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">SpWMLElement</span></a></p>
+<p><a class="reference internal" href="../super/single_child.html#single-child"><span class="std std-ref">SingleChildElement</span></a></p>
 </section>
 </section>
 
@@ -148,7 +148,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="../../../_sources/docs/classes/other/progress_indicator.rst.txt"
+      <a href="../../../_sources/docs/classes/structure/circleAvatar.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

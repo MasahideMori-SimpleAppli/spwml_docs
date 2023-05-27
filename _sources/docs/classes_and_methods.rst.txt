@@ -19,6 +19,8 @@ Container
 * :ref:`tr (A container for rows inside a table) <tableRow>`
 * :ref:`table (A container with a spreadsheet inside) <table>`
 * :ref:`wrap (A container whose interior is laid out in the Z direction from the upper left) <wrap>`
+* :ref:`circleAvatar (Circular viewing area) <circleAvatar>`
+* :ref:`badge (Notifications on the icon) <badge>`
 
 Text
 ==================
@@ -30,8 +32,8 @@ Default
 * :ref:`href <href>`
 * :ref:`ruby (The ruby-text) <ruby>`
 * :ref:`tf (textField) <textField>`
-* :ref:`superscript<super_and_subscript>`
-* :ref:`subscript<super_and_subscript>`
+* :ref:`superscript<superAndSubscript>`
+* :ref:`subscript<superAndSubscript>`
 
 Material V3
 --------------
@@ -74,6 +76,7 @@ Buttons (elements that respond to touch interactions)
 * :ref:`popupMenuBtn <popupMenuBtn>`
 * :ref:`radioBtn (Single selection) <radioBtn>`
 * :ref:`switchBtn <switchBtn>`
+* :ref:`segmentedBtn <segmentedBtn>`
 
 Others
 ==================
@@ -81,4 +84,5 @@ Others
 * :ref:`img (image) <img>`
 * :ref:`line (Horizontal line) <line>`
 * :ref:`vline (Vertical line) <vline>`
-* :ref:`progressIndicator <progress_indicator>`
+* :ref:`progressIndicator <progressIndicator>`
+* :ref:`slider <slider>`

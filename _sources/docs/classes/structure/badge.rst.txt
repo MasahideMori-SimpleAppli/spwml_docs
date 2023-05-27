@@ -1,0 +1,81 @@
+:orphan:
+.. _badge:
+
+======================================
+BadgeElement
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (badge, label:999+)
+   +(icon, iconNum:0xe22a)
+
+----
+
+Summary
+===============
+
+This is a block that can give notification badges to child blocks.
+
+----
+
+Functions (Dart)
+===================
+
+Child block control
+-----------------------
+
+:ref:`Parent class<single_child_text>` functions.
+
+
+Label setting
+-------------------
+
+Set labels. Labels are typically text widgets.
+
+.. code-block:: none
+   
+   void setLabel(Widget label)
+
+
+Offset setting
+-------------------
+
+Set label offset.
+
+.. code-block:: none
+   
+   void setOffset(Offset offset) 
+
+----
+
+Variable（Dart）
+=================
+
+* :ref:`The common<spwml>` variable.
+* :ref:`Parent<single_child_text>` variable.
+* [elParams] : A variable with parameters equivalent to Flutter `Badge class <https://api.flutter.dev/flutter/material/Badge-class.html>`__ .
+
+----
+
+Parameters
+====================
+
+* :ref:`The common<spwml>` parameters.
+* :ref:`Parent<single_child_text>` parameters.
+* color (String). Set badge color. :ref:`The color system<color_system>` .
+* textColor (String). Set badge text color. :ref:`The color system<color_system>` .
+* label (String). Specifies the label to display as a badge. If not specified, a solid color dot will be displayed.
+* smallSize (double). The size when displayed as a solid color dot.
+* offsetX (double). Use this when you want to shift the display position of the X coordinate of the label. Negative values are also allowed.
+* offsetY (double). Use this when you want to shift the display position of the Y coordinate of the label. Negative values are also allowed.
+
+----
+
+Super Class
+==============
+
+:ref:`single_child_text`

@@ -1,0 +1,79 @@
+:orphan:
+.. _segmentedBtn:
+
+======================================
+SegmentedBtnElement
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (segmentedBtn)
+   +(btn)button1
+   +(btn)button2
+   +(btn)button3
+
+----
+
+Summary
+===============
+
+A block that allows you to create buttons separated by fields.
+
+----
+
+Functions (Dart)
+===================
+
+Child block control
+-----------------------
+
+:ref:`Parent class<single_child>` functions.
+
+Initial value setting
+------------------------
+
+Set the initial value.
+To retain the value when updating the screen,
+retain the value in a higher widget, etc., and call this function.
+
+.. code-block:: none
+   
+   void setInitialValues(Set<int> v)
+
+Callback setting
+-------------------
+
+Set callback when selection.
+
+.. code-block:: none
+   
+   void setCallback(void Function(Set<int>)? onSelectionChanged)
+
+----
+
+Variable（Dart）
+=================
+
+* :ref:`The common<spwml>` variable.
+* :ref:`Parent<multi_child>` variable.
+* [elParams] : A variable with parameters equivalent to Flutter `SegmentedButton class <https://api.flutter.dev/flutter/material/SegmentedButton-class.html>`__ .
+
+----
+
+Parameters
+====================
+
+* :ref:`The common<spwml>` parameters.
+* :ref:`Parent<multi_child>` parameters.
+* isMultiSelection (bool). If true, multiple selections are allowed. Default is false.
+* allowEmpty (bool). If true, unselected states are allowed. Default is false.
+
+----
+
+Super Class
+==============
+
+:ref:`multi_child`

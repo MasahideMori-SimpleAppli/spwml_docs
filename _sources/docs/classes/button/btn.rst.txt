@@ -75,6 +75,17 @@ Disable the button. the callback will be null.
    
    void setDisabled()
 
+
+Change color
+-------------------
+
+Change the button color. 
+You can also directly edit the button's internal parameters (elParams) if you need more complex operations.
+
+.. code-block:: none
+   
+   void setBtnColor(Color color)
+
 ----
 
 Variable（Dart）

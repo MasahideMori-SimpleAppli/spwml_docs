@@ -1,5 +1,5 @@
 :orphan:
-.. _progress_indicator:
+.. _progressIndicator:
 
 ======================================
 ProgressIndicatorElement

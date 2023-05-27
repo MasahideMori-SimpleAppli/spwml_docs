@@ -72,7 +72,8 @@ If the size of the inner child block exceeds the size of the parent block, it wi
 <li><p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">The common</span></a> parameters.</p></li>
 <li><p><a class="reference internal" href="../super/single_child.html#single-child"><span class="std std-ref">Parent</span></a> parameters.</p></li>
 <li><p>isPrimary (bool). Specifies whether this is the primary scroll view.If there are multiple scrolls, the second and subsequent views must be set to false.</p></li>
-<li><p>axis (String). Specifies the direction of scrolling, either vertical or horizontal.</p></li>
+<li><p>axis (String). Specifies the direction of scrolling, either vertical or horizontal. If horizontal is specified and scrollBehavior is not set, scrollBehavior is automatically set to touchAndMouse.</p></li>
+<li><p>scrollBehavior (String?). Setting of scroll permission. Default is null. Specify one of touch, touchAndMouse, touchAndMouseAndTrackpad, nonEraser, all.</p></li>
 </ul>
 </section>
 <hr class="docutils" />
@@ -102,6 +103,7 @@ If the size of the inner child block exceeds the size of the parent block, it wi
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../introduction.html">What is SpWML?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../try_editor.html">Try SpWML Editor!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ai_prompt.html">Let AI generate the design</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../install.html">How to install SpWML</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../coding.html">Working with SpWML from code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes_and_methods.html">Classes and methods</a></li>

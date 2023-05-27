@@ -1,0 +1,73 @@
+:orphan:
+.. _slider:
+
+======================================
+SliderElement
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (slider)
+
+----
+
+Summary
+===============
+
+A block that can place a slider without child blocks.
+
+----
+
+Functions (Dart)
+===================
+
+Value setting
+-------------------
+
+Set slider value
+
+.. code-block:: none
+   
+   void setValue(double v)
+
+
+Calback setting
+-------------------
+
+Set callback when slider value changed.
+
+.. code-block:: none
+   
+   void setOnChanged(void Function(double)? onChanged)
+
+----
+
+Variable（Dart）
+=================
+
+* :ref:`The common<spwml>` variable.
+* [elParams] : A variable with parameters equivalent to Flutter `Slider class <https://api.flutter.dev/flutter/material/Slider-class.html>`__ .
+
+----
+
+Parameters
+====================
+
+* :ref:`The common<spwml>` parameters.
+* value (double). The slider initial value.
+* min (double). Slider minimum value.
+* max (double). Slider maximum value.
+* label (String?). Specifies a label on the slider. If not set, the current slider value is automatically assigned as the label by default.
+* activeColor (String). Specifies the color below the current value of the slider. :ref:`The color system<color_system>` .
+* inactiveColor (String). Specifies the color of the portion above the current value of the slider. :ref:`The color system<color_system>` .
+* divisions (int). Specifies the number of division points for the slider.
+
+----
+
+Super Class
+==============
+
+:ref:`spwml`
