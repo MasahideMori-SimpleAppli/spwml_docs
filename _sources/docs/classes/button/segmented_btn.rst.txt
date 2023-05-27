@@ -69,7 +69,7 @@ Parameters
 * :ref:`The common<spwml>` parameters.
 * :ref:`Parent<multi_child>` parameters.
 * isMultiSelection (bool). If true, multiple selections are allowed. Default is false.
-* allowEmpty (bool). If true, unselected states are allowed. Default is false.
+* allowEmpty (bool). If true, unselected states are allowed. Default is true.
 
 ----
 
