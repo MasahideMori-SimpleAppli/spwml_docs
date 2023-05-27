@@ -1,5 +1,5 @@
 :orphan:
-.. _super_and_subscript:
+.. _superAndSubscript:
 
 ======================================
 SuperAndSubscriptElement
