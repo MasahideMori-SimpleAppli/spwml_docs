@@ -59,6 +59,15 @@ Also, By default text is the same parameter as body1, and menu is almost the sam
 Functions (Dart)
 ===================
 
+Get text
+-----------------
+
+Get content text.
+
+.. code-block:: none
+   
+   String getContentText()
+
 Change text
 -----------------
 
@@ -66,7 +75,7 @@ Change content text.
 
 .. code-block:: none
    
-   setText(String newText)
+   setContentText(String newText)
 
 Get Style
 --------------------

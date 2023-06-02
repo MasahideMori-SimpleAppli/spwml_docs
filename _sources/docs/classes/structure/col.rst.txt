@@ -50,6 +50,7 @@ Parameters
 * :ref:`Parent<multi_child>` variable.
 * vAlign (String). Vertical alignment: left, start, center, right, end, top, bottom, spaceAround, spaceEvenly or spaceBetween.
 * hAlign (String). Horizontal alignment, which can be left, start, center, right, end, top, bottom or stretch.
+* mainAxisSize (String).  Set min or max. Set whether to maximize the main axis or minimize to fit the child view, the initial value is max.
 
 ----
 

@@ -64,6 +64,17 @@ Sets the background color. Calling this will automatically update the box decora
     void setBGColor(Color c)
 
 
+Get ID or SID
+----------------------
+
+Get method for ID or SID. Returns null if not set.
+
+.. code-block:: none
+   
+    int? getID()
+    String? getSID()
+
+
 ----
 
 Variable（Dart）

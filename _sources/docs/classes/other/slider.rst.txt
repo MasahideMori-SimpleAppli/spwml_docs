@@ -64,6 +64,8 @@ Parameters
 * activeColor (String). Specifies the color below the current value of the slider. :ref:`The color system<color_system>` .
 * inactiveColor (String). Specifies the color of the portion above the current value of the slider. :ref:`The color system<color_system>` .
 * divisions (int). Specifies the number of division points for the slider.
+* useAutoLabel (bool). If true, show the current value on the slider.
+* isIntValue (bool). If true, the value of the label displayed when useAutoLabel is enabled is cast to an integer before being displayed.
 
 ----
 
