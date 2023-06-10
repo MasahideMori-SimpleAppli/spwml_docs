@@ -48,8 +48,8 @@ Parameters
 
 * :ref:`The common<spwml>` parameters.
 * :ref:`Parent<multi_child>` parameters.
-* vAlign (String). Vertical alignment: left, start, center, right, end, top, bottom, baseline or stretch.
-* hAlign (String). Horizontal alignment, which can be left, start. center, right, end, top, bottom, spaceAround, spaceEvenly or spaceBetween.
+* vAlign (String). Vertical alignment: start, center, top, bottom, end, baseline or stretch.
+* hAlign (String). Horizontal alignment, which can be left, start, center, right, end, spaceAround, spaceEvenly or spaceBetween.
 * baselineType (String?). Specify alphabetic or ideographic. Required if vAlign is baseline, and if null automatically specifies alphabetic.
 * mainAxisSize (String).  Set min or max. Set whether to maximize the main axis or minimize to fit the child view, the initial value is max.
 
