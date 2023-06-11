@@ -4,6 +4,9 @@ The specifications of SpWML are as follows. Please consider this specification w
 # Basic structure of SpWML
 (type, parameter1 : value1, parameter2 : value2, ...) content text
 
+# Escape sequence of SpWML
+If the parameter value contains spaces, a backslash is required before each space.
+
 # Among the elements that can be set to type, an element that can store child elements is called a container. There are two types of containers.
 ## Single element container. Can have only one child element.
 - block : a container that can later be replaced with Flutter's widgets. It can also be used to set the background color of child elements.
