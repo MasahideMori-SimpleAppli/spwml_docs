@@ -77,8 +77,8 @@ Containers can have child elements, and child elements are indented with a + mar
 
 # element size
 A setting for the size of the element that can be set for all elements.
-- w : width. Units are relative pixels. Specify Infinity to maximize to the same width as the parent element. auto cannot be used and must always be numeric.
-- h : Height. Units are relative pixels. Specify Infinity to maximize to the same height as the parent element. auto cannot be used and must always be numeric.
+- w : width. Units are relative pixels. Specify Infinity to maximize to the same width as the parent element. % and auto are not allowed and must always be numeric.
+- h : Height. Units are relative pixels. Specify Infinity to maximize to the same height as the parent element. % and auto are not allowed and must always be numeric.
 
 # Ratio of elements in screen
 If set, the size of col or row's inner child elements can be set proportionally.
