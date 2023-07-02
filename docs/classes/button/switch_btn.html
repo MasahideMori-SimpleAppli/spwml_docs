@@ -52,19 +52,27 @@ An ON/OFF switch is placed where this block is placed.</p>
 <hr class="docutils" />
 <section id="functions-dart">
 <h2>Functions (Dart)<a class="headerlink" href="#functions-dart" title="Permalink to this heading">¶</a></h2>
+<section id="setting-the-state-management-manager">
+<h3>Setting the state management manager<a class="headerlink" href="#setting-the-state-management-manager" title="Permalink to this heading">¶</a></h3>
+<p>Set the state management class.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setManager(FlagManager m)
+</pre></div>
+</div>
+</section>
+<section id="initial-value-setting">
+<h3>Initial value setting<a class="headerlink" href="#initial-value-setting" title="Permalink to this heading">¶</a></h3>
+<p>Sets the switch value.
+Screen updates are required and arguments must be managed within the parent widget.
+Invalid if the manager class is not set.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setValue(bool v)
+</pre></div>
+</div>
+</section>
 <section id="setcallback">
 <h3>setCallback<a class="headerlink" href="#setcallback" title="Permalink to this heading">¶</a></h3>
 <p>Set a callback when the switch is tapped.
 The button state is passed as an argument to the callback function.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setCallback(void Function(bool btnEnabled)? callback)
-</pre></div>
-</div>
-</section>
-<section id="setswitchvalue">
-<h3>setSwitchValue<a class="headerlink" href="#setswitchvalue" title="Permalink to this heading">¶</a></h3>
-<p>Sets the switch value.
-Screen updates are required and arguments must be managed within the Parent widget.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setSwitchValue(bool v)
 </pre></div>
 </div>
 </section>

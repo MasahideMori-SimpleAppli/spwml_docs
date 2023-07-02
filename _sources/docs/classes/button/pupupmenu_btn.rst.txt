@@ -32,6 +32,26 @@ Child block control
 
 :ref:`Parent class <multi_child>` functions.
 
+Setting the state management manager
+---------------------------------------
+
+Set the state management class.
+
+.. code-block:: none
+   
+   void setManager(IndexManager m)
+
+Initial value setting
+-----------------------
+
+Set the initial value. To keep the value on screen refresh, use
+Hold the value in a higher widget, etc., and call it.
+Invalid if the manager class is not set.
+
+.. code-block:: none
+   
+   setValue(int? v)
+
 Callback setting
 -------------------
 

@@ -27,6 +27,26 @@ An ON/OFF switch is placed where this block is placed.
 Functions (Dart)
 ===================
 
+Setting the state management manager
+-------------------------------------
+
+Set the state management class.
+
+.. code-block:: none
+   
+   void setManager(FlagManager m)
+
+Initial value setting
+-----------------------
+
+Sets the switch value.
+Screen updates are required and arguments must be managed within the parent widget.
+Invalid if the manager class is not set.
+
+.. code-block:: none
+   
+   void setValue(bool v)
+
 setCallback
 ---------------------
 
@@ -36,16 +56,6 @@ The button state is passed as an argument to the callback function.
 .. code-block:: none
    
    void setCallback(void Function(bool btnEnabled)? callback)
-
-setSwitchValue
----------------------
-
-Sets the switch value.
-Screen updates are required and arguments must be managed within the Parent widget.
-
-.. code-block:: none
-   
-   void setSwitchValue(bool v)
 
 ----
 

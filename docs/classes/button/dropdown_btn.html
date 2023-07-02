@@ -56,12 +56,20 @@
 <h3>Child block control<a class="headerlink" href="#child-block-control" title="Permalink to this heading">¶</a></h3>
 <p><a class="reference internal" href="../super/multi_child.html#multi-child"><span class="std std-ref">Parent class</span></a> functions.</p>
 </section>
+<section id="setting-the-state-management-manager">
+<h3>Setting the state management manager<a class="headerlink" href="#setting-the-state-management-manager" title="Permalink to this heading">¶</a></h3>
+<p>Set the state management class.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setManager(IndexManager m)
+</pre></div>
+</div>
+</section>
 <section id="initial-value-setting">
 <h3>Initial value setting<a class="headerlink" href="#initial-value-setting" title="Permalink to this heading">¶</a></h3>
-<p>Set the initial value.To keep the value when updating the screen, use
-Hold the value in a parent widget, etc., and call it.
-It will be in the state where the index that counting from 0 given as an argument is selected.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>setInitialIndex(int? index)
+<p>Set the initial value. To keep the value on screen refresh, use
+Hold the value in a higher widget, etc., and call it.
+It will be in the state where the index number counting from 0 given as an argument is selected.
+Invalid if the manager class is not set.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>setValue(int? v)
 </pre></div>
 </div>
 </section>

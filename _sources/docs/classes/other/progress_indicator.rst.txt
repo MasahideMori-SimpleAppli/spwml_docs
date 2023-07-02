@@ -24,11 +24,21 @@ A block in which a progress indicator can be placed that has no child blocks.
 Functions (Dart)
 ===================
 
+Setting the state management manager
+--------------------------------------
+
+Set the state management class.
+
+.. code-block:: none
+   
+    void setManager(ValueManager m)
+
 
 Setting the current progress
 ------------------------------
 
 You can set the progress as a value between 0.0 and 1.0. If you give null, it will be in loading state.
+Invalid if the manager class is not set.
 
 .. code-block:: none
    
@@ -50,7 +60,6 @@ Parameters
 
 * :ref:`The common<spwml>` parameters.
 * type (String). Specifies the type of loading. Specify circular or linear.
-* value (double?). You can set the progress as a value between 0.0 and 1.0. If you give null, it will be in loading state.
 * indicatorColor (String). Indicator color setting. :ref:`The color system<color_system>` .
 * indicatorBGColor (String). Indicator background color setting. :ref:`The color system<color_system>` .
 

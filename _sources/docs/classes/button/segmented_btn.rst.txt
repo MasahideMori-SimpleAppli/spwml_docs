@@ -32,16 +32,25 @@ Child block control
 
 :ref:`Parent class<single_child>` functions.
 
-Initial value setting
-------------------------
+Setting the state management manager
+--------------------------------------
 
-Set the initial value.
-To retain the value when updating the screen,
-retain the value in a higher widget, etc., and call this function.
+Set the state management class.
 
 .. code-block:: none
    
-   void setInitialValues(Set<int> v)
+   void setManager(MultiIndexManager m)
+
+Initial value setting
+-----------------------
+
+Set the initial value. To keep the value on screen refresh, use
+Hold the value in a higher widget, etc., and call it.
+Invalid if the manager class is not set.
+
+.. code-block:: none
+   
+   void setValue(Set<int> v)
 
 Callback setting
 -------------------

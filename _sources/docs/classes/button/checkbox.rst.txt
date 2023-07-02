@@ -37,15 +37,26 @@ Child block control
 
 :ref:`Parent class <multi_child>` functions.
 
-Initial value setting
--------------------------
+Setting the state management manager
+---------------------------------------
 
-Set the initial value.To keep the value when updating the screen, use
-Hold the value in the parent widget, etc., and call it.
+Set the state management class.
 
 .. code-block:: none
    
-   void setInitialValues(List<bool> v)
+   void setManager(MultiFlagManager m)
+
+
+Initial value setting
+-----------------------
+
+Set the initial value. To keep the value on screen refresh, use
+Hold the value in a higher widget, etc., and call it.
+Invalid if the manager class is not set.
+
+.. code-block:: none
+   
+   void setValue(List<bool> v)
 
 Callback setting
 -------------------

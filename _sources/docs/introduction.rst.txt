@@ -26,6 +26,7 @@ Therefore, it is particularly suitable for cases such as:
 * New app development of ventures and startups with fast development speed and frequent updates.
 * MVP prototyping and experimental projects.
 * Development of business system.
+* Development of programs using AI.
 
 By using SpWML, you can not only build quickly, but also make it difficult to create spaghetti code.
 By limiting the degree of freedom, it is less likely that the code will become obscure after the person in charge takes over.
@@ -37,3 +38,4 @@ If you're thinking of building a completely compatible and static layout, you sh
 There are other projects trying to do this with XML and markdown.
 
 SpWML is being developed in the direction of "making it easier to write a practical layout with a small amount of code".
+Also, recently (as of 2023), it has become possible to create programs from AI, so we are also optimizing for such usage.

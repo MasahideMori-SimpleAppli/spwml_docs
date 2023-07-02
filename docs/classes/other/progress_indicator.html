@@ -49,9 +49,17 @@
 <hr class="docutils" />
 <section id="functions-dart">
 <h2>Functions (Dart)<a class="headerlink" href="#functions-dart" title="Permalink to this heading">¶</a></h2>
+<section id="setting-the-state-management-manager">
+<h3>Setting the state management manager<a class="headerlink" href="#setting-the-state-management-manager" title="Permalink to this heading">¶</a></h3>
+<p>Set the state management class.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setManager(ValueManager m)
+</pre></div>
+</div>
+</section>
 <section id="setting-the-current-progress">
 <h3>Setting the current progress<a class="headerlink" href="#setting-the-current-progress" title="Permalink to this heading">¶</a></h3>
-<p>You can set the progress as a value between 0.0 and 1.0. If you give null, it will be in loading state.</p>
+<p>You can set the progress as a value between 0.0 and 1.0. If you give null, it will be in loading state.
+Invalid if the manager class is not set.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setValue(double? v)
 </pre></div>
 </div>
@@ -71,7 +79,6 @@
 <ul class="simple">
 <li><p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">The common</span></a> parameters.</p></li>
 <li><p>type (String). Specifies the type of loading. Specify circular or linear.</p></li>
-<li><p>value (double?). You can set the progress as a value between 0.0 and 1.0. If you give null, it will be in loading state.</p></li>
 <li><p>indicatorColor (String). Indicator color setting. <a class="reference internal" href="../../ref/color_system.html#color-system"><span class="std std-ref">The color system</span></a> .</p></li>
 <li><p>indicatorBGColor (String). Indicator background color setting. <a class="reference internal" href="../../ref/color_system.html#color-system"><span class="std std-ref">The color system</span></a> .</p></li>
 </ul>

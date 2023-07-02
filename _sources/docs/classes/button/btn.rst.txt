@@ -63,7 +63,7 @@ Set button callback
 
 .. code-block:: none
    
-   void setBtnCallback(void Function()? callback)
+   void setCallback(void Function()? callback)
 
 
 Disable

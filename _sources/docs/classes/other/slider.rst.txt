@@ -24,10 +24,21 @@ A block that can place a slider without child blocks.
 Functions (Dart)
 ===================
 
-Value setting
+Setting the state management manager
+---------------------------------------
+
+Set the state management class.
+
+.. code-block:: none
+   
+   void setManager(ValueManager m)
+
+
+value setting
 -------------------
 
-Set slider value
+Sets the slider value.
+Invalid if the manager class is not set.
 
 .. code-block:: none
    
@@ -57,8 +68,7 @@ Parameters
 ====================
 
 * :ref:`The common<spwml>` parameters.
-* value (double). The slider initial value.
-* min (double). Slider minimum value.
+* min (double). Slider minimum value. If no value is set in the manager class, this value will be used as the initial value of the slider.
 * max (double). Slider maximum value.
 * label (String?). Specifies a label on the slider. If not set, the current slider value is automatically assigned as the label by default.
 * activeColor (String). Specifies the color below the current value of the slider. :ref:`The color system<color_system>` .

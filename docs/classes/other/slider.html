@@ -49,9 +49,17 @@
 <hr class="docutils" />
 <section id="functions-dart">
 <h2>Functions (Dart)<a class="headerlink" href="#functions-dart" title="Permalink to this heading">¶</a></h2>
+<section id="setting-the-state-management-manager">
+<h3>Setting the state management manager<a class="headerlink" href="#setting-the-state-management-manager" title="Permalink to this heading">¶</a></h3>
+<p>Set the state management class.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setManager(ValueManager m)
+</pre></div>
+</div>
+</section>
 <section id="value-setting">
-<h3>Value setting<a class="headerlink" href="#value-setting" title="Permalink to this heading">¶</a></h3>
-<p>Set slider value</p>
+<h3>value setting<a class="headerlink" href="#value-setting" title="Permalink to this heading">¶</a></h3>
+<p>Sets the slider value.
+Invalid if the manager class is not set.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setValue(double v)
 </pre></div>
 </div>
@@ -77,8 +85,7 @@
 <h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">The common</span></a> parameters.</p></li>
-<li><p>value (double). The slider initial value.</p></li>
-<li><p>min (double). Slider minimum value.</p></li>
+<li><p>min (double). Slider minimum value. If no value is set in the manager class, this value will be used as the initial value of the slider.</p></li>
 <li><p>max (double). Slider maximum value.</p></li>
 <li><p>label (String?). Specifies a label on the slider. If not set, the current slider value is automatically assigned as the label by default.</p></li>
 <li><p>activeColor (String). Specifies the color below the current value of the slider. <a class="reference internal" href="../../ref/color_system.html#color-system"><span class="std std-ref">The color system</span></a> .</p></li>

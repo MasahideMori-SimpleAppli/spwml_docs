@@ -8,31 +8,23 @@ Basic operation
 It will be easier to understand if you check the sample below.
 https://pub.dev/packages/simple_widget_markup/example
 
-One of the SpWML parameters contain above sample is "id".
-For example, a block with "id:1" can be retrieved from the Dart code as follows.
+One of the SpWML parameters contain above sample is "sid".
+For example, a block with "sid:deleteButton" can be retrieved from the Dart code as follows.
 
 .. code-block:: none
    
-   BtnElement btnElement = builder.getElementByID(1) as BtnElement;
+   BtnElement delBtn = builder.getElement("deleteButton") as BtnElement;
 
 See :ref:`Classes and Methods <classes_and_methods>` to see what types there are and what parameters they have.
 The "BtnElement" part changes depending on what you want to get. This is mentioned on the page above.
 Basically, except for some abbreviations, the class is named "SpWML type name + Element".
-
-Also, by using the sid parameter introduced from version 10.1.0, you can write easier-to-understand code.
-
-.. code-block:: none
-   
-   BtnElement delBtn = builder.getElementBySID("deleteButton") as BtnElement;
-
-Maintainability is high because it can be called using the sid set on SpWML. I recommend using sid.
 
 Each class has almost the same parameters as similar classes in Flutter, and by rewriting the class parameters as follows,
 You can control almost everything from code.
 
 .. code-block:: none
    
-   BtnElement runBtn = builder.getElementByID(1) as BtnElement;
+   BtnElement runBtn = builder.getElement("runButton") as BtnElement;
    runBtn.elParams.p.normalBtnParams?.style = const ButtonStyle();
    runBtn.textParams.p.isSelectable = true;
 
@@ -47,6 +39,24 @@ If there is an implementation, please use it. It may be safer to operate.
 
 ----
 
+State management
+==================
+
+SpWML switched to state management using simple_managers after version 20.
+
+https://pub.dev/packages/simple_managers
+
+By giving SpWMLBlilder the required manager class in the layout, the state will be automatically managed.
+Each manager class included in simple_managers supports serialization.
+Easy to save and restore.
+
+.. code-block:: none
+
+   SpWMLBlilder b = SpWMLBlilder(layout);
+   b.setManager(the manager class you want to use);
+
+----
+
 Integration with Flutter widgets
 =================================
 
@@ -56,8 +66,7 @@ By using this, if the screen parts created by the designer with the design tool 
 .. code-block:: none
 
    SpWMLBuilder b = SpWMLBuilder(layout);
-   b.replaceID (Target block id, Widget);
+   b.replace (Target block sid, Widget);
    Widget compiledWidget = b.build(context);
 
 Use this when reusing existing code or embedding special screen parts that are difficult to write in a static language.
-If you use replaceSID instead of replaceID, you can also search and embed by sid.

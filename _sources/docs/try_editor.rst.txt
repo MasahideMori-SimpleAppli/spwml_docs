@@ -6,6 +6,7 @@ There is a simple editor written in SpWML, so please try various things.
 
 This is a simple build for test display,
 so I think the best way to use it is to paste code created with another code editor to test and fine-tune the UI.
+In addition, the SpWMLEditor has an automatic Dart code generation function that can automatically generate UI display code.
 
 https://simple-widget-markup-editor.web.app/
 
