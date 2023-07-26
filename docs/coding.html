@@ -89,6 +89,33 @@ Widget compiledWidget = b.build(context);
 </div>
 <p>Use this when reusing existing code or embedding special screen parts that are difficult to write in a static language.</p>
 </section>
+<hr class="docutils" />
+<section id="create-a-dialog-with-spwml">
+<h2>Create a dialog with SpWML<a class="headerlink" href="#create-a-dialog-with-spwml" title="Permalink to this heading">¶</a></h2>
+<p>SpWML can create dialogs as well as main screens.
+Added in version 21.0.0, SpWMLDialog makes it easy to create even complex dialogs.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>SpWMLBuilder b = SpWMLBuilder(layout);
+b.setManager(the manager class you want to use);
+showDialog(
+     context: context,
+     builder: (context) {
+       return SpWMLDialog(
+         b,
+         const Text(&#39;Dialog title&#39;),
+         320, // The dialog width
+         cancelBtnCallback: (close) {
+           close();
+         },
+         okBtnCallback: (close) {
+           close();
+         },
+       );
+     });
+</pre></div>
+</div>
+<p>You don’t need to create your own dialog class every time anymore.
+Even for dialogs with state, the state is automatically managed by the manager class.</p>
+</section>
 </section>
 
 
@@ -117,6 +144,7 @@ Widget compiledWidget = b.build(context);
 <li class="toctree-l2"><a class="reference internal" href="#basic-operation">Basic operation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#state-management">State management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#integration-with-flutter-widgets">Integration with Flutter widgets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-a-dialog-with-spwml">Create a dialog with SpWML</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="classes_and_methods.html">Classes and methods</a></li>

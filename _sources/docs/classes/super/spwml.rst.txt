@@ -64,16 +64,24 @@ Sets the background color. Calling this will automatically update the box decora
     void setBGColor(Color c)
 
 
-Get ID or SID
+Get SID
 ----------------------
 
-Get method for ID or SID. Returns null if not set.
+Get method for SID. Returns null if not set.
 
 .. code-block:: none
    
-    int? getID()
     String? getSID()
 
+
+Get class name
+----------------------
+
+Get the class name. For subclasses, you can get the name of the subclass.
+
+.. code-block:: none
+   
+    String getClassName()
 
 ----
 
@@ -94,7 +102,7 @@ Variable（Dart）
 Parameters
 ====================
 
-* sid(String). String ID specified by int. Used for specifying button callbacks and replacing child blocks.
+* sid(String). String ID specified by int. Used for specifying button callbacks and replacing child blocks. Setting the sid is mandatory for some subclasses.
 * text(String). The text content written within the block. In a text element, this content is displayed on the screen.
 * h(double). It can also be written as height, which is the height of this element specified in px. Specify Infinity to maximize to the same width as the parent element.
 * w(double). It can also be written as width, which is the width of this element specified in px. Specify Infinity to maximize to the same width as the parent element.

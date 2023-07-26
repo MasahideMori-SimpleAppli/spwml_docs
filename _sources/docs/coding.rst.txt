@@ -70,3 +70,34 @@ By using this, if the screen parts created by the designer with the design tool 
    Widget compiledWidget = b.build(context);
 
 Use this when reusing existing code or embedding special screen parts that are difficult to write in a static language.
+
+----
+
+Create a dialog with SpWML
+===================================
+
+SpWML can create dialogs as well as main screens.
+Added in version 21.0.0, SpWMLDialog makes it easy to create even complex dialogs.
+
+.. code-block:: none
+
+   SpWMLBuilder b = SpWMLBuilder(layout);
+   b.setManager(the manager class you want to use);
+   showDialog(
+        context: context,
+        builder: (context) {
+          return SpWMLDialog(
+            b,
+            const Text('Dialog title'),
+            320, // The dialog width
+            cancelBtnCallback: (close) {
+              close();
+            },
+            okBtnCallback: (close) {
+              close();
+            },
+          );
+        });
+   
+You don't need to create your own dialog class every time anymore.
+Even for dialogs with state, the state is automatically managed by the manager class.
