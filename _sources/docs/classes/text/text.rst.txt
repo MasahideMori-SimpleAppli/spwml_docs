@@ -2,7 +2,7 @@
 .. _text:
 
 ======================================
-TextElement
+text
 ======================================
 
 How to write by SpWML
@@ -51,69 +51,22 @@ Summary
 ===============
 
 A block that contains text elements without a child block.
+
 There are many variations in size and format.
+
 Also, By default text is the same parameter as body1, and menu is almost the same as body1, but with selection disabled and a different lineHeight.
 
-----
-
-Functions (Dart)
-===================
-
-Get text
------------------
-
-Get content text.
-
-.. code-block:: none
-   
-   String getContentText()
-
-Change text
------------------
-
-Change content text.
-
-.. code-block:: none
-   
-   setContentText(String newText)
-
-Get Style
---------------------
-
-Get the TextStyle set by SpWML.
-
-.. code-block:: none
-   
-   TextStyle getStyle()
-
-Get StrutStyleの取得
---------------------
-
-Get the StrutStyle set by SpWML.
-
-.. code-block:: none
-   
-   StrutStyle getStrutStyle()
-
-Get Align
---------------------
-
-Get the TextAlign set by SpWML.
-
-.. code-block:: none
-   
-   TextAlign getTextAlign()
+It has a variable with equivalent parameters of Flutter's `Text class <https://api.flutter.dev/flutter/widgets/Text-class.html>`__ and `SelectableText class <https://api.flutter.dev/flutter /material/SelectableText-class.html>`__ .
 
 ----
 
-Variable（Dart）
-=================
+Dart Class Reference
+======================
+`TextElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/TextElement-class.html>`__
 
-* :ref:`The common<spwml>` variable.
-* [textParams] : A variable with equivalent parameters of Flutter's `Text class <https://api.flutter.dev/flutter/widgets/Text-class.html>`__ and `SelectableText class <https://api.flutter.dev/flutter /material/SelectableText-class.html>`__ .
 ----
 
-Parameters
+SpWML Parameters
 ======================
 
 * :ref:`The common<spwml>` parameters.
@@ -141,10 +94,3 @@ Deprecated parameters
 ========================
 * textHeight(double). Renamed to lineHeight.
 * fontName(String). Renamed to fontFamily.
-
-----
-
-Super Class
-================
-
-:ref:`spwml`

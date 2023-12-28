@@ -19,56 +19,17 @@ Summary
 
 A block that does not have a child block and can contain ruby text.
 
-----
-
-Functions (Dart)
-===================
-
-Function of Parent class
---------------------------
-
-You can use the functions of the :ref:`Parent class<text>` .
-
-Get Style
---------------------
-
-Get ruby-text TextStyle set by SpWML.
-
-.. code-block:: none
-   
-   TextStyle getRubyStyle()
-
-Get StrutStyle
---------------------
-
-Get ruby-text StrutStyle set by SpWML.
-
-.. code-block:: none
-   
-   StrutStyle getRubyStrutStyle()
-
-Get Align
---------------------
-
-Get ruby-text TextAlign set by SpWML.
-
-.. code-block:: none
-   
-   TextAlign getRubyAlign()
-
+It has a variable with parameters equivalent to Flutter `Text class <https://api.flutter.dev/flutter/widgets/Text-class.html>`__ , and ruby-text controlling parameters.
 
 ----
 
-Variable（Dart）
-=================
-
-* :ref:`The common<spwml>` variable.
-* :ref:`Parent<text>` variable.
-* [rubyParams] :  A variable with parameters equivalent to Flutter `Text class <https://api.flutter.dev/flutter/widgets/Text-class.html>`__ , and ruby-text controlling parameters.
+Dart Class Reference
+======================
+`TableElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/TableElement-class.html>`__
 
 ----
 
-Parameters
+SpWML Parameters
 ======================
 
 * :ref:`The common<spwml>` parameters.
@@ -87,10 +48,3 @@ Parameters
 * rubyWordSpacing(double). Specifies the space between words in px.
 * rubyAlign(String). Text alignment.Left, center, right, or justify.
 * rubyHeight(double). Specifies the text height. For English, 1.0 is fine, but for Japanese or other hieroglyph type text, it may be better to adjust between 1.0 and 1.3.
-
-----
-
-Super Class
-================
-
-:ref:`text`

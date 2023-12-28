@@ -2,7 +2,7 @@
 .. _card:
 
 ======================================
-CardElement
+card
 ======================================
 
 How to write by SpWML
@@ -19,30 +19,20 @@ Summary
 ===============
 
 A card block with only one child block.
+
 Inner child blocks are placed inside the card UI.
 
-----
-
-Functions (Dart)
-===================
-
-Child block control
------------------------
-
-:ref:`Parent class<single_child>` functions.
+It has a variable with parameters equivalent to Flutter `Card class <https://api.flutter.dev/flutter/material/Card-class.html>`__ .
 
 ----
 
-Variable（Dart）
-=================
-
-* :ref:`The common<spwml>` variable.
-* :ref:`Parent<single_child>` variable.
-* [elParams] :  A variable with parameters equivalent to Flutter `Card class <https://api.flutter.dev/flutter/material/Card-class.html>`__ .
+Dart Class Reference
+======================
+`CardElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/CardElement-class.html>`__
 
 ----
 
-Parameters
+SpWML Parameters
 ====================
 
 * :ref:`The common<spwml>` parameters.
@@ -50,10 +40,3 @@ Parameters
 * color (String).  :ref:`The color system<color_system>` .
 * cardElevation (double). It is the floating degree of the card. It is specified in px.
 * shape (String). The shape of the border. Specify one of roundRect, stadium, bevel, or circle.
-
-----
-
-Super Class
-==============
-
-:ref:`single_child`

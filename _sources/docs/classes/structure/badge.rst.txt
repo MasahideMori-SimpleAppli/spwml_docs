@@ -2,7 +2,7 @@
 .. _badge:
 
 ======================================
-BadgeElement
+badge
 ======================================
 
 How to write by SpWML
@@ -20,48 +20,17 @@ Summary
 
 This is a block that can give notification badges to child blocks.
 
-----
-
-Functions (Dart)
-===================
-
-Child block control
------------------------
-
-:ref:`Parent class<single_child_text>` functions.
-
-
-Label setting
--------------------
-
-Set labels. Labels are typically text widgets.
-
-.. code-block:: none
-   
-   void setLabel(Widget label)
-
-
-Offset setting
--------------------
-
-Set label offset.
-
-.. code-block:: none
-   
-   void setOffset(Offset offset) 
+It has a variable with parameters equivalent to Flutter `Badge class <https://api.flutter.dev/flutter/material/Badge-class.html>`__ .
 
 ----
 
-Variable（Dart）
-=================
-
-* :ref:`The common<spwml>` variable.
-* :ref:`Parent<single_child_text>` variable.
-* [elParams] : A variable with parameters equivalent to Flutter `Badge class <https://api.flutter.dev/flutter/material/Badge-class.html>`__ .
+Dart Class Reference
+======================
+`BadgeElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/BadgeElement-class.html>`__
 
 ----
 
-Parameters
+SpWML Parameters
 ====================
 
 * :ref:`The common<spwml>` parameters.
@@ -72,10 +41,3 @@ Parameters
 * smallSize (double). The size when displayed as a solid color dot.
 * offsetX (double). Use this when you want to shift the display position of the X coordinate of the label. Negative values are also allowed.
 * offsetY (double). Use this when you want to shift the display position of the Y coordinate of the label. Negative values are also allowed.
-
-----
-
-Super Class
-==============
-
-:ref:`single_child_text`

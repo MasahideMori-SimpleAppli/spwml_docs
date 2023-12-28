@@ -2,7 +2,7 @@
 .. _checkbox:
 
 ======================================
-CheckboxElement
+checkbox
 ======================================
 
 How to write by SpWML
@@ -27,58 +27,17 @@ Summary
 
 This block allows you to create checkboxes.
 
-----
-
-Functions (Dart)
-===================
-
-Child block control
------------------------
-
-:ref:`Parent class <multi_child>` functions.
-
-Setting the state management manager
----------------------------------------
-
-Set the state management class.
-
-.. code-block:: none
-   
-   void setManager(MultiFlagManager m)
-
-
-Initial value setting
------------------------
-
-Set the initial value. To keep the value on screen refresh, use
-Hold the value in a higher widget, etc., and call it.
-Invalid if the manager class is not set.
-
-.. code-block:: none
-   
-   void setValue(List<bool> v)
-
-Callback setting
--------------------
-
-The values of each of the retained checkboxes are collectively passed as a list.
-
-.. code-block:: none
-   
-   void setCallback(void Function(List<bool>? checkValues)? callback)
+It has not only `Checkbox class <https://api.flutter.dev/flutter/material/Checkbox-class.html>`__ variables that has variables that have been further adjusted to improve usability.
 
 ----
 
-Variable（Dart）
-=================
-
-* :ref:`The common<spwml>` variable.
-* :ref:`Parent<multi_child>` variable.
-* [elParams] : Not only `Checkbox class <https://api.flutter.dev/flutter/material/Checkbox-class.html>`__ variables that has variables that have been further adjusted to improve usability.
+Dart Class Reference
+======================
+`CheckboxElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/CheckboxElement-class.html>`__
 
 ----
 
-Parameters
+SpWML Parameters
 ====================
 
 * :ref:`The common<spwml>` parameters.
@@ -89,10 +48,4 @@ Parameters
 * enableTapLabel (bool). If true, can tap text. The initial value is false.
 * isV3 (bool). If true, the checkbox color will be the system primary color. Also, the icon changes to a solid type.
 * isPrefixIcon (bool). Default is true, if false the icon is aligned to the right. Note that you may need to specify the width as well, as the text portion will autostretch.
-
-----
-
-Super Class
-==============
-
-:ref:`multi_child`
+* isEnabled (bool). Set to false if you want to disable this elements.

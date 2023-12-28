@@ -2,7 +2,7 @@
 .. _vline:
 
 ======================================
-VLineElement
+vline
 ======================================
 
 How to write by SpWML
@@ -19,33 +19,19 @@ Summary
 
 A block that can place vertical lines without child blocks.
 
-----
-
-Functions (Dart)
-===================
-
-It has no external use, only methods that are used internally.
+It has a variable with parameters equivalent to Flutter `VerticalDivider class <https://api.flutter.dev/flutter/material/VerticalDivider-class.html>`__ .
 
 ----
 
-Variable（Dart）
-=================
-
-* :ref:`The common<spwml>` variable.
-* [elParams] :  A variable with parameters equivalent to Flutter `VerticalDivider class <https://api.flutter.dev/flutter/material/VerticalDivider-class.html>`__ .
+Dart Class Reference
+======================
+`VLineElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/VLineElement-class.html>`__
 
 ----
 
-Parameters
+SpWML Parameters
 ====================
 
 * :ref:`The common<spwml>` parameters.
 * thickness (double). Set line thickness on py.
 * color (String). Set line color. :ref:`The color system<color_system>` .
-
-----
-
-Super Class
-==============
-
-:ref:`spwml`

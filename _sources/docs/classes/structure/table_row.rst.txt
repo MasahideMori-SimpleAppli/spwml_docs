@@ -2,7 +2,7 @@
 .. _tableRow:
 
 ======================================
-TableRowElement
+tr
 ======================================
 
 How to write by SpWML
@@ -20,39 +20,22 @@ Summary
 ===============
 
 A block with multiple child blocks.
+
 This block is used as a child element of the table block, and the inner child blocks are the elements of each column in the table.
 
-----
-
-Functions (Dart)
-===================
-
-Child block control
------------------------
-
-:ref:`Parent class <multi_child>` functions.
+It has a variable with parameters equivalent to Flutter `TableRow class <https://api.flutter.dev/flutter/widgets/TableRow-class.html>`__ .
 
 ----
 
-Variable（Dart）
-=================
-
-* :ref:`The common<spwml>` variable.
-* :ref:`Parent<multi_child>` variable.
-* [elParams] :  A variable with parameters equivalent to Flutter `TableRow class <https://api.flutter.dev/flutter/widgets/TableRow-class.html>`__ .
+Dart Class Reference
+======================
+`TableRowElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/TableRowElement-class.html>`__
 
 ----
 
-Parameters
+SpWML Parameters
 ====================
 
 * :ref:`The common<spwml>` parameters.
 * :ref:`Parent<multi_child>` parameters.
 * color (String). Color setting. :ref:`The color system<color_system>` .
-
-----
-
-Super Class
-==============
-
-:ref:`multi_child`

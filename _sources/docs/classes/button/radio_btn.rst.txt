@@ -2,7 +2,7 @@
 .. _radioBtn:
 
 ======================================
-RadioBtnElement
+radioBtn
 ======================================
 
 How to write by SpWML
@@ -27,58 +27,17 @@ Summary
 
 A block that can create radio buttons.
 
-----
-
-Functions (Dart)
-===================
-
-Child block control
------------------------
-
-:ref:`Parent class <multi_child>` functions.
-
-Setting the state management manager
---------------------------------------
-
-Set the state management class.
-
-.. code-block:: none
-   
-   void setManager(IndexManager m)
-
-Initial value setting
-------------------------
-
-Set the initial value. To keep the value on screen refresh, use
-Hold the value in a higher widget, etc., and call it.
-It will be in the state where the index number counting from 0 given as an argument is selected.
-Invalid if the manager class is not set.
-
-.. code-block:: none
-   
-   void setValue(int? v)
-
-Callback setting
--------------------
-
-When a radio button is selected, its index is passed.
-
-.. code-block:: none
-   
-   void setCallback(void Function(int? selectedIndex)? callback)
+It has not only `Radio class <https://api.flutter.dev/flutter/material/Radio-class.html>`__ variables that has variables that have been further adjusted to improve usability.
 
 ----
 
-Variable（Dart）
-=================
-
-* :ref:`The common<spwml>` variable.
-* :ref:`Parent<multi_child>` variable.
-* [elParams] : Not only `Radio class <https://api.flutter.dev/flutter/material/Radio-class.html>`__ variables that has variables that have been further adjusted to improve usability.
+Dart Class Reference
+======================
+`RadioBtnElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/RadioBtnElement-class.html>`__
 
 ----
 
-Parameters
+SpWML Parameters
 ====================
 
 * :ref:`The common<spwml>` parameters.
@@ -89,10 +48,4 @@ Parameters
 * enableTapLabel (bool). If true, can tap text. The initial value is false.
 * isV3 (bool). If true, the checkbox color will be the system primary color. Also, the icon changes to a solid type.
 * isPrefixIcon (bool). Default is true, if false the icon is aligned to the right. Note that you may need to specify the width as well, as the text portion will autostretch.
-
-----
-
-Super Class
-==============
-
-:ref:`multi_child`
+* isEnabled (bool). Set to false if you want to disable this elements.

@@ -2,7 +2,7 @@
 .. _block:
 
 ======================================
-BlockElement
+block
 ======================================
 
 How to write by SpWML
@@ -22,33 +22,14 @@ A region delimiter block with only one child block.
 
 ----
 
-Functions (Dart)
-===================
-
-Child block control
------------------------
-
-:ref:`Parent class<single_child>` functions.
+Dart Class Reference
+======================
+`BlockElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/BlockElement-class.html>`__
 
 ----
 
-Variable（Dart）
-=================
-
-* :ref:`The common<spwml>` variable.
-* :ref:`Parent<single_child>` variable.
-
-----
-
-Parameters
+SpWML Parameters
 ====================
 
 * :ref:`The common<spwml>` parameters.
 * :ref:`Parent<single_child>` parameters.
-
-----
-
-Super Class
-==============
-
-:ref:`single_child`

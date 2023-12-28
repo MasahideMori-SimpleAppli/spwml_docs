@@ -2,7 +2,7 @@
 .. _href:
 
 ======================================
-HrefElement
+href
 ======================================
 
 How to write by SpWML
@@ -21,35 +21,15 @@ A block that can have a hyperlink without a child block.
 
 ----
 
-Functions (Dart)
-===================
-
-Change text
------------------
-
-:ref:`Parent class<text>` functions.
+Dart Class Reference
+======================
+`HrefElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/HrefElement-class.html>`__
 
 ----
 
-Variable（Dart）
-=================
-
-* :ref:`The common<spwml>` variable.
-* :ref:`Parent<text>` variable.
-* [elParams] : Parameters for tap response and alt text.
-
-----
-
-Parameters
+SpWML Parameters
 ======================
 
 * :ref:`The common<spwml>` parameters.
 * :ref:`Parent<text>` parameters. However, isSelectable is invalid.
 * alt(String). Alternate text for the hyperlink.If enabled, this will be displayed as the text for the link.
-
-----
-
-Super Class
-================
-
-:ref:`text`

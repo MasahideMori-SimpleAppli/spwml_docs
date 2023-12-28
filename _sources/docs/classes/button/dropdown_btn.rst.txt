@@ -2,7 +2,7 @@
 .. _dropdownBtn:
 
 ======================================
-DropdownBtnElement
+dropdownBtn
 ======================================
 
 How to write by SpWML
@@ -22,58 +22,17 @@ Summary
 
 A block that allows you to create a drop-down button.
 
-----
-
-Functions (Dart)
-===================
-
-Child block control
------------------------
-
-:ref:`Parent class <multi_child>` functions.
-
-Setting the state management manager
----------------------------------------
-
-Set the state management class.
-
-.. code-block:: none
-   
-   void setManager(IndexManager m)
-
-Initial value setting
------------------------
-
-Set the initial value. To keep the value on screen refresh, use
-Hold the value in a higher widget, etc., and call it.
-It will be in the state where the index number counting from 0 given as an argument is selected.
-Invalid if the manager class is not set.
-
-.. code-block:: none
-   
-   setValue(int? v)
-
-Callback setting
--------------------
-
-The index is passed when the dropdown is selected.
-
-.. code-block:: none
-   
-   setCallback(void Function(int index)? callback)
-
+It has not only `DropdownButton class <https://api.flutter.dev/flutter/material/DropdownButton-class.html>`__ variables that has variables that have been further adjusted to improve usability.
 
 ----
 
-Variable（Dart）
-=================
+Dart Class Reference
+======================
+`DropdownBtnElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/DropdownBtnElement-class.html>`__
 
-* :ref:`The common<spwml>` variable.
-* :ref:`Parent<multi_child>` variable.
-* [elParams] : Not only `DropdownButton class <https://api.flutter.dev/flutter/material/DropdownButton-class.html>`__ variables that has variables that have been further adjusted to improve usability.
 ----
 
-Parameters
+SpWML Parameters
 ====================
 
 * :ref:`The common<spwml>` parameters.
@@ -85,10 +44,4 @@ Parameters
 * splashRadius (double). Set the size of the reaction circle in px on when tapped.
 * underlineColor (String). Color setting of underline. :ref:`The color system<color_system>` .
 * underlineHeight (double). Set underline size in px.
-
-----
-
-Super Class
-==============
-
-:ref:`multi_child`
+* isEnabled (bool). Set to false if you want to disable this elements.

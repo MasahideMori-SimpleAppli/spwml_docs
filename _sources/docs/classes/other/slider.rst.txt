@@ -2,7 +2,7 @@
 .. _slider:
 
 ======================================
-SliderElement
+slider
 ======================================
 
 How to write by SpWML
@@ -19,52 +19,17 @@ Summary
 
 A block that can place a slider without child blocks.
 
-----
-
-Functions (Dart)
-===================
-
-Setting the state management manager
----------------------------------------
-
-Set the state management class.
-
-.. code-block:: none
-   
-   void setManager(ValueManager m)
-
-
-value setting
--------------------
-
-Sets the slider value.
-Invalid if the manager class is not set.
-
-.. code-block:: none
-   
-   void setValue(double v)
-
-
-Calback setting
--------------------
-
-Set callback when slider value changed.
-
-.. code-block:: none
-   
-   void setOnChanged(void Function(double)? onChanged)
+It has a variable with parameters equivalent to Flutter `Slider class <https://api.flutter.dev/flutter/material/Slider-class.html>`__ .
 
 ----
 
-Variable（Dart）
-=================
-
-* :ref:`The common<spwml>` variable.
-* [elParams] : A variable with parameters equivalent to Flutter `Slider class <https://api.flutter.dev/flutter/material/Slider-class.html>`__ .
+Dart Class Reference
+======================
+`SliderElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/SliderElement-class.html>`__
 
 ----
 
-Parameters
+SpWML Parameters
 ====================
 
 * :ref:`The common<spwml>` parameters.
@@ -76,10 +41,3 @@ Parameters
 * divisions (int). Specifies the number of division points for the slider.
 * useAutoLabel (bool). If true, show the current value on the slider.
 * isIntValue (bool). If true, the value of the label displayed when useAutoLabel is enabled is cast to an integer before being displayed.
-
-----
-
-Super Class
-==============
-
-:ref:`spwml`

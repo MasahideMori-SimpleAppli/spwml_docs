@@ -2,7 +2,7 @@
 .. _progressIndicator:
 
 ======================================
-ProgressIndicatorElement
+progressIndicator
 ======================================
 
 How to write by SpWML
@@ -19,53 +19,20 @@ Summary
 
 A block in which a progress indicator can be placed that has no child blocks.
 
-----
-
-Functions (Dart)
-===================
-
-Setting the state management manager
---------------------------------------
-
-Set the state management class.
-
-.. code-block:: none
-   
-    void setManager(ValueManager m)
-
-
-Setting the current progress
-------------------------------
-
-You can set the progress as a value between 0.0 and 1.0. If you give null, it will be in loading state.
-Invalid if the manager class is not set.
-
-.. code-block:: none
-   
-    void setValue(double? v)
-
+It has `CircularProgressIndicator class <https://api.flutter.dev/flutter/material/CircularProgressIndicator-class.html>`__ and `LinearProgressIndicator class <https://api.flutter.dev/flutter/material/LinearProgressIndicator-class.html>`__ parameters.
 
 ----
 
-Variable（Dart）
-=================
-
-* :ref:`The common<spwml>` variable.
-* [elParams] : This parameter has `CircularProgressIndicator class <https://api.flutter.dev/flutter/material/CircularProgressIndicator-class.html>`__ and `LinearProgressIndicator class <https://api.flutter.dev/flutter/material/LinearProgressIndicator-class.html>`__ parameters.
+Dart Class Reference
+======================
+`ProgressIndicatorElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/ProgressIndicatorElement-class.html>`__
 
 ----
 
-Parameters
+SpWML Parameters
 ====================
 
 * :ref:`The common<spwml>` parameters.
 * type (String). Specifies the type of loading. Specify circular or linear.
 * indicatorColor (String). Indicator color setting. :ref:`The color system<color_system>` .
 * indicatorBGColor (String). Indicator background color setting. :ref:`The color system<color_system>` .
-
-----
-
-Super Class
-==============
-
-:ref:`spwml`

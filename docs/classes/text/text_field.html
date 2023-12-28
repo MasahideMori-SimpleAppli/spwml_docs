@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>TextFieldElement &#8212; SpWML Docs  documentation</title>
+    <title>textfield &#8212; SpWML Docs  documentation</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/alabaster.css" />
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
@@ -33,8 +33,8 @@
 
           <div class="body" role="main">
             
-  <section id="textfieldelement">
-<span id="textfield"></span><h1>TextFieldElement<a class="headerlink" href="#textfieldelement" title="Permalink to this heading">¶</a></h1>
+  <section id="textfield">
+<span id="id1"></span><h1>textfield<a class="headerlink" href="#textfield" title="Permalink to this heading">¶</a></h1>
 <section id="how-to-write-by-spwml">
 <h2>How to write by SpWML<a class="headerlink" href="#how-to-write-by-spwml" title="Permalink to this heading">¶</a></h2>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(tf)
@@ -51,66 +51,16 @@
 <section id="summary">
 <h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">¶</a></h2>
 <p>It is a block that can be set to text input without a child block.</p>
+<p>It has a variable with parameters equivalent to Flutter <a class="reference external" href="https://api.flutter.dev/flutter/material/TextField-class.html">TextField class</a> .</p>
 </section>
 <hr class="docutils" />
-<section id="functions-dart">
-<h2>Functions (Dart)<a class="headerlink" href="#functions-dart" title="Permalink to this heading">¶</a></h2>
-<section id="search-icon-callback">
-<h3>Search icon callback<a class="headerlink" href="#search-icon-callback" title="Permalink to this heading">¶</a></h3>
-<p>Sets the button callback when the input is in search mode.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setSuffixCallback(Function(String inputText)? suffixCallback)
-</pre></div>
-</div>
-</section>
-<section id="text-change-callback">
-<h3>Text change callback<a class="headerlink" href="#text-change-callback" title="Permalink to this heading">¶</a></h3>
-<p>Set a callback when text changed by user.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setOnChanged(void Function(String)? onChanged)
-</pre></div>
-</div>
-</section>
-<section id="input-complete-callback">
-<h3>Input complete callback<a class="headerlink" href="#input-complete-callback" title="Permalink to this heading">¶</a></h3>
-<p>Set a callback when user input is completed.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setOnSubmitted(void Function(String)? onSubmitted)
-</pre></div>
-</div>
-</section>
-<section id="other-functions">
-<h3>Other functions<a class="headerlink" href="#other-functions" title="Permalink to this heading">¶</a></h3>
-<p>Set a class to hold the input text. The text is managed by the Parent widget as per Flutter’s standard specifications.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setController(TextEditingController? controller)
-</pre></div>
-</div>
-<hr class="docutils" />
-<p>Set Focus.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setFocusNode(FocusNode? focusNode)
-</pre></div>
-</div>
-<hr class="docutils" />
-<p>Set enabled flag.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setEnabled(bool enabled)
-</pre></div>
-</div>
-<hr class="docutils" />
-<p>Set Controller and Focus by textfield_manager.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setManager(TextFieldManager manager, String name, {String? initialText, bool isAlwaysInitialize = false})
-</pre></div>
-</div>
-</section>
+<section id="dart-class-reference">
+<h2>Dart Class Reference<a class="headerlink" href="#dart-class-reference" title="Permalink to this heading">¶</a></h2>
+<p><a class="reference external" href="https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/TextFieldElement-class.html">TextFieldElement class</a></p>
 </section>
 <hr class="docutils" />
-<section id="variable-dart">
-<h2>Variable（Dart）<a class="headerlink" href="#variable-dart" title="Permalink to this heading">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">The common</span></a> variable.</p></li>
-<li><p><a class="reference internal" href="text.html#text"><span class="std std-ref">Parent</span></a> variable.</p></li>
-<li><p>[tfParams] :  A variable with parameters equivalent to Flutter <a class="reference external" href="https://api.flutter.dev/flutter/material/TextField-class.html">TextField class</a> .</p></li>
-</ul>
-</section>
-<hr class="docutils" />
-<section id="parameters">
-<h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading">¶</a></h2>
+<section id="spwml-parameters">
+<h2>SpWML Parameters<a class="headerlink" href="#spwml-parameters" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">The common</span></a> parameters.</p></li>
 <li><p><a class="reference internal" href="text.html#text"><span class="std std-ref">Parent</span></a> parameters. However, isSelectable is invalid.</p></li>
@@ -125,20 +75,15 @@
 <li><p>suffixIconSize(double). Suffix Set size of icon in px.</p></li>
 <li><p>suffixIconSplashRadius(double). Specifies the size of the animation area for tapping the tail icon in px.</p></li>
 <li><p>suffixIconColor(String). Color setting for the suffix icon.  <a class="reference internal" href="../../ref/color_system.html#color-system"><span class="std std-ref">The color system</span></a> .</p></li>
-<li><p>cpL (double)。Left content padding.</p></li>
-<li><p>cpT (double)。Top content padding.</p></li>
-<li><p>cpR (double)。Right content padding.</p></li>
-<li><p>cpB (double)。Bottom content padding.</p></li>
+<li><p>cpL (double). Left content padding.</p></li>
+<li><p>cpT (double). Top content padding.</p></li>
+<li><p>cpR (double). Right content padding.</p></li>
+<li><p>cpB (double). Bottom content padding.</p></li>
 <li><p>maxLines(int?). Sets how many lines of text the text field will look like. This does not limit the actual number of input lines. However, if set to 1, line breaks are not allowed.</p></li>
 <li><p>maxLength(int?). Maximum number of input characters for text.</p></li>
 <li><p>fillColor(String?). Fill color when type is rounded.</p></li>
 <li><p>radius(double). The corner rounding when type is rounded.</p></li>
 </ul>
-</section>
-<hr class="docutils" />
-<section id="super-class">
-<h2>Super Class<a class="headerlink" href="#super-class" title="Permalink to this heading">¶</a></h2>
-<p><a class="reference internal" href="text.html#text"><span class="std std-ref">TextElement</span></a></p>
 </section>
 </section>
 

@@ -2,7 +2,7 @@
 .. _table:
 
 ======================================
-TableElement
+table
 ======================================
 
 How to write by SpWML
@@ -24,42 +24,27 @@ Summary
 ===============
 
 A block with multiple child blocks.
+
 This block is used as a child element of the table block, and the inner child blocks are the elements of each column in the table.
+
 Of the parameters, hNum is a required parameter and must be specified.
+
 Also, tr is usually used for the child block.
 
-----
-
-Functions (Dart)
-===================
-
-Child block control
------------------------
-
-:ref:`Parent class <multi_child>` functions.
+It has a variable with parameters equivalent to Flutter `Table class <https://api.flutter.dev/flutter/widgets/Table-class.html>`__ .
 
 ----
 
-Variable（Dart）
-=================
-
-* :ref:`The common<spwml>` variable.
-* :ref:`Parent<multi_child>` variable.
-* [elParams] :  A variable with parameters equivalent to Flutter `Table class <https://api.flutter.dev/flutter/widgets/Table-class.html>`__ .
+Dart Class Reference
+======================
+`TableElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/TableElement-class.html>`__
 
 ----
 
-Parameters
+SpWML Parameters
 ====================
 
 * :ref:`The common<spwml>` parameters.
 * :ref:`Parent<multi_child>` parameters.
 * hNum (int). Set the number of elements in the horizontal direction of the table.This parameter is required.
 * color (String). Color setting. :ref:`The color system<color_system>` .
-
-----
-
-Super Class
-==============
-
-:ref:`multi_child`

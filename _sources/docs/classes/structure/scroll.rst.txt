@@ -2,7 +2,7 @@
 .. _scroll:
 
 ======================================
-ScrollElement
+scroll
 ======================================
 
 How to write by SpWML
@@ -19,30 +19,20 @@ Summary
 ===============
 
 A block with a single child block.
+
 If the size of the inner child block exceeds the size of the parent block, it will be scrollable.
 
-----
-
-Functions (Dart)
-===================
-
-Child block control
------------------------
-
-:ref:`Parent class<single_child>` functions.
+It has a variable with parameters equivalent to Flutter `SingleChildScrollViewclass <https://api.flutter.dev/flutter/widgets/SingleChildScrollView-class.html>`__ .
 
 ----
 
-Variable（Dart）
-=================
-
-* :ref:`The common<spwml>` variable.
-* :ref:`Parent<single_child>` variable.
-* [elParams] :  A variable with parameters equivalent to Flutter `SingleChildScrollViewclass <https://api.flutter.dev/flutter/widgets/SingleChildScrollView-class.html>`__ .
+Dart Class Reference
+======================
+`ScrollElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/ScrollElement-class.html>`__
 
 ----
 
-Parameters
+SpWML Parameters
 ====================
 
 * :ref:`The common<spwml>` parameters.
@@ -50,10 +40,3 @@ Parameters
 * isPrimary (bool). Specifies whether this is the primary scroll view.If there are multiple scrolls, the second and subsequent views must be set to false.
 * axis (String). Specifies the direction of scrolling, either vertical or horizontal. If horizontal is specified and scrollBehavior is not set, scrollBehavior is automatically set to touchAndMouse.
 * scrollBehavior (String?). Setting of scroll permission. Default is null. Specify one of touch, touchAndMouse, touchAndMouseAndTrackpad, nonEraser, all.
-
-----
-
-Super Class
-==============
-
-:ref:`single_child`

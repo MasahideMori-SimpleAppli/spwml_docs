@@ -2,7 +2,7 @@
 .. _switchBtn:
 
 ======================================
-SwitchBtnElement
+switchBtn
 ======================================
 
 How to write by SpWML
@@ -20,63 +20,23 @@ Summary
 ===============
 
 A block that has no child blocks.
+
 An ON/OFF switch is placed where this block is placed.
 
-----
-
-Functions (Dart)
-===================
-
-Setting the state management manager
--------------------------------------
-
-Set the state management class.
-
-.. code-block:: none
-   
-   void setManager(FlagManager m)
-
-Initial value setting
------------------------
-
-Sets the switch value.
-Screen updates are required and arguments must be managed within the parent widget.
-Invalid if the manager class is not set.
-
-.. code-block:: none
-   
-   void setValue(bool v)
-
-setCallback
----------------------
-
-Set a callback when the switch is tapped.
-The button state is passed as an argument to the callback function.
-
-.. code-block:: none
-   
-   void setCallback(void Function(bool btnEnabled)? callback)
+It has a variable with parameters equivalent to Flutter `Switch class <https://api.flutter.dev/flutter/material/Switch-class.html>`__ .
 
 ----
 
-Variable（Dart）
-=================
-
-* :ref:`The common<spwml>` variable.
-* [elParams] : A variable with parameters equivalent to Flutter `Switch class <https://api.flutter.dev/flutter/material/Switch-class.html>`__ .
+Dart Class Reference
+======================
+`SwitchBtnElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/SwitchBtnElement-class.html>`__
 
 ----
 
-Parameters
+SpWML Parameters
 ====================
 
 * :ref:`The common<spwml>` parameters.
 * color (String). Color setting. :ref:`The color system<color_system>` .
 * check (bool). It changes to a switch with a check icon only when Material V3 is enabled.
-
-----
-
-Super Class
-==============
-
-:ref:`spwml`
+* isEnabled (bool). Set to false if you want to disable this elements.

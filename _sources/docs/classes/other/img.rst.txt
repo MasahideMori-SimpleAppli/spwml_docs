@@ -2,7 +2,7 @@
 .. _img:
 
 ======================================
-ImgElement
+img
 ======================================
 
 How to write by SpWML
@@ -19,33 +19,17 @@ Summary
 
 A block that does not have child blocks and can be used to place images.
 
-----
-
-Functions (Dart)
-===================
-
-
-Byte image settings
-----------------------
-
-Sets byte data as an image.
-
-.. code-block:: none
-   
-    void setBytesImage(Uint8List image)
-
+It has a variable with parameters equivalent to Flutter `Image class <https://api.flutter.dev/flutter/widgets/Image-class.html>`__ . It also has some additional parameters such as bytes.
 
 ----
 
-Variable（Dart）
-=================
-
-* :ref:`The common<spwml>` variable.
-* [elParams] :  A variable with parameters equivalent to Flutter `Image class <https://api.flutter.dev/flutter/widgets/Image-class.html>`__ . It also has some additional parameters such as bytes.
+Dart Class Reference
+======================
+`ImgElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/ImgElement-class.html>`__
 
 ----
 
-Parameters
+SpWML Parameters
 ====================
 
 * :ref:`The common<spwml>` parameters.
@@ -54,10 +38,3 @@ Parameters
 * repeat (String).Set whether to repeat the image. Specify one of noRepeat, repeat, repeatX, or repeatY. The "repeat" repeats in both vertical and horizontal directions, "repeatX" only in the X-axis direction, and "repeatY" only in the Y-axis direction.
 * clipType (String). Specifies image clipping. Specify one of none, oval, rRect. Default is none.
 * clipRadius (double). Specifies the radius of rounding applied when clipType is rRect.
-
-----
-
-Super Class
-==============
-
-:ref:`spwml`

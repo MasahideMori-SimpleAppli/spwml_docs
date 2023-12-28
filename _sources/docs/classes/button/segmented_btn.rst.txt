@@ -2,7 +2,7 @@
 .. _segmentedBtn:
 
 ======================================
-SegmentedBtnElement
+segmentedBtn
 ======================================
 
 How to write by SpWML
@@ -22,67 +22,21 @@ Summary
 
 A block that allows you to create buttons separated by fields.
 
-----
-
-Functions (Dart)
-===================
-
-Child block control
------------------------
-
-:ref:`Parent class<single_child>` functions.
-
-Setting the state management manager
---------------------------------------
-
-Set the state management class.
-
-.. code-block:: none
-   
-   void setManager(MultiIndexManager m)
-
-Initial value setting
------------------------
-
-Set the initial value. To keep the value on screen refresh, use
-Hold the value in a higher widget, etc., and call it.
-Invalid if the manager class is not set.
-
-.. code-block:: none
-   
-   void setValue(Set<int> v)
-
-Callback setting
--------------------
-
-Set callback when selection.
-
-.. code-block:: none
-   
-   void setCallback(void Function(Set<int>)? onSelectionChanged)
+It has a variable with parameters equivalent to Flutter `SegmentedButton class <https://api.flutter.dev/flutter/material/SegmentedButton-class.html>`__ .
 
 ----
 
-Variable（Dart）
-=================
-
-* :ref:`The common<spwml>` variable.
-* :ref:`Parent<multi_child>` variable.
-* [elParams] : A variable with parameters equivalent to Flutter `SegmentedButton class <https://api.flutter.dev/flutter/material/SegmentedButton-class.html>`__ .
+Dart Class Reference
+======================
+`SegmentedBtnElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/SegmentedBtnElement-class.html>`__
 
 ----
 
-Parameters
+SpWML Parameters
 ====================
 
 * :ref:`The common<spwml>` parameters.
 * :ref:`Parent<multi_child>` parameters.
 * isMultiSelection (bool). If true, multiple selections are allowed. Default is false.
 * allowEmpty (bool). If true, unselected states are allowed. Default is true.
-
-----
-
-Super Class
-==============
-
-:ref:`multi_child`
+* isEnabled (bool). Set to false if you want to disable this elements.

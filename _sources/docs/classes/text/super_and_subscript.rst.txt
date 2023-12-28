@@ -2,7 +2,7 @@
 .. _superAndSubscript:
 
 ======================================
-SuperAndSubscriptElement
+superscript and subscript
 ======================================
 
 How to write by SpWML
@@ -22,40 +22,21 @@ Summary
 ===============
 
 A block containing superscript and subscript text elements with no child blocks.
+
 By using it as a child block of the span element and combining it with an element whose lineHeight is 1 and mT is 0, you can handle characters in special positions with appropriate placement.
 
 ----
 
-Functions (Dart)
-===================
-
-Change text
------------------
-
-:ref:`Parent class<text>` functions.
+Dart Class Reference
+======================
+`SuperAndSubscriptElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/SuperAndSubscriptElement-class.html>`__
 
 ----
 
-Variable（Dart）
-=================
-
-* :ref:`The common<spwml>` variable.
-* :ref:`Parent<text>` variable.
-* [elParams] : Parameters related to display magnification, etc.
-
-----
-
-Parameters
+SpWML Parameters
 ======================
 
 * :ref:`The common<spwml>` parameters.
 * :ref:`Parent<text>` parameters. However, isSelectable is invalid.
 * baselineCorrection(double). Position correction value. If set, the value will be added to the y coordinate.
 * mag(double). Magnification of font size. The default is 0.6, and 1.0 is the same size as the normal font.
-
-----
-
-Super Class
-================
-
-:ref:`text`

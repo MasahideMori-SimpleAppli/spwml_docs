@@ -2,7 +2,7 @@
 .. _expTile:
 
 ======================================
-ExpTileElement
+expTile
 ======================================
 
 How to write by SpWML
@@ -20,30 +20,20 @@ Summary
 ===============
 
 A block with multiple child blocks.
+
 The inner child block will be the block within the unfolding tile.
 
-----
-
-Functions (Dart)
-===================
-
-Child block control
------------------------
-
-:ref:`Parent class<multi_child_text>` functions.
+It has a variable with parameters equivalent to Flutter `ExpansionTile class <https://api.flutter.dev/flutter/material/ExpansionTile-class.html>`__ .
 
 ----
 
-Variable（Dart）
-=================
-
-* :ref:`The common<spwml>` variable.
-* :ref:`Parent<multi_child_text>` variable.
-* [elParams] :  A variable with parameters equivalent to Flutter `ExpansionTile class <https://api.flutter.dev/flutter/material/ExpansionTile-class.html>`__ .
+Dart Class Reference
+======================
+`ExpTileElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/ExpTileElement-class.html>`__
 
 ----
 
-Parameters
+SpWML Parameters
 ====================
 
 * :ref:`The common<spwml>` parameters.
@@ -51,10 +41,3 @@ Parameters
 * iconNum (String).  Set the icon type with `codePoint <https://api.flutter.dev/flutter/material/Icons-class.html>`__ .
 * iconSize (String). The size of the icon. Only works if iconNum is valid.
 * iconColor (String). Color setting. :ref:`The color system<color_system>` .
-
-----
-
-Super Class
-==============
-
-:ref:`multi_child_text`

@@ -19,83 +19,9 @@ Superclass of all SpWML elements.
 
 ----
 
-Functions (Dart)
-===================
-
-Call from Builder
-----------------------
-
-There is a method called getElementByID in the function of SpWMLBuilder, you can get the element by using this.
-
-.. code-block:: none
-   
-    SpWMLBuilder builder = SpWMLBuilder("(text, id:1)abcde");
-    TextElement text = builder.getElementByID(1) as TextElement;
-
-
-Call from Builder 2
-----------------------
-
-There is a method called getElementBySID in the function of SpWMLBuilder, you can get the element by using this.
-
-.. code-block:: none
-   
-    SpWMLBuilder builder = SpWMLBuilder("(text, sid:aaa)abcde");
-    TextElement text = builder.getElementBySID("aaa") as TextElement;
-
-
-Set visibility flag
-----------------------
-
-If isGone set true, remove this element in build result.
-
-.. code-block:: none
-   
-    void setIsGone(bool isGone)
-
-
-Background color setting
---------------------------
-
-Sets the background color. Calling this will automatically update the box decoration as well.
-
-.. code-block:: none
-   
-    void setBGColor(Color c)
-
-
-Get SID
-----------------------
-
-Get method for SID. Returns null if not set.
-
-.. code-block:: none
-   
-    String? getSID()
-
-
-Get class name
-----------------------
-
-Get the class name. For subclasses, you can get the name of the subclass.
-
-.. code-block:: none
-   
-    String getClassName()
-
-----
-
-Variable（Dart）
-=================
-
-* [serial] : Internal array number.
-* [type] : The type of SpWML.
-* [param] : parameters converted for Flutter after being parsed by SpBML.
-* [spwmlParams] : Parameters written by the user in SpWML.
-* [parentSerial] : Seial of Parent block.
-* [lineStart] : Start line number of this block.
-* [lineEnd] : End line number of this block.
-* [style] : Font style reference given to the builder etc.
+Dart Class Reference
+======================
+`SpWMLElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/SpWMLElement-class.html>`__
 
 ----
 
@@ -143,4 +69,4 @@ Parameters
 Parent class
 ===============
 
-`StatelessWidget(Flutterのclassです) <https://api.flutter.dev/flutter/widgets/StatelessWidget-class.html>`__ 
+`StatelessWidget(Flutter) <https://api.flutter.dev/flutter/widgets/StatelessWidget-class.html>`__ 

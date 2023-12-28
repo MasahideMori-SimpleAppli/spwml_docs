@@ -2,7 +2,7 @@
 .. _span:
 
 ======================================
-SpanElement
+span
 ======================================
 
 How to write by SpWML
@@ -20,40 +20,22 @@ Summary
 ===============
 
 A block that has multiple child blocks.The inner child blocks are the same in-line element.
+
 For example, it is used to display text with partially different colors on the same line.
 
-----
-
-Functions (Dart)
-===================
-
-Child block control
------------------------
-
-:ref:`Parent class<multi_child_text>` functions.
-However, only widgets that implement InlineSpan, such as TextSpan and WidgetSpan, can be replaced.
+It has a avariable with parameters equivalent to Flutter `TextSpan class <https://api.flutter.dev/flutter/painting/TextSpan-class.html>`__ .
 
 ----
 
-Variable（Dart）
-=================
-
-* :ref:`The common<spwml>` variable.
-* :ref:`Parent<multi_child_text>` variable.
-* [elParams] :  A variable with parameters equivalent to Flutter `TextSpan class <https://api.flutter.dev/flutter/painting/TextSpan-class.html>`__ .
+Dart Class Reference
+======================
+`SpanElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/SpanElement-class.html>`__
 
 ----
 
-Parameters
+SpWML Parameters
 ====================
 
 * :ref:`The common<spwml>` parameters.
 * :ref:`Parent<multi_child_text>` parameters.
 * isSelectable (bool). Specifies whether or not the text inside can be selected.
-
-----
-
-Super Class
-==============
-
-:ref:`multi_child_text`

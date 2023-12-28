@@ -45,66 +45,9 @@
 <p>Superclass of all SpWML elements.</p>
 </section>
 <hr class="docutils" />
-<section id="functions-dart">
-<h2>Functions (Dart)<a class="headerlink" href="#functions-dart" title="Permalink to this heading">¶</a></h2>
-<section id="call-from-builder">
-<h3>Call from Builder<a class="headerlink" href="#call-from-builder" title="Permalink to this heading">¶</a></h3>
-<p>There is a method called getElementByID in the function of SpWMLBuilder, you can get the element by using this.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>SpWMLBuilder builder = SpWMLBuilder(&quot;(text, id:1)abcde&quot;);
-TextElement text = builder.getElementByID(1) as TextElement;
-</pre></div>
-</div>
-</section>
-<section id="call-from-builder-2">
-<h3>Call from Builder 2<a class="headerlink" href="#call-from-builder-2" title="Permalink to this heading">¶</a></h3>
-<p>There is a method called getElementBySID in the function of SpWMLBuilder, you can get the element by using this.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>SpWMLBuilder builder = SpWMLBuilder(&quot;(text, sid:aaa)abcde&quot;);
-TextElement text = builder.getElementBySID(&quot;aaa&quot;) as TextElement;
-</pre></div>
-</div>
-</section>
-<section id="set-visibility-flag">
-<h3>Set visibility flag<a class="headerlink" href="#set-visibility-flag" title="Permalink to this heading">¶</a></h3>
-<p>If isGone set true, remove this element in build result.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setIsGone(bool isGone)
-</pre></div>
-</div>
-</section>
-<section id="background-color-setting">
-<h3>Background color setting<a class="headerlink" href="#background-color-setting" title="Permalink to this heading">¶</a></h3>
-<p>Sets the background color. Calling this will automatically update the box decoration as well.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>void setBGColor(Color c)
-</pre></div>
-</div>
-</section>
-<section id="get-sid">
-<h3>Get SID<a class="headerlink" href="#get-sid" title="Permalink to this heading">¶</a></h3>
-<p>Get method for SID. Returns null if not set.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>String? getSID()
-</pre></div>
-</div>
-</section>
-<section id="get-class-name">
-<h3>Get class name<a class="headerlink" href="#get-class-name" title="Permalink to this heading">¶</a></h3>
-<p>Get the class name. For subclasses, you can get the name of the subclass.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>String getClassName()
-</pre></div>
-</div>
-</section>
-</section>
-<hr class="docutils" />
-<section id="variable-dart">
-<h2>Variable（Dart）<a class="headerlink" href="#variable-dart" title="Permalink to this heading">¶</a></h2>
-<ul class="simple">
-<li><p>[serial] : Internal array number.</p></li>
-<li><p>[type] : The type of SpWML.</p></li>
-<li><p>[param] : parameters converted for Flutter after being parsed by SpBML.</p></li>
-<li><p>[spwmlParams] : Parameters written by the user in SpWML.</p></li>
-<li><p>[parentSerial] : Seial of Parent block.</p></li>
-<li><p>[lineStart] : Start line number of this block.</p></li>
-<li><p>[lineEnd] : End line number of this block.</p></li>
-<li><p>[style] : Font style reference given to the builder etc.</p></li>
-</ul>
+<section id="dart-class-reference">
+<h2>Dart Class Reference<a class="headerlink" href="#dart-class-reference" title="Permalink to this heading">¶</a></h2>
+<p><a class="reference external" href="https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/SpWMLElement-class.html">SpWMLElement class</a></p>
 </section>
 <hr class="docutils" />
 <section id="parameters">
@@ -150,7 +93,7 @@ TextElement text = builder.getElementBySID(&quot;aaa&quot;) as TextElement;
 <hr class="docutils" />
 <section id="parent-class">
 <h2>Parent class<a class="headerlink" href="#parent-class" title="Permalink to this heading">¶</a></h2>
-<p><a class="reference external" href="https://api.flutter.dev/flutter/widgets/StatelessWidget-class.html">StatelessWidget(Flutterのclassです)</a></p>
+<p><a class="reference external" href="https://api.flutter.dev/flutter/widgets/StatelessWidget-class.html">StatelessWidget(Flutter)</a></p>
 </section>
 </section>
 

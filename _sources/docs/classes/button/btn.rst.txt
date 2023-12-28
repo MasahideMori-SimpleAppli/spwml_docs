@@ -2,7 +2,7 @@
 .. _btn:
 
 ======================================
-BtnElement
+btn
 ======================================
 
 How to write by SpWML
@@ -45,76 +45,28 @@ Summary
 
 A block in which various buttons can be placed.
 
-----
-
-Functions (Dart)
-===================
-
-Child block control
------------------------
-
-:ref:`Parent Class<single_child_text>` function.
-This only has an effect when the button is of block type.
-
-Callback setting
--------------------
-
-Set button callback
-
-.. code-block:: none
-   
-   void setCallback(void Function()? callback)
-
-
-Disable
--------------------
-
-Disable the button. the callback will be null.
-
-.. code-block:: none
-   
-   void setDisabled()
-
-
-Change color
--------------------
-
-Change the button color. 
-You can also directly edit the button's internal parameters (elParams) if you need more complex operations.
-
-.. code-block:: none
-   
-   void setBtnColor(Color color)
+It has similar parameters to `TextButton class <https://api.flutter.dev/flutter/material/TextButton-class.html>`__.
 
 ----
 
-Variable（Dart）
-=================
-
-* :ref:`common<spwml>` variable.
-* :ref:`parent<single_child_text>` variable
-* [elParams] : Like `TextButton class <https://api.flutter.dev/flutter/material/TextButton-class.html>`__ parameters.
+Dart Class Reference
+======================
+`BtnElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/BtnElement-class.html>`__
 
 ----
 
-Parameters
+SpWML Parameters
 ====================
 
 * :ref:`common<spwml>` parameters. Parameters related to borders work differently from other elements.
 * :ref:`parent<single_child_text>` parameters.
 * type (String). Specify the type of button as one of text, outlined, elevated, filled, filledTonal, icon, iconFilled, iconFilledTonal, iconOutlined, faSmall, faExtended, fa, faLarge or block. block is a special button whose child element responds to taps.
-* iconNum (String).  Set icon type by `codePoint <https://api.flutter.dev/flutter/material/Icons-class.html>`__ .
+* iconNum (String). Set icon type by `codePoint <https://api.flutter.dev/flutter/material/Icons-class.html>`__ .
 * iconSize (double). 
-* iconColor (String).  :ref:`The color system<color_system>` .
+* iconColor (String). :ref:`The color system<color_system>` .
 * splashRadius (double). 
-* fgColor (String).  The foreground color. The color of the overlay changes when the button is tapped. :ref:`The color system<color_system>` .
-* btnBGColor (String).  The backgound color. :ref:`The color system<color_system>` .
-* color (String).  Same btnBGColor.
-* shape (String).  The border shape. Specify one of roundRect, stadium, bevel, circle.
-
-----
-
-Super Class
-==============
-
-:ref:`single_child_text`
+* fgColor (String). The foreground color. The color of the overlay changes when the button is tapped. :ref:`The color system<color_system>` .
+* btnBGColor (String). The backgound color. :ref:`The color system<color_system>` .
+* color (String). Same btnBGColor.
+* shape (String). The border shape. Specify one of roundRect, stadium, bevel, circle.
+* isEnabled (bool). Set to false if you want to disable this elements.

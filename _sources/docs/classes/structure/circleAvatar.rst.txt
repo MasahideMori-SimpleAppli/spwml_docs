@@ -2,7 +2,7 @@
 .. _circleAvatar:
 
 ======================================
-CircleAvatarElement
+circleAvatar
 ======================================
 
 How to write by SpWML
@@ -21,28 +21,17 @@ Summary
 
 A block that can surround its child blocks with a circular viewing area.
 
-----
-
-Functions (Dart)
-===================
-
-Child block control
------------------------
-
-:ref:`Parent class<single_child>` functions.
+It has a variable with parameters equivalent to Flutter `CircleAvatar class <https://api.flutter.dev/flutter/material/CircleAvatar-class.html>`__ .
 
 ----
 
-Variable（Dart）
-=================
-
-* :ref:`The common<spwml>` variable.
-* :ref:`Parent<single_child>` variable.
-* [elParams] : A variable with parameters equivalent to Flutter `CircleAvatar class <https://api.flutter.dev/flutter/material/CircleAvatar-class.html>`__ .
+Dart Class Reference
+======================
+`CircleAvatarElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/CircleAvatarElement-class.html>`__
 
 ----
 
-Parameters
+SpWML Parameters
 ====================
 
 * :ref:`The common<spwml>` parameters.
@@ -50,10 +39,3 @@ Parameters
 * color (String). Set backgound color of circle. :ref:`The color system<color_system>` .
 * fgColor (String). Set foreground color. :ref:`The color system<color_system>` .
 * radius (double). Set radius.
-
-----
-
-Super Class
-==============
-
-:ref:`single_child`

@@ -2,7 +2,7 @@
 .. _textField:
 
 ======================================
-TextFieldElement
+textfield
 ======================================
 
 How to write by SpWML
@@ -25,89 +25,17 @@ Summary
 
 It is a block that can be set to text input without a child block.
 
-----
-
-Functions (Dart)
-===================
-
-Search icon callback
-----------------------------
-
-Sets the button callback when the input is in search mode.
-
-.. code-block:: none
-   
-   void setSuffixCallback(Function(String inputText)? suffixCallback)
-
-
-Text change callback
-----------------------------
-
-Set a callback when text changed by user.
-
-.. code-block:: none
-   
-   void setOnChanged(void Function(String)? onChanged)
-
-
-Input complete callback
-----------------------------
-
-Set a callback when user input is completed.
-
-.. code-block:: none
-   
-   void setOnSubmitted(void Function(String)? onSubmitted)
-
-
-Other functions
-----------------------------
-
-Set a class to hold the input text. The text is managed by the Parent widget as per Flutter's standard specifications.
-
-.. code-block:: none
-   
-   void setController(TextEditingController? controller)
-
-----------------------------
-
-
-Set Focus.
-
-.. code-block:: none
-   
-   void setFocusNode(FocusNode? focusNode)
-
-----------------------------
-
-
-Set enabled flag.
-
-.. code-block:: none
-   
-   void setEnabled(bool enabled)
-
-----------------------------
-
-
-Set Controller and Focus by textfield_manager.
-
-.. code-block:: none
-   
-   void setManager(TextFieldManager manager, String name, {String? initialText, bool isAlwaysInitialize = false})
+It has a variable with parameters equivalent to Flutter `TextField class <https://api.flutter.dev/flutter/material/TextField-class.html>`__ .
 
 ----
 
-Variable（Dart）
-=================
-
-* :ref:`The common<spwml>` variable.
-* :ref:`Parent<text>` variable.
-* [tfParams] :  A variable with parameters equivalent to Flutter `TextField class <https://api.flutter.dev/flutter/material/TextField-class.html>`__ .
+Dart Class Reference
+======================
+`TextFieldElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/TextFieldElement-class.html>`__
 
 ----
 
-Parameters
+SpWML Parameters
 ======================
 
 * :ref:`The common<spwml>` parameters.
@@ -123,18 +51,11 @@ Parameters
 * suffixIconSize(double). Suffix Set size of icon in px.
 * suffixIconSplashRadius(double). Specifies the size of the animation area for tapping the tail icon in px.
 * suffixIconColor(String). Color setting for the suffix icon.  :ref:`The color system<color_system>` .
-* cpL (double)。Left content padding.
-* cpT (double)。Top content padding.
-* cpR (double)。Right content padding.
-* cpB (double)。Bottom content padding.
+* cpL (double). Left content padding.
+* cpT (double). Top content padding.
+* cpR (double). Right content padding.
+* cpB (double). Bottom content padding.
 * maxLines(int?). Sets how many lines of text the text field will look like. This does not limit the actual number of input lines. However, if set to 1, line breaks are not allowed.
 * maxLength(int?). Maximum number of input characters for text.
 * fillColor(String?). Fill color when type is rounded.
 * radius(double). The corner rounding when type is rounded.
-
-----
-
-Super Class
-===============
-
-:ref:`text`

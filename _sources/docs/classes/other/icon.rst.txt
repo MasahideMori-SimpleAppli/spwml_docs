@@ -2,7 +2,7 @@
 .. _icon:
 
 ======================================
-IconElement
+icon
 ======================================
 
 How to write by SpWML
@@ -19,34 +19,20 @@ Summary
 
 A block that does not have child blocks and can be used to place icons.
 
-----
-
-Functions (Dart)
-===================
-
-It has no external use, only methods that are used internally.
+It has a variable with parameters equivalent to Flutter `Icons class <https://api.flutter.dev/flutter/material/Icons-class.html>`__ .
 
 ----
 
-Variable（Dart）
-=================
-
-* :ref:`The common<spwml>` variable.
-* [elParams] :  A variable with parameters equivalent to Flutter `Icons class <https://api.flutter.dev/flutter/material/Icons-class.html>`__ .
+Dart Class Reference
+======================
+`IconElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/IconElement-class.html>`__
 
 ----
 
-Parameters
+SpWML Parameters
 ====================
 
 * :ref:`The common<spwml>` parameters.
 * iconNum (String). Set the icon type with `codePoint <https://api.flutter.dev/flutter/material/Icons-class.html>`__ .
 * iconSize (double). Set size of icon in px.
 * iconColor (String). Color setting. :ref:`The color system<color_system>` .
-
-----
-
-Super Class
-==============
-
-:ref:`spwml`

@@ -2,7 +2,7 @@
 .. _col:
 
 ======================================
-ColElement
+col
 ======================================
 
 How to write by SpWML
@@ -20,30 +20,20 @@ Summary
 ===============
 
 A block with multiple child blocks.
+
 Each inner child block becomes a row element.
 
-----
-
-Functions (Dart)
-===================
-
-Child block control
------------------------
-
-:ref:`Parent class <multi_child>` functions.
+It has a variable with parameters equivalent to Flutter `Column class <https://api.flutter.dev/flutter/widgets/Column-class.html>`__ .
 
 ----
 
-Variable（Dart）
-=================
-
-* :ref:`The common<spwml>` variable.
-* :ref:`Parent<multi_child>` variable.
-* [elParams] :  A variable with parameters equivalent to Flutter `Column class <https://api.flutter.dev/flutter/widgets/Column-class.html>`__ .
+Dart Class Reference
+======================
+`ColElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/ColElement-class.html>`__
 
 ----
 
-Parameters
+SpWML Parameters
 ====================
 
 * :ref:`The common<spwml>` parameters.
@@ -51,10 +41,3 @@ Parameters
 * vAlign (String). Vertical alignment: start, center, top, bottom, end, spaceAround, spaceEvenly or spaceBetween.
 * hAlign (String). Horizontal alignment, which can be left, start, center, right, end  or stretch.
 * mainAxisSize (String).  Set min or max. Set whether to maximize the main axis or minimize to fit the child view, the initial value is max.
-
-----
-
-Super Class
-==============
-
-:ref:`multi_child`
