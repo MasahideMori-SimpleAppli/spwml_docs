@@ -25,6 +25,10 @@ An ON/OFF switch is placed where this block is placed.
 
 It has a variable with parameters equivalent to Flutter `Switch class <https://api.flutter.dev/flutter/material/Switch-class.html>`__ .
 
+To use this type, it is necessary to set `FlagManager <https://pub.dev/packages/simple_managers>`__  to SpWMLBuilder or SpWML widget. 
+
+Also, if no value is selected, the manager has no value.
+
 ----
 
 Dart Class Reference

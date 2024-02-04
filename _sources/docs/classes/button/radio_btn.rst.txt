@@ -29,6 +29,10 @@ A block that can create radio buttons.
 
 It has not only `Radio class <https://api.flutter.dev/flutter/material/Radio-class.html>`__ variables that has variables that have been further adjusted to improve usability.
 
+To use this type, it is necessary to set `IndexManager <https://pub.dev/packages/simple_managers>`__  to SpWMLBuilder or SpWML widget. 
+
+Also, if no value is selected, the manager has no value.
+
 ----
 
 Dart Class Reference

@@ -27,6 +27,8 @@ It is a block that can be set to text input without a child block.
 
 It has a variable with parameters equivalent to Flutter `TextField class <https://api.flutter.dev/flutter/material/TextField-class.html>`__ .
 
+To use this type, it is necessary to set `TextFieldManager <https://pub.dev/packages/simple_managers>`__  to SpWMLBuilder or SpWML widget.
+
 ----
 
 Dart Class Reference

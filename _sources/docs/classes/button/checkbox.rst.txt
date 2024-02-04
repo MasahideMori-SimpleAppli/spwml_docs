@@ -29,6 +29,10 @@ This block allows you to create checkboxes.
 
 It has not only `Checkbox class <https://api.flutter.dev/flutter/material/Checkbox-class.html>`__ variables that has variables that have been further adjusted to improve usability.
 
+To use this type, it is necessary to set `MultiFlagManager <https://pub.dev/packages/simple_managers>`__  to SpWMLBuilder or SpWML widget. 
+
+With this type, the manager always stores the value associated with the SID.
+
 ----
 
 Dart Class Reference
