@@ -89,7 +89,7 @@ Added in version 21.0.0, SpWMLDialog makes it easy to create even complex dialog
           return SpWMLDialog(
             b,
             const Text('Dialog title'),
-            320, // The dialog width
+            width: 320, // The dialog width
             cancelBtnCallback: (close) {
               close();
             },
