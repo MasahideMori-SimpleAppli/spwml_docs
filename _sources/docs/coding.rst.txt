@@ -52,7 +52,7 @@ https://pub.dev/packages/simple_managers
 
 By giving SpWMLBlilder the required manager class in the layout, the state will be automatically managed.
 Each manager class included in simple_managers supports serialization.
-Easy to save and restore.
+Easy to save and restore.  
 By using the StateManager added in version 3.0.0 of the simple_managers package, all states are managed for each sid and can be serialized and deserialized all at once.  
 
 .. code-block:: none
