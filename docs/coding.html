@@ -63,6 +63,8 @@ The parameter common to all elements is spwmlParams.
 Access to “params” is not recommended as it is a parameter used internally.</p>
 <p>In addition, frequently used variables may be implemented in element methods.
 If there is an implementation, please use it. It may be safer to operate.</p>
+<p>Furthermore, if you use the automatic code generation function of the SpWML editor, you can automatically generate most of the necessary code from SpWML, so it may be better to use that first.</p>
+<p><a class="reference external" href="https://simple-widget-markup-editor.web.app/">https://simple-widget-markup-editor.web.app/</a></p>
 </section>
 <hr class="docutils" />
 <section id="state-management">
@@ -71,9 +73,11 @@ If there is an implementation, please use it. It may be safer to operate.</p>
 <p><a class="reference external" href="https://pub.dev/packages/simple_managers">https://pub.dev/packages/simple_managers</a></p>
 <p>By giving SpWMLBlilder the required manager class in the layout, the state will be automatically managed.
 Each manager class included in simple_managers supports serialization.
-Easy to save and restore.</p>
+Easy to save and restore.
+By using the StateManager added in version 3.0.0 of the simple_managers package, all states are managed for each sid and can be serialized and deserialized all at once.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>SpWMLBlilder b = SpWMLBlilder(layout);
-b.setManager(the manager class you want to use);
+b.setStateManager(Manager class stored in class variables etc.);
+// or b.setManager(the manager class you want to use);
 </pre></div>
 </div>
 </section>
@@ -95,7 +99,8 @@ Widget compiledWidget = b.build(context);
 <p>SpWML can create dialogs as well as main screens.
 Added in version 21.0.0, SpWMLDialog makes it easy to create even complex dialogs.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>SpWMLBuilder b = SpWMLBuilder(layout);
-b.setManager(the manager class you want to use);
+b.setStateManager(Manager class stored in class variables etc.);
+// or b.setManager(the manager class you want to use);
 showDialog(
      context: context,
      builder: (context) {
