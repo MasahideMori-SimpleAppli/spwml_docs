@@ -41,3 +41,4 @@ SpWML Parameters
 * smallSize (double). The size when displayed as a solid color dot.
 * offsetX (double). Use this when you want to shift the display position of the X coordinate of the label. Negative values are also allowed.
 * offsetY (double). Use this when you want to shift the display position of the Y coordinate of the label. Negative values are also allowed.
+* isLabelVisible (bool). Change the visibility state of the label.
