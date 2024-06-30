@@ -21,6 +21,7 @@ Container
 * :ref:`wrap (A container whose interior is laid out in the Z direction from the upper left) <wrap>`
 * :ref:`circleAvatar (Circular viewing area) <circleAvatar>`
 * :ref:`badge (Notifications on the icon) <badge>`
+* :ref:`tooltip (Description text on the element) <tooltip>`
 
 Text
 ==================
