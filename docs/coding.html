@@ -1,20 +1,16 @@
-
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-content_root="../">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Working with SpWML from code &#8212; SpWML Docs  documentation</title>
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/sphinx_highlight.js"></script>
+    <title>Working with SpWML from code &#8212; spwml_docs 30.2.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=12dfc556" />
+    <script src="../_static/documentation_options.js?v=35073323"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Classes and methods" href="classes_and_methods.html" />
@@ -22,8 +18,9 @@
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
+
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  
 
   </head><body>
   
@@ -36,9 +33,9 @@
           <div class="body" role="main">
             
   <section id="working-with-spwml-from-code">
-<h1>Working with SpWML from code<a class="headerlink" href="#working-with-spwml-from-code" title="Permalink to this heading">¶</a></h1>
+<h1>Working with SpWML from code<a class="headerlink" href="#working-with-spwml-from-code" title="Link to this heading">¶</a></h1>
 <section id="basic-operation">
-<h2>Basic operation<a class="headerlink" href="#basic-operation" title="Permalink to this heading">¶</a></h2>
+<h2>Basic operation<a class="headerlink" href="#basic-operation" title="Link to this heading">¶</a></h2>
 <p>It will be easier to understand if you check the sample below.
 <a class="reference external" href="https://pub.dev/packages/simple_widget_markup/example">https://pub.dev/packages/simple_widget_markup/example</a></p>
 <p>One of the SpWML parameters contain above sample is “sid”.
@@ -68,7 +65,7 @@ If there is an implementation, please use it. It may be safer to operate.</p>
 </section>
 <hr class="docutils" />
 <section id="state-management">
-<h2>State management<a class="headerlink" href="#state-management" title="Permalink to this heading">¶</a></h2>
+<h2>State management<a class="headerlink" href="#state-management" title="Link to this heading">¶</a></h2>
 <p>SpWML switched to state management using simple_managers after version 20.</p>
 <p><a class="reference external" href="https://pub.dev/packages/simple_managers">https://pub.dev/packages/simple_managers</a></p>
 <p>By giving SpWMLBlilder the required manager class in the layout, the state will be automatically managed.
@@ -83,7 +80,7 @@ b.setStateManager(Manager class stored in class variables etc.);
 </section>
 <hr class="docutils" />
 <section id="integration-with-flutter-widgets">
-<h2>Integration with Flutter widgets<a class="headerlink" href="#integration-with-flutter-widgets" title="Permalink to this heading">¶</a></h2>
+<h2>Integration with Flutter widgets<a class="headerlink" href="#integration-with-flutter-widgets" title="Link to this heading">¶</a></h2>
 <p>Using the struct <a class="reference internal" href="classes/structure/block.html#block"><span class="std std-ref">block</span></a> you can embed widgets inside like this:
 By using this, if the screen parts created by the designer with the design tool are converted to Flutter Widgets, you can be easily embedded.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>SpWMLBuilder b = SpWMLBuilder(layout);
@@ -95,7 +92,7 @@ Widget compiledWidget = b.build(context);
 </section>
 <hr class="docutils" />
 <section id="create-a-dialog-with-spwml">
-<h2>Create a dialog with SpWML<a class="headerlink" href="#create-a-dialog-with-spwml" title="Permalink to this heading">¶</a></h2>
+<h2>Create a dialog with SpWML<a class="headerlink" href="#create-a-dialog-with-spwml" title="Link to this heading">¶</a></h2>
 <p>SpWML can create dialogs as well as main screens.
 Added in version 21.0.0, SpWMLDialog makes it easy to create even complex dialogs.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>SpWMLBuilder b = SpWMLBuilder(layout);
@@ -130,7 +127,7 @@ Even for dialogs with state, the state is automatically managed by the manager c
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="../index.html">SpWML Docs</a></h1>
+<h1 class="logo"><a href="../index.html">spwml_docs</a></h1>
 
 
 
@@ -166,7 +163,7 @@ Even for dialogs with state, the state is automatically managed by the manager c
   </ul></li>
 </ul>
 </div>
-<div id="searchbox" style="display: none" role="search">
+<search id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
@@ -174,7 +171,7 @@ Even for dialogs with state, the state is automatically managed by the manager c
       <input type="submit" value="Go" />
     </form>
     </div>
-</div>
+</search>
 <script>document.getElementById('searchbox').style.display = "block"</script>
 
 
@@ -189,11 +186,11 @@ Even for dialogs with state, the state is automatically managed by the manager c
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2022, Masahide Mori.
+      &#169;2024, MasahideMori.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.3.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
       
       |
       <a href="../_sources/docs/coding.rst.txt"

@@ -1,0 +1,39 @@
+:orphan:
+.. _tooltip:
+
+======================================
+tooltip
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (tooltip)Tool tip text
+   +(btn, sid:btn1)Button
+
+----
+
+Summary
+===============
+
+This is a block that can give tooltip to child blocks.
+
+It has a variable with parameters equivalent to Flutter `Tooltip class <https://api.flutter.dev/flutter/material/Tooltip-class.html>`__ .
+
+----
+
+Dart Class Reference
+======================
+`TooltipElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/TooltipElement-class.html>`__
+
+----
+
+SpWML Parameters
+====================
+
+* :ref:`The common<spwml>` parameters.
+* :ref:`Parent<single_child_text>` parameters.
+* offsetY (double). Use this when you want to shift the display position of the Y coordinate of the label. Negative values are also allowed.
+* triggerMode (String). Specify the triggering condition: longPress, manual, or tap. If you set it to manual, you must programmatically set a key to identify it using setKey, then call ensureVisible to make the tooltip visible.
