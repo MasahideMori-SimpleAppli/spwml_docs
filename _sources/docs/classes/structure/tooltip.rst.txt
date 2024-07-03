@@ -33,7 +33,7 @@ Dart Class Reference
 SpWML Parameters
 ====================
 
-* :ref:`The common<spwml>` parameters.
+* :ref:`The common<spwml>` parameters. Note that any margins or padding applied to this block will not affect the position of child elements - they will reposition the tooltip text instead of the child elements.
 * :ref:`Parent<single_child_text>` parameters.
 * offsetY (double). Use this when you want to shift the display position of the Y coordinate of the label. Negative values are also allowed.
 * triggerMode (String). Specify the triggering condition: longPress, manual, or tap. If you set it to manual, you must programmatically set a key to identify it using setKey, then call ensureVisible to make the tooltip visible.
