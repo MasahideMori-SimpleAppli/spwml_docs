@@ -43,6 +43,25 @@ https://simple-widget-markup-editor.web.app/
 
 ----
 
+Compilation Notes
+===================================
+
+SpWML uses code numbers for icons, so you will need to adjust the compilation options for certain versions of Flutter and later.
+The following will compile successfully, but if you want a lighter version, consider adjusting it manually.
+
+.. code-block:: console
+
+    flutter build web --release --no-tree-shake-icons --web-renderer canvaskit
+
+If you have already decided which icons you will use, you can do the following to significantly reduce the weight of your code
+by not compiling icons that will not be used.
+
+.. code-block:: console
+
+    flutter build web --release --no-tree-shake-icon-names=use_icon_name_1,use_icon_name_2 --web-renderer canvaskit
+
+----
+
 State management
 ==================
 
@@ -50,7 +69,7 @@ SpWML switched to state management using simple_managers after version 20.
 
 https://pub.dev/packages/simple_managers
 
-By giving SpWMLBlilder the required manager class in the layout, the state will be automatically managed.
+By giving SpWMLBuilder the required manager class in the layout, the state will be automatically managed.
 Each manager class included in simple_managers supports serialization.
 Easy to save and restore.
 
@@ -58,7 +77,7 @@ By using the StateManager added in version 3.0.0 of the simple_managers package,
 
 .. code-block:: none
 
-   SpWMLBlilder b = SpWMLBlilder(layout);
+   SpWMLBuilder b = SpWMLBuilder(layout);
    b.setStateManager(Manager class stored in class variables etc.);
    // or b.setManager(the manager class you want to use);
 

@@ -64,15 +64,29 @@ If there is an implementation, please use it. It may be safer to operate.</p>
 <p><a class="reference external" href="https://simple-widget-markup-editor.web.app/">https://simple-widget-markup-editor.web.app/</a></p>
 </section>
 <hr class="docutils" />
+<section id="compilation-notes">
+<h2>Compilation Notes<a class="headerlink" href="#compilation-notes" title="Link to this heading">¶</a></h2>
+<p>SpWML uses code numbers for icons, so you will need to adjust the compilation options for certain versions of Flutter and later.
+The following will compile successfully, but if you want a lighter version, consider adjusting it manually.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">flutter build web --release --no-tree-shake-icons --web-renderer canvaskit</span>
+</pre></div>
+</div>
+<p>If you have already decided which icons you will use, you can do the following to significantly reduce the weight of your code
+by not compiling icons that will not be used.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">flutter build web --release --no-tree-shake-icon-names=use_icon_name_1,use_icon_name_2 --web-renderer canvaskit</span>
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
 <section id="state-management">
 <h2>State management<a class="headerlink" href="#state-management" title="Link to this heading">¶</a></h2>
 <p>SpWML switched to state management using simple_managers after version 20.</p>
 <p><a class="reference external" href="https://pub.dev/packages/simple_managers">https://pub.dev/packages/simple_managers</a></p>
-<p>By giving SpWMLBlilder the required manager class in the layout, the state will be automatically managed.
+<p>By giving SpWMLBuilder the required manager class in the layout, the state will be automatically managed.
 Each manager class included in simple_managers supports serialization.
 Easy to save and restore.</p>
 <p>By using the StateManager added in version 3.0.0 of the simple_managers package, all states are managed for each sid and can be serialized and deserialized all at once.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>SpWMLBlilder b = SpWMLBlilder(layout);
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>SpWMLBuilder b = SpWMLBuilder(layout);
 b.setStateManager(Manager class stored in class variables etc.);
 // or b.setManager(the manager class you want to use);
 </pre></div>
@@ -144,6 +158,7 @@ Even for dialogs with state, the state is automatically managed by the manager c
 <li class="toctree-l1"><a class="reference internal" href="install.html">How to install SpWML</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Working with SpWML from code</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#basic-operation">Basic operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#compilation-notes">Compilation Notes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#state-management">State management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#integration-with-flutter-widgets">Integration with Flutter widgets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#create-a-dialog-with-spwml">Create a dialog with SpWML</a></li>
