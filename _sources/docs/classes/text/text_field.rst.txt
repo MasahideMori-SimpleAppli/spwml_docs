@@ -61,3 +61,5 @@ SpWML Parameters
 * maxLength(int?). Maximum number of input characters for text.
 * fillColor(String?). Fill color when type is rounded.
 * radius(double). The corner rounding when type is rounded.
+* isEnabled(bool). Flag for enable/disable.
+* readOnly(bool). Flag to enable read-only mode.
