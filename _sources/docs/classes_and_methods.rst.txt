@@ -1,4 +1,5 @@
 .. _classes_and_methods:
+
 ======================================
 Classes and methods
 ======================================
@@ -73,11 +74,16 @@ Buttons (elements that respond to touch interactions)
 ========================================================
 * :ref:`btn (buttons) <btn>`
 * :ref:`checkbox (Multi selection) <checkbox>`
+* :ref:`checkbox2 (Multi selection) <checkbox2>`
 * :ref:`dropdownBtn <dropdownBtn>`
+* :ref:`dropdownBtn2 <dropdownBtn2>`
 * :ref:`popupMenuBtn <popupMenuBtn>`
+* :ref:`popupMenuBtn2 <popupMenuBtn2>`
 * :ref:`radioBtn (Single selection) <radioBtn>`
+* :ref:`radioBtn2 (Single selection) <radioBtn2>`
 * :ref:`switchBtn <switchBtn>`
 * :ref:`segmentedBtn <segmentedBtn>`
+* :ref:`segmentedBtn2 <segmentedBtn2>`
 
 Others
 ==================

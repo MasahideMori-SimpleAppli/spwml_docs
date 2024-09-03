@@ -1,4 +1,5 @@
 :orphan:
+
 .. _textField:
 
 ======================================
@@ -9,14 +10,17 @@ How to write by SpWML
 ========================
 
 .. code-block:: none
-   
-   (tf)
-   (tf, w:380, labelText:Abbreviation)
-   (tf, w:380, labelText:search, mode:search)
-   (tf, w:380, labelText:search, mode:searchPrefix)
-   (tf, w:380, labelText:search\ with\ clear, mode:searchAndClear)
-   (tf, w:380, labelText:input\ password, mode:password)
-   (tf, w:380, labelText:rounded\ type, type:rounded)
+
+   (tf, w:380, labelText:Abbreviation, sid:tf1)
+   (tf, w:380, labelText:search, mode:search, sid:tf2)
+   (tf, w:380, labelText:search, mode:searchPrefix, sid:tf3)
+   (tf, w:380, labelText:search\ with\ clear, mode:searchAndClear, sid:tf4)
+   (tf, w:380, labelText:input\ password, mode:password, sid:tf5)
+   (tf, w:380, labelText:rounded\ type, type:rounded, sid:tf6)
+   (tf, w:380, labelText:integer\ only, inputType:intOnly, mT:12, sid:tf7)
+   (tf, w:380, labelText:Only\ numbers\ with\ decimal\ points, inputType:numOnly, mT:12, sid:tf8)
+   (tf, w:380, labelText:money, inputType:money, mT:12, sid:tf9)
+   (tf, w:380, labelText:money\ with\ decimal, inputType:moneyWithDecimal, mT:12, sid:tf10)
 
 ----
 
@@ -64,4 +68,4 @@ SpWML Parameters
 * isEnabled(bool). Flag for enable/disable.
 * readOnly(bool). Flag to enable read-only mode.
 * keyboardType(String). Specifies the type of software keyboard used for input, which is mainly useful on mobile devices. This is the equivalent of Flutter's `TextInputType <https://api.flutter.dev/flutter/services/TextInputType-class.html>`__.
-* inputType(String). Adjusts the text input. Choose between normal, intOnly, numOnly, and money. Default is normal.
+* inputType(String). Adjusts the text input. Choose between normal, intOnly, numOnly, money, moneyWithDecimal. Default is normal.

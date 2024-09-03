@@ -1,4 +1,5 @@
 :orphan:
+
 .. _segmentedBtn:
 
 ======================================
@@ -10,10 +11,10 @@ How to write by SpWML
 
 .. code-block:: none
    
-   (segmentedBtn)
-   +(btn)button1
-   +(btn)button2
-   +(btn)button3
+   (segmentedBtn, sid:segmentedBtn1)
+   +(menu)button1
+   +(menu)button2
+   +(menu)button3
 
 ----
 
@@ -21,6 +22,8 @@ Summary
 ===============
 
 A block that allows you to create buttons separated by fields.
+
+It is necessary to set the SID.
 
 It has a variable with parameters equivalent to Flutter `SegmentedButton class <https://api.flutter.dev/flutter/material/SegmentedButton-class.html>`__ .
 

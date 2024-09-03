@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>segmentedBtn2 &#8212; spwml_docs 30.2.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/basic.css?v=c058f7c8" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/alabaster.css?v=27fed22d" />
+    <script src="../../../_static/documentation_options.js?v=35073323"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="segmentedbtn2">
+<span id="id1"></span><h1>segmentedBtn2<a class="headerlink" href="#segmentedbtn2" title="Link to this heading">¶</a></h1>
+<section id="how-to-write-by-spwml">
+<h2>How to write by SpWML<a class="headerlink" href="#how-to-write-by-spwml" title="Link to this heading">¶</a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(segmentedBtn2, sid:segmentedBtn1)
++(menu, sid:child1)button1
++(menu, sid:child2)button2
++(menu, sid:child3)button3
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">¶</a></h2>
+<p>A block that allows you to create buttons separated by fields.</p>
+<p>It is necessary to set the SID.</p>
+<p>This is a flavor of segmentedBtn that allows state management via a String.</p>
+<p>It requires SIDs for all children, but in some cases it can be more convenient than the plain version because the state can be managed via SIDs.</p>
+<p>It has a variable with parameters equivalent to Flutter <a class="reference external" href="https://api.flutter.dev/flutter/material/SegmentedButton-class.html">SegmentedButton class</a> .</p>
+<p>To use this type, it is necessary to set <a class="reference external" href="https://pub.dev/packages/simple_managers">MultiSelectionManager</a>  to SpWMLBuilder or SpWML widget.</p>
+</section>
+<hr class="docutils" />
+<section id="dart-class-reference">
+<h2>Dart Class Reference<a class="headerlink" href="#dart-class-reference" title="Link to this heading">¶</a></h2>
+<p><a class="reference external" href="https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/SegmentedBtn2Element-class.html">SegmentedBtn2Element class</a></p>
+</section>
+<hr class="docutils" />
+<section id="spwml-parameters">
+<h2>SpWML Parameters<a class="headerlink" href="#spwml-parameters" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../super/spwml.html#spwml"><span class="std std-ref">The common</span></a> parameters.</p></li>
+<li><p><a class="reference internal" href="../super/multi_child.html#multi-child"><span class="std std-ref">Parent</span></a> parameters.</p></li>
+<li><p>isMultiSelection (bool). If true, multiple selections are allowed. Default is false.</p></li>
+<li><p>allowEmpty (bool). If true, unselected states are allowed. Default is true.</p></li>
+<li><p>isEnabled (bool). Set to false if you want to disable this elements.</p></li>
+</ul>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../index.html">spwml_docs</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction.html">What is SpWML?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../try_editor.html">Try SpWML Editor!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ai_prompt.html">Let AI generate the design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../install.html">How to install SpWML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../coding.html">Working with SpWML from code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes_and_methods.html">Classes and methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../copyright_notice.html">Notice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendix.html">Appendix</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, MasahideMori.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.0.2</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../../../_sources/docs/classes/button/segmented_btn2.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

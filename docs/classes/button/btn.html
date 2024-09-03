@@ -7,7 +7,8 @@
 
     <title>btn &#8212; spwml_docs 30.2.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=d1102ebc" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/alabaster.css?v=12dfc556" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/basic.css?v=c058f7c8" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/alabaster.css?v=27fed22d" />
     <script src="../../../_static/documentation_options.js?v=35073323"></script>
     <script src="../../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -35,29 +36,29 @@
 <section id="how-to-write-by-spwml">
 <h2>How to write by SpWML<a class="headerlink" href="#how-to-write-by-spwml" title="Link to this heading">¶</a></h2>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>// Example
-(btn)Button text
-+(child block)Block-type buttons use child blocks.
+(btn, sid:btn1)Button text
++(block)Block-type buttons use child blocks.
 
 // common usage
-(btn, textColor:null)Text button
-(btn, type:outlined, textColor:null)Outlined button
-(btn, type:elevated, textColor:brown, textColor:null)Elevated button
-(btn, type:icon, iconNum:0xefaa)Icon button
-(btn, type:block, borderRadius:8, shape:roundRect)An example of defining a card-type button with a block button
+(btn, textColor:null, sid:btn2)Text button
+(btn, type:outlined, textColor:null, sid:btn3)Outlined button
+(btn, type:elevated, textColor:brown, textColor:null, sid:btn4)Elevated button
+(btn, type:icon, iconNum:0xefaa, sid:btn5)Icon button
+(btn, type:block, borderRadius:8, shape:roundRect, sid:btn6)An example of defining a card-type button with a block button
 +(row, bgColor:orange, borderRadius:8, borderShape:rectangle)
 ++(col, mL:8, mT:8, mR:8, mB:8)
 +++(menu)button&#39;s child block.
 +++(menu)a button with content like this.
-(btn, type:elevated, textColor:white, iconNum:0xefaa, lineHeight:1.2, h:32, iconColor:yellow, btnBGColor:blue)With params
-(btn)
+(btn, type:elevated, textColor:white, iconNum:0xefaa, lineHeight:1.2, h:32, iconColor:yellow, btnBGColor:blue, sid:btn7)With params
+(btn, sid:btn8)
 +(col)
 ++(menu)button&#39;s child block.
 ++(menu)a button with content like this.
-(btn, type:outlined)
+(btn, type:outlined, sid:btn9)
 +(col)
 ++(menu)button&#39;s child block.
 ++(menu)a button with content like this.
-(btn, type:elevated)
+(btn, type:elevated, sid:btn10)
 +(col)
 ++(menu)button&#39;s child block.
 ++(menu)a button with content like this.
@@ -68,6 +69,7 @@
 <section id="summary">
 <h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">¶</a></h2>
 <p>A block in which various buttons can be placed.</p>
+<p>It is necessary to set the SID.</p>
 <p>It has similar parameters to <a class="reference external" href="https://api.flutter.dev/flutter/material/TextButton-class.html">TextButton class</a>.</p>
 </section>
 <hr class="docutils" />
@@ -100,7 +102,7 @@
           
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
 <h1 class="logo"><a href="../../../index.html">spwml_docs</a></h1>
 
@@ -111,7 +113,16 @@
 
 
 
-<h3>Navigation</h3>
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../introduction.html">What is SpWML?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../try_editor.html">Try SpWML Editor!</a></li>
@@ -130,16 +141,6 @@
   </ul></li>
 </ul>
 </div>
-<search id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="../../../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
-      <input type="submit" value="Go" />
-    </form>
-    </div>
-</search>
-<script>document.getElementById('searchbox').style.display = "block"</script>
 
 
 
@@ -156,8 +157,8 @@
       &#169;2024, MasahideMori.
       
       |
-      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.3.7</a>
-      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.0.2</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
       
       |
       <a href="../../../_sources/docs/classes/button/btn.rst.txt"

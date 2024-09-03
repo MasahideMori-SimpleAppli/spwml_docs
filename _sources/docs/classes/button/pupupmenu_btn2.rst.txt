@@ -1,0 +1,52 @@
+:orphan:
+
+.. _popupMenuBtn2:
+
+======================================
+popupMenuBtn2
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (popupMenuBtn2, sid:pmBtn1)
+   +(menu, sid:child1)menu 1
+   +(menu, sid:child2)menu 2
+   +(menu, sid:child3)menu 3
+
+----
+
+Summary
+===============
+
+A block that allows you to create a popup menu.
+
+It is necessary to set the SID.
+
+This is a flavor of popupMenuBtn that allows state management via a String.
+
+It requires SIDs for all children, but in some cases it can be more convenient than the plain version because the state can be managed via SIDs.
+
+It has not only `PopupMenuButton class <https://api.flutter.dev/flutter/material/PopupMenuButton-class.html>`__ variables that has variables that have been further adjusted to improve usability.
+
+To use this type, it is necessary to set `SelectionManager <https://pub.dev/packages/simple_managers>`__  to SpWMLBuilder or SpWML widget.
+
+----
+
+Dart Class Reference
+======================
+`PopupMenuBtn2Element class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/PopupMenuBtn2Element-class.html>`__
+
+----
+
+SpWML Parameters
+====================
+
+* :ref:`The common<spwml>` parameters.
+* :ref:`Parent<multi_child>` parameters.
+* iconNum (String). Set the icon type with `codePoint <https://api.flutter.dev/flutter/material/Icons-class.html>`__ .
+* iconSize (double). Set size of icon in px.
+* iconColor (String). Color setting. :ref:`The color system<color_system>` .
+* isEnabled (bool). Set to false if you want to disable this elements.

@@ -1,0 +1,55 @@
+:orphan:
+
+.. _checkbox2:
+
+======================================
+checkbox2
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (checkbox2, sid:cb1)
+   +(menu, sid:child1)menu 1
+   +(menu, sid:child2)menu 2
+   +(menu, sid:child3)menu 3
+
+----
+
+Summary
+===============
+
+This block allows you to create checkboxes.
+
+It is necessary to set the SID.
+
+This is a flavor of checkbox that allows state management via a String.
+
+It requires SIDs for all children, but in some cases it can be more convenient than the plain version because the state can be managed via SIDs.
+
+It has not only `Checkbox class <https://api.flutter.dev/flutter/material/Checkbox-class.html>`__ variables that has variables that have been further adjusted to improve usability.
+
+To use this type, it is necessary to set `MultiSelectionManager <https://pub.dev/packages/simple_managers>`__  to SpWMLBuilder or SpWML widget.
+
+----
+
+Dart Class Reference
+======================
+`Checkbox2Element class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/Checkbox2Element-class.html>`__
+
+----
+
+SpWML Parameters
+====================
+
+* :ref:`The common<spwml>` parameters.
+* :ref:`Parent<multi_child>` parameters.
+* iconSize (double). Set size of icon in px.
+* iconColor (String). Color setting. :ref:`The color system<color_system>` .
+* splashRadius (double). Set the size of the reaction circle by px on when tapped.
+* enableTapLabel (bool). If true, can tap text. The initial value is false.
+* isV3 (bool). If true, the checkbox color will be the system primary color. Also, the icon changes to a solid type.
+* isPrefixIcon (bool). Default is true, if false the icon is aligned to the right. Note that you may need to specify the width as well, as the text portion will autostretch.
+* isEnabled (bool). Set to false if you want to disable this elements.

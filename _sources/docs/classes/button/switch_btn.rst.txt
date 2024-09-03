@@ -1,4 +1,5 @@
 :orphan:
+
 .. _switchBtn:
 
 ======================================
@@ -10,9 +11,9 @@ How to write by SpWML
 
 .. code-block:: none
    
-   (switchBtn)
+   (switchBtn, sid:sb1)
    // only material v3
-   (switchBtn, type:check)
+   (switchBtn, type:check, sid:sb2)
 
 ----
 
@@ -20,6 +21,8 @@ Summary
 ===============
 
 A block that has no child blocks.
+
+It is necessary to set the SID.
 
 An ON/OFF switch is placed where this block is placed.
 
