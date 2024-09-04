@@ -12,9 +12,9 @@ How to write by SpWML
 .. code-block:: none
    
    (dropdownBtn2, sid:ddBtn1)
-   +(menu, sid:child1)menu 1
-   +(menu, sid:child2)menu 2
-   +(menu, sid:child3)menu 3
+   +(menu, tag:child1)menu 1
+   +(menu, tag:child2)menu 2
+   +(menu, tag:child3)menu 3
 
 ----
 
@@ -27,7 +27,7 @@ It is necessary to set the SID.
 
 This is a flavor of dropdownBtn that allows state management via a String.
 
-It requires SIDs for all children, but in some cases it can be more convenient than the plain version because the state can be managed via SIDs.
+It requires tags for all children, but in some cases it can be more convenient than the plain version because the state can be managed via tags.
 
 It has not only `DropdownButton class <https://api.flutter.dev/flutter/material/DropdownButton-class.html>`__ variables that has variables that have been further adjusted to improve usability.
 

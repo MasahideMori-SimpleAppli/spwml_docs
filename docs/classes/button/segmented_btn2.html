@@ -36,9 +36,9 @@
 <section id="how-to-write-by-spwml">
 <h2>How to write by SpWML<a class="headerlink" href="#how-to-write-by-spwml" title="Link to this heading">¶</a></h2>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(segmentedBtn2, sid:segmentedBtn1)
-+(menu, sid:child1)button1
-+(menu, sid:child2)button2
-+(menu, sid:child3)button3
++(menu, tag:child1)button1
++(menu, tag:child2)button2
++(menu, tag:child3)button3
 </pre></div>
 </div>
 </section>
@@ -48,7 +48,7 @@
 <p>A block that allows you to create buttons separated by fields.</p>
 <p>It is necessary to set the SID.</p>
 <p>This is a flavor of segmentedBtn that allows state management via a String.</p>
-<p>It requires SIDs for all children, but in some cases it can be more convenient than the plain version because the state can be managed via SIDs.</p>
+<p>It requires tags for all children, but in some cases it can be more convenient than the plain version because the state can be managed via tags.</p>
 <p>It has a variable with parameters equivalent to Flutter <a class="reference external" href="https://api.flutter.dev/flutter/material/SegmentedButton-class.html">SegmentedButton class</a> .</p>
 <p>To use this type, it is necessary to set <a class="reference external" href="https://pub.dev/packages/simple_managers">MultiSelectionManager</a>  to SpWMLBuilder or SpWML widget.</p>
 </section>

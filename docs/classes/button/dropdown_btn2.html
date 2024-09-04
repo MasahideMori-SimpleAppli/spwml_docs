@@ -36,9 +36,9 @@
 <section id="how-to-write-by-spwml">
 <h2>How to write by SpWML<a class="headerlink" href="#how-to-write-by-spwml" title="Link to this heading">¶</a></h2>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(dropdownBtn2, sid:ddBtn1)
-+(menu, sid:child1)menu 1
-+(menu, sid:child2)menu 2
-+(menu, sid:child3)menu 3
++(menu, tag:child1)menu 1
++(menu, tag:child2)menu 2
++(menu, tag:child3)menu 3
 </pre></div>
 </div>
 </section>
@@ -48,7 +48,7 @@
 <p>A block that allows you to create a drop-down button.</p>
 <p>It is necessary to set the SID.</p>
 <p>This is a flavor of dropdownBtn that allows state management via a String.</p>
-<p>It requires SIDs for all children, but in some cases it can be more convenient than the plain version because the state can be managed via SIDs.</p>
+<p>It requires tags for all children, but in some cases it can be more convenient than the plain version because the state can be managed via tags.</p>
 <p>It has not only <a class="reference external" href="https://api.flutter.dev/flutter/material/DropdownButton-class.html">DropdownButton class</a> variables that has variables that have been further adjusted to improve usability.</p>
 <p>To use this type, it is necessary to set <a class="reference external" href="https://pub.dev/packages/simple_managers">SelectionManager</a>  to SpWMLBuilder or SpWML widget.</p>
 </section>

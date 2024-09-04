@@ -12,9 +12,9 @@ How to write by SpWML
 .. code-block:: none
    
    (segmentedBtn2, sid:segmentedBtn1)
-   +(menu, sid:child1)button1
-   +(menu, sid:child2)button2
-   +(menu, sid:child3)button3
+   +(menu, tag:child1)button1
+   +(menu, tag:child2)button2
+   +(menu, tag:child3)button3
 
 ----
 
@@ -27,7 +27,7 @@ It is necessary to set the SID.
 
 This is a flavor of segmentedBtn that allows state management via a String.
 
-It requires SIDs for all children, but in some cases it can be more convenient than the plain version because the state can be managed via SIDs.
+It requires tags for all children, but in some cases it can be more convenient than the plain version because the state can be managed via tags.
 
 It has a variable with parameters equivalent to Flutter `SegmentedButton class <https://api.flutter.dev/flutter/material/SegmentedButton-class.html>`__ .
 
