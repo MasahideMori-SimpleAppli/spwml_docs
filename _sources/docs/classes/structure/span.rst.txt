@@ -40,3 +40,4 @@ SpWML Parameters
 * :ref:`The common<spwml>` parameters.
 * :ref:`Parent<multi_child_text>` parameters.
 * isSelectable (bool). Specifies whether or not the text inside can be selected.
+* isLayoutStrictMode (bool). If true, Calculates all children as WidgetSpan. This makes the coordinate calculation more accurate, but means you will not be able to copy selected text.

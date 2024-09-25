@@ -18,9 +18,13 @@ How to write by SpWML
    (tf, w:380, labelText:input\ password, mode:password, sid:tf5)
    (tf, w:380, labelText:rounded\ type, type:rounded, sid:tf6)
    (tf, w:380, labelText:integer\ only, inputType:intOnly, mT:12, sid:tf7)
-   (tf, w:380, labelText:Only\ numbers\ with\ decimal\ points, inputType:numOnly, mT:12, sid:tf8)
-   (tf, w:380, labelText:money, inputType:money, mT:12, sid:tf9)
-   (tf, w:380, labelText:money\ with\ decimal, inputType:moneyWithDecimal, mT:12, sid:tf10)
+   (tf, w:380, labelText:integer\ only\,\ negative\ num\ allowed, inputType:intOnlyAllowNegative, mT:12, sid:tf8)
+   (tf, w:380, labelText:Only\ numbers\ with\ decimal\ points, inputType:numOnly, mT:12, sid:tf9)
+   (tf, w:380, labelText:Only\ numbers\ with\ decimal\ points\,\ negative\ num\ allowed, inputType:numOnlyAllowNegative, mT:12, sid:tf10)
+   (tf, w:380, labelText:money, inputType:money, mT:12, sid:tf11)
+   (tf, w:380, labelText:money\,\ negative\ num\ allowed, inputType:moneyAllowNegative, mT:12, sid:tf12)
+   (tf, w:380, labelText:money\ with\ decimal, inputType:moneyWithDecimal, mT:12, sid:tf13)
+   (tf, w:380, labelText:money\ with\ decimal\,\ negative\ num\ allowed, inputType:moneyWithDecimalAllowNegative, mT:12, sid:tf14)
 
 ----
 
@@ -68,4 +72,4 @@ SpWML Parameters
 * isEnabled(bool). Flag for enable/disable.
 * readOnly(bool). Flag to enable read-only mode.
 * keyboardType(String). Specifies the type of software keyboard used for input, which is mainly useful on mobile devices. This is the equivalent of Flutter's `TextInputType <https://api.flutter.dev/flutter/services/TextInputType-class.html>`__.
-* inputType(String). Adjusts the text input. Choose between normal, intOnly, numOnly, money, moneyWithDecimal. Default is normal.
+* inputType(String). Adjusts the text input. Choose between normal, intOnly, intOnlyAllowNegative, numOnly, numOnlyAllowNegative, money, moneyAllowNegative, moneyWithDecimal and moneyWithDecimalAllowNegative. Default is normal.
