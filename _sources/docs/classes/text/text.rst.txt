@@ -90,6 +90,8 @@ SpWML Parameters
 * maxLines(int?). Maximum number of lines of text allowed when drawing.
 * usetextScaler(bool). Setting whether to respect the text size settings of the user's device. Default is false.
 * leading(double?). Text line spacing settings. The default is null, in which case the font's basic line spacing will be applied.
+* leadingDistribution(String). Specifies how the vertical space in logical pixels (calculated as fontSize * lineHeight) is distributed. You can choose even or proportional, where even distributes both the top and bottom equally and proportional adjusts to fit the font.
+* forceStrutHeight(bool). If true, the lineHeight will be enforced even if the characters overlap. Set this to true if you need strict layout. The default is false.
 
 ----
 
