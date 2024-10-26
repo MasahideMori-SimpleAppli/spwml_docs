@@ -49,6 +49,7 @@
 (tf, w:380, labelText:money\,\ negative\ num\ allowed, inputType:moneyAllowNegative, mT:12, sid:tf12)
 (tf, w:380, labelText:money\ with\ decimal, inputType:moneyWithDecimal, mT:12, sid:tf13)
 (tf, w:380, labelText:money\ with\ decimal\,\ negative\ num\ allowed, inputType:moneyWithDecimalAllowNegative, mT:12, sid:tf14)
+(tf, w:380, labelText:Integer\ only\,\ Maximum\ value\ is\ valid, inputType:intOnly, max:255, mT:12, sid:tf15)
 </pre></div>
 </div>
 </section>
@@ -93,7 +94,7 @@
 <li><p>readOnly(bool). Flag to enable read-only mode.</p></li>
 <li><p>keyboardType(String). Specifies the type of software keyboard used for input, which is mainly useful on mobile devices. This is the equivalent of Flutter’s <a class="reference external" href="https://api.flutter.dev/flutter/services/TextInputType-class.html">TextInputType</a>.</p></li>
 <li><p>inputType(String). Adjusts the text input. Choose between normal, intOnly, intOnlyAllowNegative, numOnly, numOnlyAllowNegative, money, moneyAllowNegative, moneyWithDecimal and moneyWithDecimalAllowNegative. Default is normal.</p></li>
-<li><p>min(double). This is only valid if inputType is a numeric input. Sets the minimum value.</p></li>
+<li><p>min(double). This is only valid if inputType is a numeric input. Sets the minimum value. This is an input limitation, so only 0 and negative values are recommended.</p></li>
 <li><p>max(double). This is only valid if inputType is a numeric input. Sets the maximum value.</p></li>
 </ul>
 </section>
