@@ -31,7 +31,7 @@ It requires tags for all children, but in some cases it can be more convenient t
 
 It has not only `Radio class <https://api.flutter.dev/flutter/material/Radio-class.html>`__ variables that has variables that have been further adjusted to improve usability.
 
-To use this type, it is necessary to set `SelectionManager <https://pub.dev/packages/simple_managers>`__  to SpWMLBuilder or SpWML widget.
+To use this type, it is necessary to set `TagSelectionManager <https://pub.dev/packages/simple_managers>`__  to SpWMLBuilder or SpWML widget.
 
 ----
 

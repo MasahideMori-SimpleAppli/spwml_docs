@@ -31,7 +31,7 @@ It requires tags for all children, but in some cases it can be more convenient t
 
 It has a variable with parameters equivalent to Flutter `SegmentedButton class <https://api.flutter.dev/flutter/material/SegmentedButton-class.html>`__ .
 
-To use this type, it is necessary to set `MultiSelectionManager <https://pub.dev/packages/simple_managers>`__  to SpWMLBuilder or SpWML widget.
+To use this type, it is necessary to set `MultiTagSelectionManager <https://pub.dev/packages/simple_managers>`__  to SpWMLBuilder or SpWML widget.
 
 ----
 
