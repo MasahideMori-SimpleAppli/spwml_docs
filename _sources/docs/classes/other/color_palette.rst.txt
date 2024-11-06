@@ -1,0 +1,40 @@
+:orphan:
+
+.. _colorPalette:
+
+======================================
+colorPalette
+======================================
+
+How to write by SpWML
+========================
+
+.. code-block:: none
+   
+   (colorPalette, sid:cp)
+
+----
+
+Summary
+===============
+
+This is a block for displaying a simple color palette.
+
+To use this type, it is necessary to set `TextFieldManager <https://pub.dev/packages/simple_managers>`__  to SpWMLBuilder or SpWML widget.
+
+This block extends the configured SID and consumes four namespaces: "SID:A", "SID:R", "SID:G", and "SID:B".
+Each is assigned color data from 0 to 255.
+
+----
+
+Dart Class Reference
+======================
+`ColorPaletteElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/ColorPaletteElement-class.html>`__
+
+----
+
+SpWML Parameters
+====================
+
+* :ref:`The common<spwml>` parameters.
+* color (String). Set default color. :ref:`The color system<color_system>` .

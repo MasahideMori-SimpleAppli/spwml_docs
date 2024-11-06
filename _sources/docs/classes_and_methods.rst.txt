@@ -93,3 +93,4 @@ Others
 * :ref:`vline (Vertical line) <vline>`
 * :ref:`progressIndicator <progressIndicator>`
 * :ref:`slider <slider>`
+* :ref:`colorPalette <colorPalette>`
