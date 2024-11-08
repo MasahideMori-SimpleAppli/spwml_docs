@@ -51,6 +51,8 @@ blue[100], blue[200], blue[300], blue[400], blue[500]
 <p>To use this type, it is necessary to set <a class="reference external" href="https://pub.dev/packages/simple_managers">TextFieldManager</a>  to SpWMLBuilder or SpWML widget.</p>
 <p>This block extends the configured SID and consumes four namespaces: “SID:A”, “SID:R”, “SID:G”, and “SID:B”.
 Each is assigned color data from 0 to 255.</p>
+<p>You can easily change the color from Dart code by using the static ColorPaletteParams.setColorToTFM(TextFieldManager manager, String sid, Color c) function.
+The manager usually passes in StateManager.tfm.</p>
 </section>
 <hr class="docutils" />
 <section id="dart-class-reference">
