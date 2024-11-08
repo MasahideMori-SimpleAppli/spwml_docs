@@ -11,7 +11,12 @@ How to write by SpWML
 
 .. code-block:: none
    
-   (colorPalette, sid:cp)
+   (colorPalette, sid:cp1)
+   // You can use your own palette by entering color information separated by commas.
+   // Starting a new line will create a color cell on a different line.
+   // You can also specify a material color.
+   (colorPalette, sid:cp2)#FF000000,#FF333333,#FF666666,#FF999999,white
+   blue[100], blue[200], blue[300], blue[400], blue[500]
 
 ----
 
@@ -38,3 +43,10 @@ SpWML Parameters
 
 * :ref:`The common<spwml>` parameters.
 * color (String). Set default color. :ref:`The color system<color_system>` .
+* type (String). The type of color palette, it can be normal, simple or text. The default is normal.
+* vAlign (String). Vertical alignment: start, center, top, bottom, end, baseline or stretch.
+* hAlign (String). Horizontal alignment, which can be left, start, center, right, end, spaceAround, spaceEvenly or spaceBetween.
+* cellHeight (double). The height of one cell in the color palette. The default is 24.0.
+* cellWidth (double). The width of one cell in the color palette. The default is 24.0.
+* cellMargin (double). The cells will be spaced apart by this margin. The default is 2.0.
+* vMargin (double). Margin between the color palette cell and the text input. Only effective when type is normal. The default value is 12.0.
