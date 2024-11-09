@@ -46,10 +46,12 @@ SpWML Parameters
 
 * :ref:`The common<spwml>` parameters.
 * color (String). Set default color. :ref:`The color system<color_system>` .
-* type (String). The type of color palette, it can be normal, simple or text. The default is normal.
+* type (String). The type of color palette, it can be normal, simple, text, circle, simpleCircle. The default is normal.
 * vAlign (String). Vertical alignment: start, center, top, bottom, end, baseline or stretch.
 * hAlign (String). Horizontal alignment, which can be left, start, center, right, end, spaceAround, spaceEvenly or spaceBetween.
 * cellHeight (double). The height of one cell in the color palette. The default is 24.0.
 * cellWidth (double). The width of one cell in the color palette. The default is 24.0.
 * cellMargin (double). The cells will be spaced apart by this margin. The default is 2.0.
 * vMargin (double). Margin between the color palette cell and the text input. Only effective when type is normal. The default value is 12.0.
+* cellBorderWidth (double). Set cells border width. The default is 1.0.
+* cellBorderColor (String). Set cells border color. The default is black. :ref:`The color system<color_system>` .
