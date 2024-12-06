@@ -41,4 +41,4 @@ SpWML Parameters
 * isPrimary (bool). Specifies whether this is the primary scroll view.If there are multiple scrolls, the second and subsequent views must be set to false.
 * axis (String). Specifies the direction of scrolling, either vertical or horizontal. If horizontal is specified and scrollBehavior is not set, scrollBehavior is automatically set to touchAndMouse.
 * scrollBehavior (String?). Setting of scroll permission. Default is null. Specify one of touch, touchAndMouse, touchAndMouseAndTrackpad, nonEraser, all.
-* alignCenter (bool). If true, this element will be centered within its parent element.
+* alignCenter (bool). If true, this element will be centered within its parent element. Default is false.
