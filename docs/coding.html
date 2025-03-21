@@ -69,12 +69,12 @@ If there is an implementation, please use it. It may be safer to operate.</p>
 <h2>Compilation Notes<a class="headerlink" href="#compilation-notes" title="Link to this heading">¶</a></h2>
 <p>SpWML uses code numbers for icons, so you will need to adjust the compilation options for certain versions of Flutter and later.
 The following will compile successfully, but if you want a lighter version, consider adjusting it manually.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">flutter build web --release --no-tree-shake-icons --web-renderer canvaskit</span>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">flutter build web --release --no-tree-shake-icons</span>
 </pre></div>
 </div>
 <p>If you have already decided which icons you will use, you can do the following to significantly reduce the weight of your code
 by not compiling icons that will not be used.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">flutter build web --release --no-tree-shake-icon-names=use_icon_name_1,use_icon_name_2 --web-renderer canvaskit</span>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">flutter build web --release --no-tree-shake-icon-names=use_icon_name_1,use_icon_name_2</span>
 </pre></div>
 </div>
 </section>
@@ -99,11 +99,17 @@ b.setStateManager(Manager class stored in class variables etc.);
 <p>Using the struct <a class="reference internal" href="classes/structure/block.html#block"><span class="std std-ref">block</span></a> you can embed widgets inside like this:
 By using this, if the screen parts created by the designer with the design tool are converted to Flutter Widgets, you can be easily embedded.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>SpWMLBuilder b = SpWMLBuilder(layout);
-b.replace (Target block sid, Widget);
+b.replace(Target block sid, Widget);
 Widget compiledWidget = b.build(context);
 </pre></div>
 </div>
 <p>Use this when reusing existing code or embedding special screen parts that are difficult to write in a static language.</p>
+<p>Also, if you want to perform similar operations on elements with multiple children, such as col or row, you can do the following:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>SpWMLBuilder b = SpWMLBuilder(layout);
+b.replaceUnderStructure(Target sid, Widget&#39;s list);
+Widget compiledWidget = b.build(context);
+</pre></div>
+</div>
 </section>
 <hr class="docutils" />
 <section id="create-a-dialog-with-spwml">

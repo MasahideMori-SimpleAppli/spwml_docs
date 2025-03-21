@@ -51,14 +51,14 @@ The following will compile successfully, but if you want a lighter version, cons
 
 .. code-block:: console
 
-    flutter build web --release --no-tree-shake-icons --web-renderer canvaskit
+    flutter build web --release --no-tree-shake-icons
 
 If you have already decided which icons you will use, you can do the following to significantly reduce the weight of your code
 by not compiling icons that will not be used.
 
 .. code-block:: console
 
-    flutter build web --release --no-tree-shake-icon-names=use_icon_name_1,use_icon_name_2 --web-renderer canvaskit
+    flutter build web --release --no-tree-shake-icon-names=use_icon_name_1,use_icon_name_2
 
 ----
 
@@ -92,10 +92,18 @@ By using this, if the screen parts created by the designer with the design tool 
 .. code-block:: none
 
    SpWMLBuilder b = SpWMLBuilder(layout);
-   b.replace (Target block sid, Widget);
+   b.replace(Target block sid, Widget);
    Widget compiledWidget = b.build(context);
 
 Use this when reusing existing code or embedding special screen parts that are difficult to write in a static language.
+
+Also, if you want to perform similar operations on elements with multiple children, such as col or row, you can do the following:
+
+.. code-block:: none
+
+   SpWMLBuilder b = SpWMLBuilder(layout);
+   b.replaceUnderStructure(Target sid, Widget's list);
+   Widget compiledWidget = b.build(context);
 
 ----
 
