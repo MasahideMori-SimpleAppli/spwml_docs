@@ -54,7 +54,7 @@ SpWML Parameters
 * labelText(String). Hint text with the function of moving to the upper left with animation.
 * hint(String). This is the hint text that is displayed when the input is empty.
 * type(String). Specifies the shape of the input box.Specify either material or rounded.
-* mode(String). Specifies the operation mode. Specify one of normal, password, passwordPrefix, search, searchPrefix, searchAndClear, manual. In manual mode, SpWML specification is invalid and the user setting value is reflected as it is.
+* mode(String). Specifies the operation mode. Specify one of normal, noSuggestAndAutofill, password, passwordPrefix, search, searchPrefix, searchAndClear, manual. In manual mode, SpWML specification is invalid and the user setting value is reflected as it is.
 * iconNum(String). Set the icon type with `codePoint <https://api.flutter.dev/flutter/material/Icons-class.html>`__ .
 * iconSize (double).
 * iconColor (String). Color setting for icons.  :ref:`The color system<color_system>` .
