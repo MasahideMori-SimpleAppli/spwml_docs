@@ -67,14 +67,8 @@ If there is an implementation, please use it. It may be safer to operate.</p>
 <hr class="docutils" />
 <section id="compilation-notes">
 <h2>Compilation Notes<a class="headerlink" href="#compilation-notes" title="Link to this heading">¶</a></h2>
-<p>SpWML uses code numbers for icons, so you will need to adjust the compilation options for certain versions of Flutter and later.
-The following will compile successfully, but if you want a lighter version, consider adjusting it manually.</p>
+<p>SpWML uses code numbers for icons, so you will need to adjust the compilation options for certain versions of Flutter and later.</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">flutter build web --release --no-tree-shake-icons</span>
-</pre></div>
-</div>
-<p>If you have already decided which icons you will use, you can do the following to significantly reduce the weight of your code
-by not compiling icons that will not be used.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">flutter build web --release --no-tree-shake-icon-names=use_icon_name_1,use_icon_name_2</span>
 </pre></div>
 </div>
 </section>

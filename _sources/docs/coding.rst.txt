@@ -47,18 +47,10 @@ Compilation Notes
 ===================================
 
 SpWML uses code numbers for icons, so you will need to adjust the compilation options for certain versions of Flutter and later.
-The following will compile successfully, but if you want a lighter version, consider adjusting it manually.
 
 .. code-block:: console
 
     flutter build web --release --no-tree-shake-icons
-
-If you have already decided which icons you will use, you can do the following to significantly reduce the weight of your code
-by not compiling icons that will not be used.
-
-.. code-block:: console
-
-    flutter build web --release --no-tree-shake-icon-names=use_icon_name_1,use_icon_name_2
 
 ----
 
