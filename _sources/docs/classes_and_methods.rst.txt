@@ -23,6 +23,7 @@ Container
 * :ref:`circleAvatar (Circular viewing area) <circleAvatar>`
 * :ref:`badge (Notifications on the icon) <badge>`
 * :ref:`tooltip (Description text on the element) <tooltip>`
+* :ref:`split (A container with two stretchable children) <split>`
 
 Text
 ==================

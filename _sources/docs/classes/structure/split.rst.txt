@@ -1,0 +1,45 @@
+:orphan:
+
+.. _split:
+
+======================================
+split
+======================================
+
+How to write by SpWML
+========================
+.. code-block:: none
+   
+   (split)
+   +(child block1)
+   +(child block2)
+
+----
+
+Summary
+===============
+
+A block with two stretchable child blocks.
+
+It has a draggable border in the middle.
+
+If two or more child blocks are set, the third and subsequent blocks will be ignored.
+
+This block is specific to SpWML and does not have an equivalent class in Flutter.
+
+----
+
+Dart Class Reference
+======================
+`SplitElement class <https://pub.dev/documentation/simple_widget_markup/latest/simple_widget_markup/SplitElement-class.html>`__
+
+----
+
+SpWML Parameters
+====================
+
+* :ref:`The common<spwml>` parameters.
+* :ref:`Parent<multi_child>` parameters.
+* axis (String). Specifies the direction of split, either vertical or horizontal. Default value is horizontal.
+* barSize (double). The thickness of the draggable border.
+* color (String). Color setting for the draggable border.  :ref:`The color system<color_system>` .

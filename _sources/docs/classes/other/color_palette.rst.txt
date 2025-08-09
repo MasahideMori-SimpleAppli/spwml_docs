@@ -25,6 +25,8 @@ Summary
 
 This is a block for displaying a simple color palette.
 
+This block is specific to SpWML and does not have an equivalent class in Flutter.
+
 To use this type, it is necessary to set `TextFieldManager <https://pub.dev/packages/simple_managers>`__  to SpWMLBuilder or SpWML widget.
 
 This block extends the configured SID and consumes four namespaces: "SID:A", "SID:R", "SID:G", and "SID:B".
