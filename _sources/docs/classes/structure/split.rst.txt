@@ -43,3 +43,5 @@ SpWML Parameters
 * axis (String). Specifies the direction of split, either vertical or horizontal. Default value is horizontal.
 * barSize (double). The thickness of the draggable border.
 * color (String). Color setting for the draggable border.  :ref:`The color system<color_system>` .
+* clampMin (double). Percentage of left or top margin. The bar can only be moved up to the margin. Specify a value between 0.0 and 1.0.
+* clampMax (double). Percentage of right or bottom margin. The bar can only be moved up to the margin. Specify a value between 0.0 and 1.0.
