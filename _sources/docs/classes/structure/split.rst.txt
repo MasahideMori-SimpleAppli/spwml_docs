@@ -10,7 +10,7 @@ How to write by SpWML
 ========================
 .. code-block:: none
    
-   (split)
+   (split, sid:split1)
    +(child block1)
    +(child block2)
 
@@ -26,6 +26,10 @@ It has a draggable border in the middle.
 If two or more child blocks are set, the third and subsequent blocks will be ignored.
 
 This block is specific to SpWML and does not have an equivalent class in Flutter.
+
+To use this type, it is necessary to set `ValueManager <https://pub.dev/packages/simple_managers>`__  to SpWMLBuilder or SpWML widget.
+
+With this type, the manager always stores the value associated with the SID.
 
 ----
 

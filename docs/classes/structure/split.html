@@ -35,7 +35,7 @@
 <span id="id1"></span><h1>split<a class="headerlink" href="#split" title="Link to this heading">¶</a></h1>
 <section id="how-to-write-by-spwml">
 <h2>How to write by SpWML<a class="headerlink" href="#how-to-write-by-spwml" title="Link to this heading">¶</a></h2>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(split)
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(split, sid:split1)
 +(child block1)
 +(child block2)
 </pre></div>
@@ -48,6 +48,8 @@
 <p>It has a draggable border in the middle.</p>
 <p>If two or more child blocks are set, the third and subsequent blocks will be ignored.</p>
 <p>This block is specific to SpWML and does not have an equivalent class in Flutter.</p>
+<p>To use this type, it is necessary to set <a class="reference external" href="https://pub.dev/packages/simple_managers">ValueManager</a>  to SpWMLBuilder or SpWML widget.</p>
+<p>With this type, the manager always stores the value associated with the SID.</p>
 </section>
 <hr class="docutils" />
 <section id="dart-class-reference">
