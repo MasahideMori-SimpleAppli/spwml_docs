@@ -49,3 +49,5 @@ SpWML Parameters
 * color (String). Color setting for the draggable border.  :ref:`The color system<color_system>` .
 * clampMin (double). Percentage of left or top margin. The bar can only be moved up to the margin. Specify a value between 0.0 and 1.0.
 * clampMax (double). Percentage of right or bottom margin. The bar can only be moved up to the margin. Specify a value between 0.0 and 1.0.
+* splitPane1MinPx (double). The minimum size of the left or top area (px). Entering null will disable the correction.
+* splitPane2MinPx (double). The minimum size of the right or bottom area (px). Entering null will disable the correction.
