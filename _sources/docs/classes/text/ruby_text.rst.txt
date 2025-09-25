@@ -47,5 +47,5 @@ SpWML Parameters
 * rubyDecoThickness(double). Specifies the line width of the decoration in px.
 * rubyLetterSpacing(double). Specifies the space between characters in px.
 * rubyWordSpacing(double). Specifies the space between words in px.
-* rubyAlign(String). Text alignment.Left, center, right, or justify.
+* rubyAlign(String). Text alignment.Left, center, right, start, end or justify.
 * rubyHeight(double). Specifies the text height. For English, 1.0 is fine, but for Japanese or other hieroglyph type text, it may be better to adjust between 1.0 and 1.3.

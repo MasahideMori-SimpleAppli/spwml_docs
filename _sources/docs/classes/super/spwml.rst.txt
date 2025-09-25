@@ -35,6 +35,7 @@ Parameters
 * h(double). It can also be written as height, which is the height of this element specified in px. Specify Infinity to maximize to the same width as the parent element.
 * w(double). It can also be written as width, which is the width of this element specified in px. Specify Infinity to maximize to the same width as the parent element.
 * wt(double). It can also be written as weight, The ratio of this element on the screen.If no other element has a ratio, the element with this will occupy the rest of the width.
+* flexFit(String). This is only valid if the wt parameter is set, and allows you to specify the fit method as either tight or loose. Specifying tight will maximize the use of free space, while specifying loose will minimize the use of free space. The default value is tight.
 * minH (double). It can also be written as minHeight, It is the minimum height specified in px. Ignored depending on the conditions.
 * minW (double). It can also be written as minWidth, It is the minimum width specified in px. Ignored depending on the conditions.
 * maxH (double). It can also be written as maxHeight, It is the maximum height specified in px. Ignored depending on the conditions.
