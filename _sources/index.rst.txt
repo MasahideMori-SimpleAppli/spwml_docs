@@ -14,5 +14,5 @@ Contents
    docs/install
    docs/coding
    docs/classes_and_methods
-   docs/copyright_notice
+   docs/notice
    docs/appendix
