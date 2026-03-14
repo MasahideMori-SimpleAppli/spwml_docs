@@ -1,130 +1,163 @@
 ======================================
-Working with SpWML from code
+UI Components and Integration
 ======================================
 
-Basic operation
-=================
+SpWML provides several ways to integrate with Flutter, depending on your needs.
 
-It will be easier to understand if you check the sample below.
-https://pub.dev/packages/simple_widget_markup/example
+SpWMLView (Recommended for Screens)
+=====================================
 
-One of the SpWML parameters contain above sample is "sid".
-For example, a block with "sid:deleteButton" can be retrieved from the Dart code as follows.
+Added in version 46.4.0. This is the most efficient way to build a complete screen.
+It automatically handles the lifecycle of the **StateManager** and supports asynchronous asset loading.
 
-.. code-block:: none
-   
+.. code-block:: dart
+
+   @override
+   Widget build(BuildContext context) {
+     return SpWMLView(
+       pathBuilder: (_) => "assets/layout.spwml",
+       onSetup: (context, builder, scope) {
+         final btn = builder.getSID("myButton") as BtnElement;
+         btn.setCallback(() {
+            // Your logic
+         });
+       },
+     );
+   }
+
+SpWML (Basic Widget)
+=====================
+
+Use this when you want to display a SpWML string immediately as a widget.
+Since the **SpWML** class inherits from **StatelessWidget**, you can use it directly in the widget tree.
+However, this class cannot control the state. If you want to include buttons or other elements,
+you will need either SpWMLView or SpWMLBuilder.
+
+.. code-block:: dart
+
+   // Simple usage
+   child: SpWML("(h1)Example text")
+
+SpWMLDialog
+============
+
+Makes it easy to create complex, stateful dialogs without defining new classes.
+This class replaces the content portion of a Flutter alert dialog with SpWML.
+
+If you need a more aesthetically pleasing dialog,
+you can use SpWMLView and wrap it in a Dialog.
+Bottom sheets and other elements can be customized in a similar way.
+
+.. code-block:: dart
+
+    SpWMLBuilder b = SpWMLBuilder(layout);
+    b.setStateManager(Manager class stored in class variables etc.);
+    // or b.setManager(the manager class you want to use);
+    showDialog(
+     context: context,
+     builder: (context) {
+       return SpWMLDialog(
+         b,
+         const Text('Dialog title'),
+         width: 320, // The dialog width
+         cancelBtnCallback: (close) {
+           close();
+         },
+         okBtnCallback: (close) {
+           close();
+         },
+       );
+     });
+
+Advanced: SpWMLBuilder
+=======================
+
+The **SpWMLBuilder** is the core engine. Use it directly for manual manipulations,
+such as replacing blocks with custom Flutter widgets before building.
+
+.. code-block:: dart
+
+   SpWMLBuilder b = SpWMLBuilder(layout);
+
+   // Embedding Flutter widgets into SpWML "block"
+   b.replace("target_sid", MyCustomWidget());
+
+   // Replace children for multiple child elements like col or row
+   b.replaceUnderStructure("parent_sid", [Widget1(), Widget2()]);
+
+   Widget compiledWidget = b.build(context);
+
+----
+
+Interacting with Elements from Code
+=====================================
+
+Except for stateless SpWML, elements can be accessed and modified via their **sid** regardless of the component being used.
+
+.. code-block:: dart
+
+   // Get element by sid
    BtnElement delBtn = builder.getElement("deleteButton") as BtnElement;
 
-See :ref:`Classes and Methods <classes_and_methods>` to see what types there are and what parameters they have.
-The "BtnElement" part changes depending on what you want to get. This is mentioned on the page above.
-Basically, except for some abbreviations, the class is named "SpWML type name + Element".
+   // Modify parameters directly
+   delBtn.setBGColor(Colors.red);
+   delBtn.textParams.p.isSelectable = true;
 
-Each class has almost the same parameters as similar classes in Flutter, and by rewriting the class parameters as follows,
-You can control almost everything from code.
-
-.. code-block:: none
-   
-   BtnElement runBtn = builder.getElement("runButton") as BtnElement;
-   runBtn.elParams.p.normalBtnParams?.style = const ButtonStyle();
-   runBtn.textParams.p.isSelectable = true;
-
-There are various types of parameters, but they are all named xxParams,
-Basically what you use in that class is defined with the name elParams.
-Exceptions are Text type Element, such as textParams, tfParams, and rubyParams.
-The parameter common to all elements is spwmlParams.
-Access to "params" is not recommended as it is a parameter used internally.
-
-In addition, frequently used variables may be implemented in element methods.
-If there is an implementation, please use it. It may be safer to operate.  
-
-Furthermore, if you use the automatic code generation function of the SpWML editor, you can automatically generate most of the necessary code from SpWML, so it may be better to use that first.
-
-https://simple-widget-markup-editor.web.app/
+.. note::
+   Accessing **element.params** is not recommended as it is for internal use.
+   Please use **spwmlParams**, **elParams**, or specific params like **textParams**.
 
 ----
 
-Compilation Notes
-===================================
+State Management and Serialization
+====================================
 
-SpWML uses code numbers for icons, so you will need to adjust the compilation options for certain versions of Flutter and later.
+SpWML manages the state of UI elements (such as text field inputs or switch states) using the `simple_managers <https://pub.dev/packages/simple_managers>`_ package.
 
-.. code-block:: console
+With SpWMLView (Automatic Management)
+----------------------------------------
 
-    flutter build web --release --no-tree-shake-icons
+In **SpWMLView**, state management is handled automatically. You don't need to manually create a **StateManager**.
+Use **onInit** to set initial values and **scope.sm** in **onSetup** to access the manager for serialization.
 
-----
+.. code-block:: dart
 
-State management
-==================
+   return SpWMLView(
+     pathBuilder: (_) => "assets/layout.spwml",
+     onInit: (sm) {
+       // 1. Pre-set values before UI build
+       sm.tfm.setText("user_name", "Taro Yamada");
+     },
+     onSetup: (context, builder, scope) {
+       // 2. Access the manager via scope.sm for serialization
+       final manager = scope.sm;
+       final Map<String, dynamic> json = manager.toDict(); // Save all states to JSON
 
-SpWML switched to state management using simple_managers after version 20.
+       // 3. Set callbacks for buttons
+       final btn = builder.getElement("saveBtn") as BtnElement;
+       btn.setCallback(() => print("Saved!"));
+     },
+   );
 
-https://pub.dev/packages/simple_managers
+With SpWMLBuilder (Manual Management)
+----------------------------------------
 
-By giving SpWMLBuilder the required manager class in the layout, the state will be automatically managed.
-Each manager class included in simple_managers supports serialization.
-Easy to save and restore.
+If you are using **SpWMLBuilder** directly, you must provide a **StateManager** instance yourself and manage its lifecycle.
 
-By using the StateManager added in version 3.0.0 of the simple_managers package, all states are managed for each sid and can be serialized and deserialized all at once.  
+.. code-block:: dart
 
-.. code-block:: none
+   // In your State Class
+   final manager = StateManager();
 
-   SpWMLBuilder b = SpWMLBuilder(layout);
-   b.setStateManager(Manager class stored in class variables etc.);
-   // or b.setManager(the manager class you want to use);
+   @override
+   void dispose() {
+     manager.dispose(); // Important: Manually dispose the manager
+     super.dispose();
+   }
 
-----
-
-Integration with Flutter widgets
-=================================
-
-Using the struct :ref:`block <block>` you can embed widgets inside like this:
-By using this, if the screen parts created by the designer with the design tool are converted to Flutter Widgets, you can be easily embedded.
-
-.. code-block:: none
-
-   SpWMLBuilder b = SpWMLBuilder(layout);
-   b.replace(Target block sid, Widget);
-   Widget compiledWidget = b.build(context);
-
-Use this when reusing existing code or embedding special screen parts that are difficult to write in a static language.
-
-Also, if you want to perform similar operations on elements with multiple children, such as col or row, you can do the following:
-
-.. code-block:: none
-
-   SpWMLBuilder b = SpWMLBuilder(layout);
-   b.replaceUnderStructure(Target sid, Widget's list);
-   Widget compiledWidget = b.build(context);
-
-----
-
-Create a dialog with SpWML
-===================================
-
-SpWML can create dialogs as well as main screens.
-Added in version 21.0.0, SpWMLDialog makes it easy to create even complex dialogs.
-
-.. code-block:: none
-
-   SpWMLBuilder b = SpWMLBuilder(layout);
-   b.setStateManager(Manager class stored in class variables etc.);
-   // or b.setManager(the manager class you want to use);
-   showDialog(
-        context: context,
-        builder: (context) {
-          return SpWMLDialog(
-            b,
-            const Text('Dialog title'),
-            width: 320, // The dialog width
-            cancelBtnCallback: (close) {
-              close();
-            },
-            okBtnCallback: (close) {
-              close();
-            },
-          );
-        });
-   
-You don't need to create your own dialog class every time anymore.
-Even for dialogs with state, the state is automatically managed by the manager class.
+   @override
+   Widget build(BuildContext context) {
+     SpWMLBuilder b = SpWMLBuilder(layout);
+     b.setStateManager(manager); // Link the manager to the builder
+     return b.build(context);
+   }

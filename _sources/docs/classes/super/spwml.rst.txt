@@ -52,8 +52,14 @@ Parameters
 * pAll (double). Batch specification of padding in px. When used together with individual specifications such as pL, the individual side takes precedence.
 * shiftX (double). Shift the relative position of the element on the x-axis.
 * shiftY (double). Shift the relative position of the element on the y-axis.
-* elevation (double). Shifts the relative position of the element on the z-axis.
-* bgColor (String). Background Color setting. :ref:`The color system<color_system>` .
+* elevation (double). Specifies the element's relative position on the z-axis, creating a shadow effect. Specifying this will automatically wrap the corresponding element internally with a **Material** widget.
+
+    .. tip::
+        Setting **elevation: 0.0** can be used to wrap an element in a Material widget without a shadow. This is useful for resolving rendering interference with other views, such as when placing elements within a ScrollView.
+
+* shadowColor (String). Sets the color of the elevation shadow. See :ref:`The color system <color_system>`.
+* materialPadding (double). Adds an outer margin around the Material widget. This is essential for securing enough space for the shadow to be rendered, preventing it from being clipped by parent elements or screen edges.
+* bgColor (String). Background color setting. :ref:`The color system<color_system>` .
 * borderColor (String). Border color setting. :ref:`The color system<color_system>` .
 * borderWidth (double). The width of the border line specified in px.
 * borderRadius (double). Radius of border specified in px.

@@ -23,6 +23,12 @@ A block with a single child block.
 
 If the size of the inner child block exceeds the size of the parent block, it will be scrollable.
 
+Depending on the layout, views within the scrollable area may interfere with views outside of it.
+
+In that case, add **elevation: 0.0** or similar.
+
+This may resolve the issue because it will be internally wrapped in a Material widget.
+
 It has a variable with parameters equivalent to Flutter `SingleChildScrollViewclass <https://api.flutter.dev/flutter/widgets/SingleChildScrollView-class.html>`__ .
 
 ----

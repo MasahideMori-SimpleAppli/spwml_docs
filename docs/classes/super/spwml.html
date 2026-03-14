@@ -50,7 +50,7 @@
 <hr class="docutils" />
 <section id="parameters">
 <h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading">¶</a></h2>
-<ul class="simple">
+<ul>
 <li><p>sid(String). String serial id. Used for specifying button callbacks and replacing child blocks. Setting the sid is mandatory for some subclasses. Only one identical SID is allowed in the same layout.</p></li>
 <li><p>tag(String). A string tag, used by stateful types to manage the state. The same tag can be set multiple times in the same layout.</p></li>
 <li><p>text(String). The text content written within the block. In a text element, this content is displayed on the screen.</p></li>
@@ -74,8 +74,17 @@
 <li><p>pAll (double). Batch specification of padding in px. When used together with individual specifications such as pL, the individual side takes precedence.</p></li>
 <li><p>shiftX (double). Shift the relative position of the element on the x-axis.</p></li>
 <li><p>shiftY (double). Shift the relative position of the element on the y-axis.</p></li>
-<li><p>elevation (double). Shifts the relative position of the element on the z-axis.</p></li>
-<li><p>bgColor (String). Background Color setting. <a class="reference internal" href="../../ref/color_system.html#color-system"><span class="std std-ref">The color system</span></a> .</p></li>
+<li><p>elevation (double). Specifies the element’s relative position on the z-axis, creating a shadow effect. Specifying this will automatically wrap the corresponding element internally with a <strong>Material</strong> widget.</p>
+<blockquote>
+<div><div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Setting <strong>elevation: 0.0</strong> can be used to wrap an element in a Material widget without a shadow. This is useful for resolving rendering interference with other views, such as when placing elements within a ScrollView.</p>
+</div>
+</div></blockquote>
+</li>
+<li><p>shadowColor (String). Sets the color of the elevation shadow. See <a class="reference internal" href="../../ref/color_system.html#color-system"><span class="std std-ref">The color system</span></a>.</p></li>
+<li><p>materialPadding (double). Adds an outer margin around the Material widget. This is essential for securing enough space for the shadow to be rendered, preventing it from being clipped by parent elements or screen edges.</p></li>
+<li><p>bgColor (String). Background color setting. <a class="reference internal" href="../../ref/color_system.html#color-system"><span class="std std-ref">The color system</span></a> .</p></li>
 <li><p>borderColor (String). Border color setting. <a class="reference internal" href="../../ref/color_system.html#color-system"><span class="std std-ref">The color system</span></a> .</p></li>
 <li><p>borderWidth (double). The width of the border line specified in px.</p></li>
 <li><p>borderRadius (double). Radius of border specified in px.</p></li>
@@ -128,7 +137,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../try_editor.html">Try SpWML Editor!</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ai_prompt.html">Let AI generate the design</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../install.html">How to install SpWML</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../coding.html">Working with SpWML from code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../coding.html">UI Components and Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes_and_methods.html">Classes and methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../notice.html">Notice</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../appendix.html">Appendix</a></li>
