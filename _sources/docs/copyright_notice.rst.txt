@@ -1,7 +1,0 @@
-======================================
-Notice
-======================================
-
-Copyright notice
-------------------------------
-The “Dart” name and “Flutter” name are trademarks of Google LLC.

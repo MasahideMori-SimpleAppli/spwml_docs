@@ -12,4 +12,4 @@ Please note that this prompt is being adjusted and may change frequently.
 
 Also, anyone new to SpWML may find this prompt a good example.
 
-`Prompt for AI <https://masahidemori-simpleappli.github.io/spwml_docs/prompt/spwml_prompt_en.txt>`__ 
+`Prompt for AI <https://github.com/MasahideMori-SimpleAppli/spwml_docs/blob/main/prompt/spwml_prompt_en.md>`__
