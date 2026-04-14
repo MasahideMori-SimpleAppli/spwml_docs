@@ -56,7 +56,7 @@ Lines starting with `//` are comments and are ignored by the parser.
 ### Escape
 
 - To include special characters in parameter values, use backslash escaping:
-  `\(`, `\)`, `\:`, `\,`, `\\`
+  `\(`, `\)`, `\:`, `\,`, `\\`, `\ `
 - If a content line starts with `+(`, prefix that line with `(esc)`.
 
 ---
